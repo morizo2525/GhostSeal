@@ -21,18 +21,18 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        // ===== 左右移動 =====
-        float moveInput = 0f;
-        if      (Input.GetKey(KeyCode.A)) moveInput = -1f; //左移動
-        else if (Input.GetKey(KeyCode.D)) moveInput =  1f; //右移動
-
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
-
-        // ===== 接地判定 =====
+        //接地判定
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // ===== ジャンプ =====
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        //左右移動
+        float horizontalInput = 0f;
+        if (Input.GetKey(KeyCode.A))                          horizontalInput -=  1f; //左移動
+        if (Input.GetKey(KeyCode.D))                          horizontalInput +=  1f; //右移動
+
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+
+        //ジャンプ
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
