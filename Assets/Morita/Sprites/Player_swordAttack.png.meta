@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: b27df24d0b68059448b80de95ff96790
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5365698871009782859
+    second: Player_swordAttack_0
+  - first:
+      213: 4248845467760222635
+    second: Player_swordAttack_1
+  - first:
+      213: 3529217087145746130
+    second: Player_swordAttack_2
+  - first:
+      213: -3719404486487584200
+    second: Player_swordAttack_3
+  - first:
+      213: 1691226647926366601
+    second: Player_swordAttack_4
+  - first:
+      213: -1103599472698976136
+    second: Player_swordAttack_5
+  - first:
+      213: -6878978768171294509
+    second: Player_swordAttack_6
+  - first:
+      213: 688927979013964236
+    second: Player_swordAttack_7
+  - first:
+      213: -8532849635926053097
+    second: Player_swordAttack_8
+  - first:
+      213: -3225465860801164381
+    second: Player_swordAttack_9
+  - first:
+      213: 2229023922952105391
+    second: Player_swordAttack_10
+  - first:
+      213: -871279713040435485
+    second: Player_swordAttack_11
+  - first:
+      213: 6232712431679054011
+    second: Player_swordAttack_12
+  - first:
+      213: 973553544596246714
+    second: Player_swordAttack_13
+  - first:
+      213: 4688064893643933476
+    second: Player_swordAttack_14
+  - first:
+      213: 411967851771550601
+    second: Player_swordAttack_15
+  - first:
+      213: 5499275578199205007
+    second: Player_swordAttack_16
+  - first:
+      213: -4339635201704692580
+    second: Player_swordAttack_17
+  - first:
+      213: 1879415743878287895
+    second: Player_swordAttack_18
+  - first:
+      213: 6416726661978597139
+    second: Player_swordAttack_19
+  - first:
+      213: -4430557394322693120
+    second: Player_swordAttack_20
+  - first:
+      213: -1241126577414695743
+    second: Player_swordAttack_21
+  - first:
+      213: 4888109619263849890
+    second: Player_swordAttack_22
+  - first:
+      213: -4796521851076416817
+    second: Player_swordAttack_23
+  - first:
+      213: -8930098541286643822
+    second: Player_swordAttack_24
+  - first:
+      213: -6160498620275809677
+    second: Player_swordAttack_25
+  - first:
+      213: -7242844561897703227
+    second: Player_swordAttack_26
+  - first:
+      213: 2023282262745793720
+    second: Player_swordAttack_27
+  - first:
+      213: -5261859551846575474
+    second: Player_swordAttack_28
+  - first:
+      213: -5003369570521544364
+    second: Player_swordAttack_29
+  - first:
+      213: -7081013678977499278
+    second: Player_swordAttack_30
+  - first:
+      213: -3592964415353058363
+    second: Player_swordAttack_31
+  - first:
+      213: -3827195372522172305
+    second: Player_swordAttack_32
+  - first:
+      213: -1875599905347863554
+    second: Player_swordAttack_33
+  - first:
+      213: -8770401525333844230
+    second: Player_swordAttack_34
+  - first:
+      213: 5395476646373790255
+    second: Player_swordAttack_35
+  - first:
+      213: 3219307844300710274
+    second: Player_swordAttack_36
+  - first:
+      213: 4632985161518289494
+    second: Player_swordAttack_37
+  - first:
+      213: -416612029099892009
+    second: Player_swordAttack_38
+  - first:
+      213: -1106896405641356709
+    second: Player_swordAttack_39
+  - first:
+      213: -6576745919829693464
+    second: Player_swordAttack_40
+  - first:
+      213: 7741820518597058874
+    second: Player_swordAttack_41
+  - first:
+      213: -3777702835313536121
+    second: Player_swordAttack_42
+  - first:
+      213: 344357890529677174
+    second: Player_swordAttack_43
+  - first:
+      213: -5444019597029327233
+    second: Player_swordAttack_44
+  - first:
+      213: -6059998798813787944
+    second: Player_swordAttack_45
+  - first:
+      213: 1323408689705031251
+    second: Player_swordAttack_46
+  - first:
+      213: 8783441915955402915
+    second: Player_swordAttack_47
+  - first:
+      213: -5128694591739684853
+    second: Player_swordAttack_48
+  - first:
+      213: -3776212799382612767
+    second: Player_swordAttack_49
+  - first:
+      213: 6333695117864321469
+    second: Player_swordAttack_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_swordAttack_0
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1546
+        width: 475
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ca04ac1bac67a40800000000000000
+      internalID: 5365698871009782859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_1
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1540
+        width: 297
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1606b017ee6fa30800000000000000
+      internalID: 4248845467760222635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_2
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1532
+        width: 332
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de9f8efd3c4af030800000000000000
+      internalID: 3529217087145746130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_3
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1530
+        width: 266
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832d9e66355026cc0800000000000000
+      internalID: -3719404486487584200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1037
+        width: 480
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f6ec0177a359980800000000000000
+      internalID: -8532849635926053097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_10
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1040
+        width: 483
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad6863b2751fee10800000000000000
+      internalID: 2229023922952105391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_12
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1041
+        width: 482
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0246d2fea0f7650800000000000000
+      internalID: 6232712431679054011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 610
+        width: 482
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab05b7b6ac1c28d00800000000000000
+      internalID: 973553544596246714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 609
+        width: 482
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42740adae2a5f0140800000000000000
+      internalID: 4688064893643933476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_18
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 600
+        width: 515
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712542759a6051a10800000000000000
+      internalID: 1879415743878287895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 68
+        width: 266
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297206db0bae11480800000000000000
+      internalID: -8930098541286643822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 71
+        width: 481
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8b7b4ce3f3c7b90800000000000000
+      internalID: -7242844561897703227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_swordAttack_31
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 31
+        width: 481
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb034c86e9332ec0800000000000000
+      internalID: -3592964415353058363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc41f599ad92a89419bcae4ae821964e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player_swordAttack_0: 5365698871009782859
+      Player_swordAttack_1: 4248845467760222635
+      Player_swordAttack_10: 2229023922952105391
+      Player_swordAttack_11: -871279713040435485
+      Player_swordAttack_12: 6232712431679054011
+      Player_swordAttack_13: 973553544596246714
+      Player_swordAttack_14: 4688064893643933476
+      Player_swordAttack_15: 411967851771550601
+      Player_swordAttack_16: 5499275578199205007
+      Player_swordAttack_17: -4339635201704692580
+      Player_swordAttack_18: 1879415743878287895
+      Player_swordAttack_19: 6416726661978597139
+      Player_swordAttack_2: 3529217087145746130
+      Player_swordAttack_20: -4430557394322693120
+      Player_swordAttack_21: -1241126577414695743
+      Player_swordAttack_22: 4888109619263849890
+      Player_swordAttack_23: -4796521851076416817
+      Player_swordAttack_24: -8930098541286643822
+      Player_swordAttack_25: -6160498620275809677
+      Player_swordAttack_26: -7242844561897703227
+      Player_swordAttack_27: 2023282262745793720
+      Player_swordAttack_28: -5261859551846575474
+      Player_swordAttack_29: -5003369570521544364
+      Player_swordAttack_3: -3719404486487584200
+      Player_swordAttack_30: -7081013678977499278
+      Player_swordAttack_31: -3592964415353058363
+      Player_swordAttack_32: -3827195372522172305
+      Player_swordAttack_33: -1875599905347863554
+      Player_swordAttack_34: -8770401525333844230
+      Player_swordAttack_35: 5395476646373790255
+      Player_swordAttack_36: 3219307844300710274
+      Player_swordAttack_37: 4632985161518289494
+      Player_swordAttack_38: -416612029099892009
+      Player_swordAttack_39: -1106896405641356709
+      Player_swordAttack_4: 1691226647926366601
+      Player_swordAttack_40: -6576745919829693464
+      Player_swordAttack_41: 7741820518597058874
+      Player_swordAttack_42: -3777702835313536121
+      Player_swordAttack_43: 344357890529677174
+      Player_swordAttack_44: -5444019597029327233
+      Player_swordAttack_45: -6059998798813787944
+      Player_swordAttack_46: 1323408689705031251
+      Player_swordAttack_47: 8783441915955402915
+      Player_swordAttack_48: -5128694591739684853
+      Player_swordAttack_49: -3776212799382612767
+      Player_swordAttack_5: -1103599472698976136
+      Player_swordAttack_50: 6333695117864321469
+      Player_swordAttack_6: -6878978768171294509
+      Player_swordAttack_7: 688927979013964236
+      Player_swordAttack_8: -8532849635926053097
+      Player_swordAttack_9: -3225465860801164381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
