@@ -7,9 +7,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float     jumpForce = 10f; //ジャンプ力
     [SerializeField] private LayerMask groundLayer;     //接地判定用
 
-    private Rigidbody2D rb;
+    private Rigidbody2D    rb;
+    private SpriteRenderer sr;
     private bool isGrounded;
-
+    
     [Header("接地チェック")]
     [SerializeField] private Transform groundCheck; 　　　　     //接地チェック用当たり判定の位置
     [SerializeField] private float     groundCheckRadius = 0.2f; //接地チェック用当たり判定の半径
@@ -17,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -26,8 +28,16 @@ public class PlayerMove : MonoBehaviour
 
         //左右移動
         float horizontalInput = 0f;
-        if (Input.GetKey(KeyCode.A))                          horizontalInput -=  1f; //左移動
-        if (Input.GetKey(KeyCode.D))                          horizontalInput +=  1f; //右移動
+        if (Input.GetKey(KeyCode.A))
+        {
+            horizontalInput -= 1f;  //左移動
+            sr.flipX = false;       //左向きに反転
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            horizontalInput += 1f; //右移動
+            sr.flipX = true;       //右向きに反転
+        }
 
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
