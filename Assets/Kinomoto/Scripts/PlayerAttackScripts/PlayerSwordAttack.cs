@@ -13,7 +13,7 @@ public class PlayerSwordAttack : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             SwordAttack(); //剣攻撃メソッド
         }
@@ -21,23 +21,26 @@ public class PlayerSwordAttack : MonoBehaviour
 
     public void SwordAttack()
     {
+        float direction = transform.localScale.x > 0 ? 1 : -1; //プレイヤーの向き
+
         //攻撃アニメーション再生
-        animator.SetTrigger("Attack");
+        //animator.SetTrigger("Attack");
 
         //プレイヤーの前方に攻撃判定を生成
-        Vector2 attackPos = (Vector2)transform.position + (Vector2)(transform.right * attackRange);
+        Vector2 attackPos = (Vector2)transform.position + new Vector2(direction * attackRange,0);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, 0.5f, enemyLayer);
 
         //攻撃エフェクトの生成
         if (attackEffect != null)
         {
-            Instantiate(attackEffect, attackPos, Quaternion.identity);
+            //Instantiate(attackEffect, attackPos, Quaternion.identity);
         }
 
         //敵にダメージを与える
         foreach (Collider2D enemy in hitEnemies)
         {
             //敵のダメージ処理
+            enemy.GetComponent<EnemyHPManager>().EnemyTakeDamage(20); //例:20ダメージ
         }
     }
 }
