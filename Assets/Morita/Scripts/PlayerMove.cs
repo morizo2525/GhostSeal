@@ -31,12 +31,16 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             horizontalInput -= 1f;  //¶ˆÚ“®
-            sr.flipX = false;       //¶Œü‚«‚É”½“]
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x); //¶Œü‚«‚É”½“]
+            transform.localScale = scale;
         }
         if (Input.GetKey(KeyCode.D))
         {
             horizontalInput += 1f; //‰EˆÚ“®
-            sr.flipX = true;       //‰EŒü‚«‚É”½“]
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x); //‰EŒü‚«‚É”½“]
+            transform.localScale = scale;
         }
 
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
