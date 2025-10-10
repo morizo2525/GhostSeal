@@ -22,7 +22,7 @@ public class ArrowTest : MonoBehaviour
         {
             if (arrowShooter != null)
             {
-                arrowShooter.bowShoot();
+                arrowShooter.BowShoot();
             }
         }
     }

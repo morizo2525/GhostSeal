@@ -336,7 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack_Bow
   arrowPrefab: {fileID: 1155395192224245379, guid: 945f696d289a4d44e8f14535382e215c, type: 3}
   shootPoint: {fileID: 1501366472}
-  shootPower: 12.5
+  shootPower: 2
   minAngle: 40
   maxAngle: 90
 --- !u!114 &371464611

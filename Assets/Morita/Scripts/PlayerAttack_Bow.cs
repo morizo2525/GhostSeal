@@ -12,7 +12,7 @@ public class PlayerAttack_Bow : MonoBehaviour
     [Range(0, 120)] public float minAngle = 15f;
     [Range(0, 120)] public float maxAngle = 75f;
 
-    public void bowShoot()
+    public void BowShoot()
     {
         // マウス位置取得（ワールド座標）
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
