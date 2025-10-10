@@ -255,8 +255,8 @@ Transform:
   m_GameObject: {fileID: 91411901}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.18, y: -2.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.2833, y: -2.89, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 324982847}
   - component: {fileID: 324982848}
   - component: {fileID: 324982849}
+  - component: {fileID: 324982850}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -470,6 +471,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackEffect: {fileID: 0}
+--- !u!114 &324982850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324982843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9337ddbbc03f64c922f37ed86f7138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBombAttack
+  bombPrefab: {fileID: 0}
+  bowAttackScript: {fileID: 0}
 --- !u!1 &771788728
 GameObject:
   m_ObjectHideFlags: 0
