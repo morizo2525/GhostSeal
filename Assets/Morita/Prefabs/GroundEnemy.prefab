@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1331783471386136124}
   - component: {fileID: 7329812299652685418}
   - component: {fileID: 8792220504702444063}
-  - component: {fileID: 3197102849841009342}
   - component: {fileID: 8831695296372663168}
+  - component: {fileID: 3197102849841009342}
+  - component: {fileID: -6641930105418064466}
   m_Layer: 0
   m_Name: GroundEnemy
   m_TagString: Untagged
@@ -120,27 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3197102849841009342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7879678001261346585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b92c86dc5753ba84baed03957182652d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GroundEnemyMove
-  moveSpeed: 3
-  jumpForce: 10
-  jumpCooldown: 2
-  stopDurationAfterJump: 1
-  randomJumpChance: 0.5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheckDistance: 0.3
 --- !u!61 &8831695296372663168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,3 +167,40 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3197102849841009342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879678001261346585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b92c86dc5753ba84baed03957182652d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundEnemyMove
+  moveSpeed: 3
+  jumpForce: 10
+  jumpCooldown: 2
+  stopDurationAfterJump: 1
+  randomJumpChance: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckDistance: 0.3
+--- !u!114 &-6641930105418064466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879678001261346585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50235ea14dc191f44bb8d597ae249347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHPManager
+  minHealth: 50
+  maxHealth: 150
+  minSizeMultiplier: 0.5
+  maxSizeMultiplier: 2
