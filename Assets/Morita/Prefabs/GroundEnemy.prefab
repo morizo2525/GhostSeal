@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8831695296372663168}
   - component: {fileID: 3197102849841009342}
   - component: {fileID: -6641930105418064466}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
