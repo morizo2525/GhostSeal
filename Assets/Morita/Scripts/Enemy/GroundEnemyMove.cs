@@ -5,16 +5,16 @@ using UnityEngine;
 public class GroundEnemyMove : MonoBehaviour
 {
     [Header("移動設定")]
-    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float moveSpeed = 3f;  // 移動速度
 
     [Header("ジャンプ設定")]
-    [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float jumpCooldown = 2f;
-    [SerializeField] private float stopDurationAfterJump = 2f;
-    [SerializeField] private float randomJumpChance = 0.3f; // クールダウン終了後のジャンプ確率(0~1)
+    [SerializeField] private float jumpForce = 10f;            // ジャンプ力
+    [SerializeField] private float jumpCooldown = 2f;          // ジャンプのクールダウン時間
+    [SerializeField] private float stopDurationAfterJump = 2f; // ジャンプ後の停止時間
+    [SerializeField] private float randomJumpChance = 0.3f;    // ジャンプ確率(0~1)
 
     [Header("地面判定")]
-    [SerializeField] private Transform groundCheck; // 接地チェック用当たり判定の位置
+    [SerializeField] private Transform groundCheck;          // 接地チェック用当たり判定の位置
     [SerializeField] private float groundCheckRadius = 0.2f; // 接地チェック用当たり判定の半径
     [SerializeField] private LayerMask groundLayer;
 

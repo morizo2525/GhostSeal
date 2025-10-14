@@ -3,11 +3,11 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [Header("移動パラメーター")]
-    [SerializeField] private float moveSpeed = 5f; //移動速度
-    [SerializeField] private float jumpForce = 10f; //ジャンプ力
-    [SerializeField] private LayerMask groundLayer;     //接地判定用
+    [SerializeField] private float moveSpeed = 5f;         //移動速度
+    [SerializeField] private float jumpForce = 10f;        //ジャンプ力
+    [SerializeField] private LayerMask groundLayer;        //接地判定用
     [SerializeField] private bool enableDoubleJump = true; //二段ジャンプ有効化
-    [SerializeField] private float secondJumpForce = 9f;    //二段ジャンプの力(1段目より弱めに設定可能)
+    [SerializeField] private float secondJumpForce = 9f;   //二段ジャンプの力
 
     [Header("回避設定")]
     [SerializeField] private float dodgeDistance = 3f;    //回避距離
@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
     private int dodgeDirection;       //回避の方向(1=右, -1=左)
 
     [Header("接地チェック")]
-    [SerializeField] private Transform groundCheck;              //接地チェック用当たり判定の位置
+    [SerializeField] private Transform groundCheck;          //接地チェック用当たり判定の位置
     [SerializeField] private float groundCheckRadius = 0.2f; //接地チェック用当たり判定の半径
 
     void Start()
