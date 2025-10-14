@@ -11,17 +11,20 @@ public class GroundEnemyMove : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float jumpCooldown = 2f;
     [SerializeField] private float stopDurationAfterJump = 2f;
-    [SerializeField] private float randomJumpChance = 0.02f; // 毎フレームのジャンプ確率
+    [SerializeField] private float randomJumpChance = 0.3f; // クールダウン終了後のジャンプ確率(0~1)
 
     [Header("地面判定")]
+    [SerializeField] private Transform groundCheck; // 接地チェック用当たり判定の位置
+    [SerializeField] private float groundCheckRadius = 0.2f; // 接地チェック用当たり判定の半径
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float groundCheckDistance = 0.1f;
 
     private Rigidbody2D rb;
     private Transform player;
     private float jumpTimer;
     private float stopTimer;
     private bool isStopped;
+    private bool wasGroundedLastFrame;
+    private bool jumpCheckDone; // クールダウン後のジャンプ判定済みフラグ
 
     void Start()
     {
@@ -43,6 +46,16 @@ public class GroundEnemyMove : MonoBehaviour
     {
         jumpTimer += Time.deltaTime;
 
+        bool currentGrounded = IsGrounded();
+
+        // 着地した瞬間を検知
+        if (currentGrounded && !wasGroundedLastFrame)
+        {
+            // 着地後の停止開始
+            isStopped = true;
+            stopTimer = 0f;
+        }
+
         // 停止中の処理
         if (isStopped)
         {
@@ -52,23 +65,42 @@ public class GroundEnemyMove : MonoBehaviour
                 isStopped = false;
                 stopTimer = 0f;
             }
-            return;
         }
 
-        // ランダムジャンプ
-        if (IsGrounded() && jumpTimer >= jumpCooldown)
+        // クールダウンが終了したら、次回の接地時に1回だけジャンプ判定
+        if (!isStopped && currentGrounded && jumpTimer >= jumpCooldown)
         {
-            if (Random.value < randomJumpChance)
+            if (!jumpCheckDone)
             {
-                Jump();
+                // ジャンプするかどうかを1回だけ判定
+                if (Random.value < randomJumpChance)
+                {
+                    Jump();
+                }
+                jumpCheckDone = true; // 判定済みにする
             }
         }
+
+        // クールダウン中は判定フラグをリセット
+        if (jumpTimer < jumpCooldown)
+        {
+            jumpCheckDone = false;
+        }
+
+        wasGroundedLastFrame = currentGrounded;
     }
 
     void FixedUpdate()
     {
-        // 停止中は移動しない
-        if (isStopped || player == null)
+        // プレイヤーが存在しない場合は移動しない
+        if (player == null)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            return;
+        }
+
+        // 停止中は横移動しない
+        if (isStopped)
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
@@ -81,24 +113,29 @@ public class GroundEnemyMove : MonoBehaviour
 
     void Jump()
     {
+        // 横方向の速度を維持したままジャンプ
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         jumpTimer = 0f;
-        isStopped = true;
-        stopTimer = 0f;
     }
 
     bool IsGrounded()
     {
-        Vector2 position = transform.position;
-        RaycastHit2D hit = Physics2D.Raycast(position, Vector2.down, groundCheckDistance, groundLayer);
-        return hit.collider != null;
+        if (groundCheck == null)
+        {
+            Debug.LogWarning("groundCheckが設定されていません");
+            return false;
+        }
+
+        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    void OnDrawGizmos()
+    void OnDrawGizmosSelected()
     {
         // 地面判定の可視化
-        Gizmos.color = Color.green;
-        Vector2 position = transform.position;
-        Gizmos.DrawLine(position, position + Vector2.down * groundCheckDistance);
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
     }
 }
