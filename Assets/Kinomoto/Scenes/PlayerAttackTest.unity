@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 324982852}
   - component: {fileID: 324982851}
   - component: {fileID: 324982854}
+  - component: {fileID: 324982855}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -217,6 +218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1757826105}
+  - {fileID: 1599210857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &324982846
@@ -347,8 +349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92c9ac2061693443a92f43500feab76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack_Bow
-  arrowPrefab: {fileID: 0}
-  shootPoint: {fileID: 0}
+  arrowPrefab: {fileID: 1155395192224245379, guid: 945f696d289a4d44e8f14535382e215c, type: 3}
+  shootPoint: {fileID: 1757826105}
   shootPower: 10
   minAngle: 15
   maxAngle: 75
@@ -405,6 +407,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTrapCreator
   trapPrefab: {fileID: 6704387512906414869, guid: 157e4d2857a337149887dd89467e6629, type: 3}
   trapCooldown: 2
+--- !u!114 &324982855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324982843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043341043b2234040b06b9cf02f0de74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTrapBowAttack
+  trapArrowPrefab: {fileID: 6428922045497720817, guid: 5ece3265d07a573499b762e2e897acba, type: 3}
+  shootPoint: {fileID: 1599210857}
+  shootPower: 10
+  trapArrowCooldown: 1
 --- !u!1 &771788728
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrapTest
   trapCreator: {fileID: 324982854}
+  bowWithTrap: {fileID: 324982855}
 --- !u!4 &953896861
 Transform:
   m_ObjectHideFlags: 0
@@ -694,6 +713,37 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1599210856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599210857}
+  m_Layer: 0
+  m_Name: PlayerArrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599210857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599210856}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 1.6, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 324982845}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757826104
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +769,7 @@ Transform:
   m_GameObject: {fileID: 1757826104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.994, z: 0}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

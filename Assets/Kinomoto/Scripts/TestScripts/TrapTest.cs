@@ -3,20 +3,19 @@ using UnityEngine;
 public class TrapTest : MonoBehaviour
 {
     [SerializeField] private PlayerTrapCreator trapCreator;
-
-    private GameObject spawnedEnemy;
-
+    [SerializeField] private PlayerTrapBowAttack bowWithTrap;
     private void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
-            if (trapCreator != null)
+            // ƒgƒ‰ƒbƒv–î‚ğ”­Ë
+            if (bowWithTrap != null)
             {
-                trapCreator.CreateTrap();
+                bowWithTrap.BowShootTrapArrow();
             }
             else
             {
-                Debug.LogError("PlayerTrapCreator‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+                Debug.LogError("PlayerAttack_BowWithTrap‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
             }
         }
     }
