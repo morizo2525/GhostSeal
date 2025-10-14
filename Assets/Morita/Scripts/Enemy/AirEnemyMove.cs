@@ -5,7 +5,7 @@ using UnityEngine;
 public class AirEnemyMove : MonoBehaviour
 {
     [Header("ˆÚ“®İ’è")]
-    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float moveSpeed = 4f;      // ˆÚ“®‘¬“x
 
     [Header("—h‚êİ’è")]
     [SerializeField] private float waveAmplitude = 1f;  //—h‚ê•(ã‰º‚ÌU‚ê•)

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHPManager
   minHealth: 50
-  maxHealth: 150
+  maxHealth: 60
   minSizeMultiplier: 0.5
   maxSizeMultiplier: 2
 --- !u!114 &-9119583575660192852
@@ -149,5 +149,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AirEnemyMove
   moveSpeed: 1
-  waveAmplitude: 5
+  waveAmplitude: 3
   waveFrequency: 1
