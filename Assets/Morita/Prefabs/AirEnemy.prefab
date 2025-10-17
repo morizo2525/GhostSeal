@@ -132,10 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50235ea14dc191f44bb8d597ae249347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHPManager
-  minHealth: 50
-  maxHealth: 60
+  minHealth: 10
+  maxHealth: 50
   minSizeMultiplier: 0.5
-  maxSizeMultiplier: 2
+  maxSizeMultiplier: 1.5
 --- !u!114 &-9119583575660192852
 MonoBehaviour:
   m_ObjectHideFlags: 0
