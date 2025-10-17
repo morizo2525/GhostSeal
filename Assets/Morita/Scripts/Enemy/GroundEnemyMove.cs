@@ -8,17 +8,17 @@ public class GroundEnemyMove : MonoBehaviour
     [SerializeField] private float horizontalSpeed = 3f;  // ジャンプ時の横移動速度
 
     [Header("通常ジャンプ設定(スライム移動)")]
-    [SerializeField] private float normalJumpForce = 5f;          // 通常ジャンプ力
-    [SerializeField] private float normalJumpInterval = 0.5f;     // 通常ジャンプの間隔
-    [SerializeField] private float normalStopDuration = 0.1f;     // 通常ジャンプ後の停止時間
+    [SerializeField] private float normalJumpForce = 5f;                   // 通常ジャンプ力
+    [SerializeField] private float normalJumpInterval = 0.5f;              // 通常ジャンプの間隔
+    [SerializeField] private float normalStopDuration = 0.1f;              // 通常ジャンプ後の停止時間
     [SerializeField][Range(0f, 1f)] private float normalJumpChance = 0.7f; // 通常ジャンプの確率(0~1)
 
     [Header("大ジャンプ設定")]
-    [SerializeField] private float bigJumpForce = 10f;            // 大ジャンプ力
-    [SerializeField] private float bigJumpCooldown = 2f;          // ジャンプ判定の間隔
-    [SerializeField] private float bigStopDuration = 2f;          // 大ジャンプ後の停止時間
+    [SerializeField] private float bigJumpForce = 10f;                  // 大ジャンプ力
+    [SerializeField] private float bigJumpCooldown = 2f;                // 大ジャンプ判定の間隔
+    [SerializeField] private float bigStopDuration = 2f;                // 大ジャンプ後の停止時間
     [SerializeField][Range(0f, 1f)] private float bigJumpChance = 0.3f; // 大ジャンプの確率(0~1)
-                                                                        // 注意: normalJumpChance + bigJumpChance の合計が1.0(100%)になるように調整してください
+                                                                       
 
     [Header("地面判定")]
     [SerializeField] private Transform groundCheck;          // 接地チェック用当たり判定の位置
