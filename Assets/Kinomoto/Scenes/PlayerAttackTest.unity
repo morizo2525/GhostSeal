@@ -132,9 +132,10 @@ GameObject:
   - component: {fileID: 324982846}
   - component: {fileID: 324982847}
   - component: {fileID: 324982848}
+  - component: {fileID: 324982857}
+  - component: {fileID: 324982856}
   - component: {fileID: 324982849}
   - component: {fileID: 324982850}
-  - component: {fileID: 324982853}
   - component: {fileID: 324982852}
   - component: {fileID: 324982851}
   - component: {fileID: 324982854}
@@ -322,11 +323,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSwordAttack
   animator: {fileID: 0}
-  attackRange: 1
+  attackRange: -0.6
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
   attackEffect: {fileID: 0}
+  swordDamage: 20
 --- !u!114 &324982850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,9 +341,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9337ddbbc03f64c922f37ed86f7138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBombAttack
-  bombPrefab: {fileID: 0}
-  throwPowerMultiplier: 0.6
-  bowAttackScript: {fileID: 0}
+  bombPrefab: {fileID: 1803176805147384423, guid: 33986920617fd164aac326e68649649f, type: 3}
+  throwPoint: {fileID: 1599210857}
+  throwPower: 8
+  minAngle: 15
+  maxAngle: 75
+  showTrajectory: 1
+  trajectoryColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  trajectoryPoints: 30
 --- !u!114 &324982851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack_Bow
   arrowPrefab: {fileID: 1155395192224245379, guid: 945f696d289a4d44e8f14535382e215c, type: 3}
-  shootPoint: {fileID: 1757826105}
+  shootPoint: {fileID: 1599210857}
   shootPower: 10
   minAngle: 15
   maxAngle: 75
@@ -371,33 +378,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ece19d8899a2b047883c4c0025c991a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBoomBowAttack
-  boomArrowPrefab: {fileID: 0}
+  boomArrowPrefab: {fileID: 1803176805147384423, guid: a6fd7d8019d5f4a4fa81aee38f804499, type: 3}
   explosionEffect: {fileID: 0}
   explosionRadius: 4
   explosionDamage: 40
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
-  bowAttackScript: {fileID: 0}
---- !u!114 &324982853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324982843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df8b3f6608f88aa41921ca5aaf4773e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BombTest
-  bombAttack: {fileID: 324982850}
-  bowAttack: {fileID: 324982851}
-  boomBowAttack: {fileID: 324982852}
-  bombKey: 98
-  arrowKey: 99
-  boomBowKey: 120
-  showDebugInfo: 1
+    m_Bits: 128
+  bowAttackScript: {fileID: 324982851}
 --- !u!114 &324982854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +418,44 @@ MonoBehaviour:
   shootPoint: {fileID: 1599210857}
   shootPower: 10
   trapArrowCooldown: 1
+--- !u!114 &324982856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324982843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8253764c6c7af5f45bcb73806c95d344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponInventory
+  weaponSlot1: 0
+  weaponSlot2: 0
+  bowAmmo: 0
+  bombAmmo: 0
+  trapAmmo: 0
+  maxAmmo: 10
+  currentCombo: 0
+--- !u!114 &324982857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324982843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be8d0ff9534d504b9ed9f1aefccbcb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttackManager
+  swordAttack: {fileID: 324982849}
+  bowAttack: {fileID: 324982851}
+  bombAttack: {fileID: 324982850}
+  trapCreator: {fileID: 324982854}
+  boomBowAttack: {fileID: 324982852}
+  trapBowAttack: {fileID: 324982855}
+  weaponInventory: {fileID: 324982856}
 --- !u!1 &771788728
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +491,7 @@ MonoBehaviour:
   bombAmmo: 0
   trapAmmo: 0
   maxAmmo: 10
+  currentCombo: 0
 --- !u!4 &771788730
 Transform:
   m_ObjectHideFlags: 0
@@ -475,53 +502,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.36944, y: -1.35915, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &953896859
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 953896861}
-  - component: {fileID: 953896860}
-  m_Layer: 0
-  m_Name: Traptest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &953896860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953896859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4457a1875fe5442b139898b705f6bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrapTest
-  trapCreator: {fileID: 324982854}
-  bowWithTrap: {fileID: 324982855}
-  boomTrap: {fileID: 7265960340562511557, guid: 135002ba327713440a84ea006ca0a3c6, type: 3}
---- !u!4 &953896861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953896859}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.63893, y: -1.50935, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -929,4 +909,3 @@ SceneRoots:
   - {fileID: 2129897439}
   - {fileID: 771788730}
   - {fileID: 1362069557}
-  - {fileID: 953896861}

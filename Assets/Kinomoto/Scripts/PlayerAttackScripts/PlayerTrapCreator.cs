@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerTrapCreator : MonoBehaviour
 {
-    [Header("トラバサミトラップの設定")]
+    [Header("トラバサミトラップ（罠単体攻撃）の設定")]
     [SerializeField] private GameObject trapPrefab;
     [SerializeField] private float trapCooldown = 2f;
 

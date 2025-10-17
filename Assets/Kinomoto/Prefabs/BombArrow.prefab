@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8772635081481895913}
   - component: {fileID: 5912621623537232410}
   - component: {fileID: 6135938768236663395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BombArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

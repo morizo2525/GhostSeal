@@ -10,6 +10,7 @@ public class PlayerSwordAttack : MonoBehaviour
     public float attackRange = 1.0f;    //攻撃範囲
     public LayerMask enemyLayer;        //敵のレイヤー
     public GameObject attackEffect;     //攻撃エフェクト
+    public int swordDamage = 20;        //剣のダメージ量
 
     void Update()
     {
@@ -21,13 +22,14 @@ public class PlayerSwordAttack : MonoBehaviour
 
     public void SwordAttack()
     {
-        float direction = transform.localScale.x > 0 ? 1 : -1; //プレイヤーの向き
+        // プレイヤーの向きを判定（localScale.xが負なら左向き、正なら右向き）
+        float direction = transform.localScale.x < 0 ? -1 : 1;
 
         //攻撃アニメーション再生
         //animator.SetTrigger("Attack");
 
         //プレイヤーの前方に攻撃判定を生成
-        Vector2 attackPos = (Vector2)transform.position + new Vector2(direction * attackRange,0);
+        Vector2 attackPos = (Vector2)transform.position + new Vector2(direction * attackRange, 0);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, 0.5f, enemyLayer);
 
         //攻撃エフェクトの生成
@@ -40,7 +42,28 @@ public class PlayerSwordAttack : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             //敵のダメージ処理
-            enemy.GetComponent<EnemyHPManager>().EnemyTakeDamage(20); //例:20ダメージ
+            EnemyHPManager enemyHP = enemy.GetComponent<EnemyHPManager>();
+            if (enemyHP != null)
+            {
+                enemyHP.EnemyTakeDamage(swordDamage);
+                Debug.Log($"剣で敵を攻撃！ {swordDamage}ダメージ");
+            }
+        }
+
+        // デバッグ用：攻撃位置を可視化
+        Debug.DrawLine(transform.position, attackPos, Color.red, 0.5f);
+    }
+
+    // Gizmoで攻撃範囲を可視化（Scene Viewで確認用）
+    private void OnDrawGizmosSelected()
+    {
+        if (transform != null)
+        {
+            float direction = transform.localScale.x < 0 ? -1 : 1;
+            Vector2 attackPos = (Vector2)transform.position + new Vector2(direction * attackRange, 0);
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPos, 0.5f);
         }
     }
 }

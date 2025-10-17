@@ -32,11 +32,29 @@ public class WeaponInventory : MonoBehaviour
     public int trapAmmo = 0;    //罠の残数
     public int maxAmmo = 10;    //各武器の最大残数
 
-    private WeponComboType currentCombo = WeponComboType.None; //現在の武器コンボ
+    [Header("現在のコンボ（読み取り専用）")]
+    [SerializeField] private WeponComboType currentCombo = WeponComboType.None; //現在の武器コンボ
+
+    // Inspector上での変更を検知するための変数
+    private WeaponType previousSlot1 = WeaponType.None;
+    private WeaponType previousSlot2 = WeaponType.None;
 
     void Start()
     {
         UpdateWeaponCombo(); //初期化時に武器コンボを更新
+        previousSlot1 = weaponSlot1;
+        previousSlot2 = weaponSlot2;
+    }
+
+    void Update()
+    {
+        // Inspector上でスロットが変更されたかチェック
+        if (weaponSlot1 != previousSlot1 || weaponSlot2 != previousSlot2)
+        {
+            UpdateWeaponCombo();
+            previousSlot1 = weaponSlot1;
+            previousSlot2 = weaponSlot2;
+        }
     }
 
     //武器を拾うメソッド
@@ -52,7 +70,7 @@ public class WeaponInventory : MonoBehaviour
         if (weaponSlot1 == weaponType || weaponSlot2 == weaponType)
         {
             AddAmmo(weaponType, ammo);
-            Debug.Log(weaponType + "の弾薬を追加しました。現在の残数: ");
+            Debug.Log(weaponType + "の弾薬を追加しました。現在の残数: " + GetAmmo(weaponType));
             return true;
         }
 
@@ -62,6 +80,7 @@ public class WeaponInventory : MonoBehaviour
             weaponSlot1 = weaponType;
             AddAmmo(weaponType, ammo);
             UpdateWeaponCombo();
+            previousSlot1 = weaponSlot1;
             Debug.Log(weaponType + "をスロット1に装備しました。");
             return true;
         }
@@ -72,6 +91,7 @@ public class WeaponInventory : MonoBehaviour
             weaponSlot2 = weaponType;
             AddAmmo(weaponType, ammo);
             UpdateWeaponCombo();
+            previousSlot2 = weaponSlot2;
             Debug.Log(weaponType + "をスロット2に装備しました。");
             return true;
         }
@@ -95,6 +115,58 @@ public class WeaponInventory : MonoBehaviour
                 trapAmmo = Mathf.Min(trapAmmo + ammo, maxAmmo);
                 break;
         }
+    }
+
+    //コンボ武器を使用（両方の弾薬を消費）
+    public bool UseComboWeapon()
+    {
+        if (currentCombo == WeponComboType.None)
+        {
+            Debug.Log("コンボ武器が装備されていません。");
+            return false;
+        }
+
+        switch (currentCombo)
+        {
+            case WeponComboType.BombBow:
+                if (bombAmmo > 0 && bowAmmo > 0)
+                {
+                    bombAmmo--;
+                    bowAmmo--;
+                    CheckWeaponEmpty(WeaponType.Bomb);
+                    CheckWeaponEmpty(WeaponType.Bow);
+                    Debug.Log("爆弾矢を使用しました。残り - 爆弾: " + bombAmmo + " 矢: " + bowAmmo);
+                    return true;
+                }
+                break;
+
+            case WeponComboType.TrapBow:
+                if (trapAmmo > 0 && bowAmmo > 0)
+                {
+                    trapAmmo--;
+                    bowAmmo--;
+                    CheckWeaponEmpty(WeaponType.Trap);
+                    CheckWeaponEmpty(WeaponType.Bow);
+                    Debug.Log("トラップアローを使用しました。残り - 罠: " + trapAmmo + " 矢: " + bowAmmo);
+                    return true;
+                }
+                break;
+
+            case WeponComboType.BombTrap:
+                if (bombAmmo > 0 && trapAmmo > 0)
+                {
+                    bombAmmo--;
+                    trapAmmo--;
+                    CheckWeaponEmpty(WeaponType.Bomb);
+                    CheckWeaponEmpty(WeaponType.Trap);
+                    Debug.Log("地雷を使用しました。残り - 爆弾: " + bombAmmo + " 罠: " + trapAmmo);
+                    return true;
+                }
+                break;
+        }
+
+        Debug.Log("コンボ武器の弾薬が不足しています。");
+        return false;
     }
 
     //武器の仕様（弾薬の消費）
@@ -145,10 +217,12 @@ public class WeaponInventory : MonoBehaviour
             if (weaponSlot1 == weaponType)
             {
                 weaponSlot1 = WeaponType.None;
+                previousSlot1 = WeaponType.None;
             }
             else if (weaponSlot2 == weaponType)
             {
                 weaponSlot2 = WeaponType.None;
+                previousSlot2 = WeaponType.None;
             }
             UpdateWeaponCombo();
         }

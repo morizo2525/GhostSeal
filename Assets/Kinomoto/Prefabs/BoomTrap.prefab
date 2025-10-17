@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7265960340562511557}
   - component: {fileID: -4216623423869708727}
   - component: {fileID: 5902081929667696310}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoomTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
