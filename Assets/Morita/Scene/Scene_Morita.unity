@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 371464604}
   - component: {fileID: 371464610}
   - component: {fileID: 371464611}
+  - component: {fileID: 371464613}
+  - component: {fileID: 371464612}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -164,8 +166,10 @@ MonoBehaviour:
   dodgeDistance: 1.5
   dodgeSpeed: 25
   dodgeCooldown: 0
+  dodgeInvincibleTime: 1
   groundCheck: {fileID: 1179332730}
   groundCheckRadius: 0.02
+  isInvincible: 0
 --- !u!50 &371464605
 Rigidbody2D:
   serializedVersion: 5
@@ -356,6 +360,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee7da36991f92d41b9980d1447eac90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArrowTest
+--- !u!114 &371464612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371464603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eace9e0d5e6300e4f934b85e686e8f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDamageChecker
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 1
+  invincibleTime: 1
+  boxSize: {x: 0.29, y: 0.35}
+  boxOffset: {x: -0.085, y: 0}
+  circleRadius: 0.144
+  circleYOffset: 0.193
+  playerMove: {fileID: 0}
+--- !u!114 &371464613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371464603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0496b509909f98b43bb2c75f4a567973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHPManager
+  maxHP: 3
 --- !u!1 &476128274
 GameObject:
   m_ObjectHideFlags: 0
