@@ -3,47 +3,45 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [Header("移動パラメーター")]
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private bool enableDoubleJump = true;
-    [SerializeField] private float secondJumpForce = 9f;
+    [SerializeField] private float     moveSpeed = 5f;           // 移動速度
+    [SerializeField] private float     jumpForce = 10f;          // 1段目のジャンプ力
+    [SerializeField] private LayerMask groundLayer;              // 地面として認識するレイヤー
+    [SerializeField] private bool      enableDoubleJump = true;  // 2段ジャンプを有効にするか
+    [SerializeField] private float     secondJumpForce = 9f;     // 2段目のジャンプ力
 
     [Header("回避設定")]
-    [SerializeField] private float dodgeDistance = 3f;
-    [SerializeField] private float dodgeSpeed = 15f;
-    [SerializeField] private float dodgeCooldown = 1f;
-    [SerializeField] private float dodgeInvincibleTime = 0.5f; // 回避中無敵時間
+    [SerializeField] private float dodgeDistance = 3f; 　　　　// 回避距離
+    [SerializeField] private float dodgeSpeed = 15f; 　　　　　// 回避速度
+    [SerializeField] private float dodgeCooldown = 1f; 　　　　// 回避クールダウン
+    [SerializeField] private float dodgeInvincibleTime = 0.5f; // 回避の無敵時間
 
-    private float dodgeDuration;
+    private float dodgeDuration; // 回避動作全体の時間
 
-    private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    private bool isGrounded;
-    private bool hasDoubleJump;
-    private bool isDodging;
-    private float dodgeTimer;
-    private float dodgeCooldownTimer;
-    private int dodgeDirection;
+    private Rigidbody2D rb; 
+
+    private bool  isGrounded;         // 接地しているか
+    private bool  hasDoubleJump;      // 2段ジャンプが使用可能か
+    private bool  isDodging;          // 現在回避中か
+    private float dodgeTimer;         // 回避開始からの経過時間
+    private float dodgeCooldownTimer; // 回避のクールダウン残り時間
+    private int   dodgeDirection;     // 回避の方向(1:右 / -1:左)
 
     [Header("接地チェック")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private Transform groundCheck;          // 接地判定用のオブジェクト位置
+    [SerializeField] private float groundCheckRadius = 0.2f; // 接地判定の半径
 
-    [HideInInspector] public bool isInvincible = false; // 回避無敵フラグ
+    [HideInInspector] public bool isInvincible = false; // 回避無敵フラグ(他スクリプトから参照)
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
         // 接地判定
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        if (isGrounded) hasDoubleJump = true;
+        if (isGrounded) hasDoubleJump = true; // 着地したら2段ジャンプを回復
 
         // クールダウンタイマー更新
         if (dodgeCooldownTimer > 0f) dodgeCooldownTimer -= Time.deltaTime;
@@ -55,25 +53,27 @@ public class PlayerMove : MonoBehaviour
 
             // 無敵時間終了チェック
             if (dodgeTimer >= dodgeInvincibleTime)
-                isInvincible = false;
+                isInvincible = false; // 無敵時間が終了したら無敵解除
 
+            // 回避動作終了チェック
             if (dodgeTimer >= dodgeDuration)
             {
-                isDodging = false;
-                dodgeTimer = 0f;
+                isDodging    = false;  // 回避終了
+                dodgeTimer   = 0f; 　　// タイマーリセット
+                isInvincible = false;　// 確実に無敵解除
             }
             return; // 回避中は通常操作を受け付けない
         }
 
-        // 回避入力(Eキー)
+        // 回避入力
         if (Input.GetKeyDown(KeyCode.E) && dodgeCooldownTimer <= 0f)
         {
-            dodgeDuration = dodgeDistance / dodgeSpeed;
-            dodgeDirection = transform.localScale.x < 0 ? 1 : -1;
-            isDodging = true;
-            dodgeTimer = 0f;
-            dodgeCooldownTimer = dodgeCooldown;
-            isInvincible = true;
+            dodgeDuration      = dodgeDistance / dodgeSpeed; 　　　　 // 回避時間を計算
+            dodgeDirection     = transform.localScale.x < 0 ? 1 : -1; // 向きの逆方向に回避
+            isDodging          = true; 　                             // 回避開始
+            dodgeTimer         = 0f;                                  // タイマーリセット
+            dodgeCooldownTimer = dodgeCooldown;                       // クールダウン開始
+            isInvincible       = true;                                // 無敵状態開始
             return;
         }
 
@@ -81,16 +81,16 @@ public class PlayerMove : MonoBehaviour
         float horizontalInput = 0f;
         if (Input.GetKey(KeyCode.A))
         {
-            horizontalInput -= 1f;
+            horizontalInput -= 1f; // 左移動
             Vector3 scale = transform.localScale;
-            scale.x = Mathf.Abs(scale.x);
+            scale.x = Mathf.Abs(scale.x); // スプライトを左向きに
             transform.localScale = scale;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            horizontalInput += 1f;
+            horizontalInput += 1f; // 右移動
             Vector3 scale = transform.localScale;
-            scale.x = -Mathf.Abs(scale.x);
+            scale.x = -Mathf.Abs(scale.x); // スプライトを右向きに
             transform.localScale = scale;
         }
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
@@ -99,11 +99,11 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (isGrounded)
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 1段目ジャンプ
             else if (enableDoubleJump && hasDoubleJump)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, secondJumpForce);
-                hasDoubleJump = false;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, secondJumpForce); // 2段目ジャンプ
+                hasDoubleJump = false; // 2段ジャンプを消費
             }
         }
     }
@@ -122,7 +122,7 @@ public class PlayerMove : MonoBehaviour
         if (groundCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius); // 接地判定範囲を可視化
         }
     }
 }
