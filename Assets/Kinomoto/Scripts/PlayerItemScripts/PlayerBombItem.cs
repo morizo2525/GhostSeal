@@ -24,7 +24,7 @@ public class PlayerBombItem : MonoBehaviour
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
 
         // ƒAƒCƒeƒ€‚ð•‚—V‚³‚¹‚é
-        float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        //float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
+        //transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }
