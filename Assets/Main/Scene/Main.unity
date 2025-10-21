@@ -679,6 +679,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2216737126590319409, guid: 16cf69d164effd24e94c5cf76657b10b, type: 3}
+      propertyPath: spawnAreaMaxY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216737126590319409, guid: 16cf69d164effd24e94c5cf76657b10b, type: 3}
+      propertyPath: spawnAreaMinY
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 2861454002098211649, guid: 16cf69d164effd24e94c5cf76657b10b, type: 3}
       propertyPath: m_Name
       value: ItemSpawn
