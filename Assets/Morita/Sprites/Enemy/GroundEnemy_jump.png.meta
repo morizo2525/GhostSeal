@@ -257,9 +257,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1453
-        y: 1826
+        y: 1836
         width: 335
-        height: 304
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,7 +280,7 @@ TextureImporter:
         serializedVersion: 2
         x: 38
         y: 1488
-        width: 376
+        width: 323
         height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -301,9 +301,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 481
-        y: 1425
-        width: 375
-        height: 288
+        y: 1447
+        width: 302
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,35 +319,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundEnemy_jump_5
-      rect:
-        serializedVersion: 2
-        x: 482
-        y: 1542
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b66e683c7ddef45d0800000000000000
-      internalID: -3075978509516609941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GroundEnemy_jump_6
       rect:
         serializedVersion: 2
-        x: 967
-        y: 1285
-        width: 293
-        height: 443
+        x: 1005
+        y: 1400
+        width: 255
+        height: 328
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +344,10 @@ TextureImporter:
       name: GroundEnemy_jump_7
       rect:
         serializedVersion: 2
-        x: 1425
-        y: 1408
-        width: 429
-        height: 328
+        x: 1577
+        y: 1409
+        width: 279
+        height: 330
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,101 +363,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundEnemy_jump_8
-      rect:
-        serializedVersion: 2
-        x: 1572
-        y: 1479
-        width: 7
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03d8ea048cd8fd6a0800000000000000
-      internalID: -6422258652388881104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_14
-      rect:
-        serializedVersion: 2
-        x: 1587
-        y: 1216
-        width: 21
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e125e9d7a28735e0800000000000000
-      internalID: -1929930257878146585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_17
-      rect:
-        serializedVersion: 2
-        x: 1812
-        y: 1198
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 484c7c40a88b61050800000000000000
-      internalID: 5771002875447067780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_18
-      rect:
-        serializedVersion: 2
-        x: 1838
-        y: 1190
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4477ecadb1fcda110800000000000000
-      internalID: 1273901988157749060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GroundEnemy_jump_19
       rect:
         serializedVersion: 2
-        x: 38
-        y: 834
-        width: 330
-        height: 283
+        x: 39
+        y: 576
+        width: 329
+        height: 541
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,35 +385,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundEnemy_jump_20
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 794
-        width: 15
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3f6e0aedf2962400800000000000000
-      internalID: 299088044517912379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GroundEnemy_jump_21
       rect:
         serializedVersion: 2
         x: 521
-        y: 790
+        y: 600
         width: 338
-        height: 323
+        height: 513
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +410,10 @@ TextureImporter:
       name: GroundEnemy_jump_22
       rect:
         serializedVersion: 2
-        x: 984
-        y: 758
-        width: 353
-        height: 323
+        x: 1029
+        y: 610
+        width: 308
+        height: 471
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,10 +432,10 @@ TextureImporter:
       name: GroundEnemy_jump_23
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 763
-        width: 331
-        height: 289
+        x: 1572
+        y: 767
+        width: 306
+        height: 285
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,28 +446,6 @@ TextureImporter:
       bones: []
       spriteID: 7da5baa617dff48f0800000000000000
       internalID: -553945565580535081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_24
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 827
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae39514cf3b7473e0800000000000000
-      internalID: -2056883615998569494
       vertices: []
       indices: 
       edges: []
@@ -825,72 +671,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundEnemy_jump_38
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 569
-        width: 25
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf15ea23a599cadd0800000000000000
-      internalID: -2473433482656853508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_39
-      rect:
-        serializedVersion: 2
-        x: 1029
-        y: 584
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a15fef635d37500d0800000000000000
-      internalID: -3457229779349080806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_40
-      rect:
-        serializedVersion: 2
-        x: 1042
-        y: 577
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a22359580348a7960800000000000000
-      internalID: 7600532665075577386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GroundEnemy_jump_42
       rect:
         serializedVersion: 2
@@ -916,9 +696,9 @@ TextureImporter:
       name: GroundEnemy_jump_43
       rect:
         serializedVersion: 2
-        x: 194
+        x: 189
         y: 148
-        width: 328
+        width: 333
         height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -938,10 +718,10 @@ TextureImporter:
       name: GroundEnemy_jump_44
       rect:
         serializedVersion: 2
-        x: 703
-        y: 130
-        width: 322
-        height: 296
+        x: 707
+        y: 132
+        width: 318
+        height: 243
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -983,9 +763,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1566
-        y: 124
+        y: 134
         width: 335
-        height: 304
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -996,28 +776,6 @@ TextureImporter:
       bones: []
       spriteID: 1e363024df6569960800000000000000
       internalID: 7608364266223264737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundEnemy_jump_47
-      rect:
-        serializedVersion: 2
-        x: 696
-        y: 169
-        width: 8
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0247aedad123c6590800000000000000
-      internalID: -7679708161520274400
       vertices: []
       indices: 
       edges: []
