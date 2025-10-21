@@ -1,0 +1,889 @@
+fileFormatVersion: 2
+guid: bc5b6c9e634e5fc4099e10ca3e272657
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2226084379920521500
+    second: GroundEnemy_Death_0
+  - first:
+      213: -7567757889080614337
+    second: GroundEnemy_Death_1
+  - first:
+      213: -2476245652470011270
+    second: GroundEnemy_Death_2
+  - first:
+      213: -8335312622067236767
+    second: GroundEnemy_Death_3
+  - first:
+      213: 1403584408273074285
+    second: GroundEnemy_Death_4
+  - first:
+      213: 2920972002081078301
+    second: GroundEnemy_Death_5
+  - first:
+      213: 7619508352153042592
+    second: GroundEnemy_Death_6
+  - first:
+      213: -2969173373760023964
+    second: GroundEnemy_Death_7
+  - first:
+      213: -6139604089668476947
+    second: GroundEnemy_Death_8
+  - first:
+      213: -4470845345242365034
+    second: GroundEnemy_Death_9
+  - first:
+      213: 6638640719695349889
+    second: GroundEnemy_Death_10
+  - first:
+      213: 3702033413841798216
+    second: GroundEnemy_Death_11
+  - first:
+      213: -3564196730861830341
+    second: GroundEnemy_Death_12
+  - first:
+      213: 5324492026186145503
+    second: GroundEnemy_Death_13
+  - first:
+      213: -1294218292732245599
+    second: GroundEnemy_Death_14
+  - first:
+      213: -6374457901643362262
+    second: GroundEnemy_Death_15
+  - first:
+      213: -3624922402615289729
+    second: GroundEnemy_Death_16
+  - first:
+      213: -6137931678662713880
+    second: GroundEnemy_Death_17
+  - first:
+      213: -6919160525855962830
+    second: GroundEnemy_Death_18
+  - first:
+      213: -5102973740958988324
+    second: GroundEnemy_Death_19
+  - first:
+      213: -1772392064854385443
+    second: GroundEnemy_Death_20
+  - first:
+      213: -4701502910137182275
+    second: GroundEnemy_Death_21
+  - first:
+      213: -3498937002101314105
+    second: GroundEnemy_Death_22
+  - first:
+      213: 5121265973429971072
+    second: GroundEnemy_Death_23
+  - first:
+      213: 8084693276102258438
+    second: GroundEnemy_Death_24
+  - first:
+      213: 3753564324923417695
+    second: GroundEnemy_Death_25
+  - first:
+      213: 2615306413911879872
+    second: GroundEnemy_Death_26
+  - first:
+      213: 9405587796593245
+    second: GroundEnemy_Death_27
+  - first:
+      213: -1454166839516856093
+    second: GroundEnemy_Death_28
+  - first:
+      213: 2689416197001229861
+    second: GroundEnemy_Death_29
+  - first:
+      213: -2833865623561762550
+    second: GroundEnemy_Death_30
+  - first:
+      213: -921172127666097213
+    second: GroundEnemy_Death_31
+  - first:
+      213: -6652029514866446468
+    second: GroundEnemy_Death_32
+  - first:
+      213: 6813264696987921013
+    second: GroundEnemy_Death_33
+  - first:
+      213: 2545393453792165992
+    second: GroundEnemy_Death_34
+  - first:
+      213: 4031159716846118343
+    second: GroundEnemy_Death_35
+  - first:
+      213: 3306693327098247824
+    second: GroundEnemy_Death_36
+  - first:
+      213: 2711080051313021357
+    second: GroundEnemy_Death_37
+  - first:
+      213: -113349562702502352
+    second: GroundEnemy_Death_38
+  - first:
+      213: 5649922171838002340
+    second: GroundEnemy_Death_39
+  - first:
+      213: -7032566913792345998
+    second: GroundEnemy_Death_40
+  - first:
+      213: -4756375744093836431
+    second: GroundEnemy_Death_41
+  - first:
+      213: -6414325512416174593
+    second: GroundEnemy_Death_42
+  - first:
+      213: -446179948455197104
+    second: GroundEnemy_Death_43
+  - first:
+      213: -8867231303222866836
+    second: GroundEnemy_Death_44
+  - first:
+      213: 3381140129834185159
+    second: GroundEnemy_Death_45
+  - first:
+      213: -2698691242983135097
+    second: GroundEnemy_Death_46
+  - first:
+      213: 2124232104924580531
+    second: GroundEnemy_Death_47
+  - first:
+      213: -3834014712889448318
+    second: GroundEnemy_Death_48
+  - first:
+      213: 4927577173132622187
+    second: GroundEnemy_Death_49
+  - first:
+      213: -4595274795974820980
+    second: GroundEnemy_Death_50
+  - first:
+      213: 393201395410785009
+    second: GroundEnemy_Death_51
+  - first:
+      213: -1902816349268984904
+    second: GroundEnemy_Death_52
+  - first:
+      213: 4029395941756671366
+    second: GroundEnemy_Death_53
+  - first:
+      213: 3988829833718210123
+    second: GroundEnemy_Death_54
+  - first:
+      213: 5790284866901554999
+    second: GroundEnemy_Death_55
+  - first:
+      213: 8575786196271605097
+    second: GroundEnemy_Death_56
+  - first:
+      213: -4081169055714987728
+    second: GroundEnemy_Death_57
+  - first:
+      213: 1766567417180434983
+    second: GroundEnemy_Death_58
+  - first:
+      213: 4712586904703411846
+    second: GroundEnemy_Death_59
+  - first:
+      213: 1142030947974156536
+    second: GroundEnemy_Death_60
+  - first:
+      213: -6336218800953338621
+    second: GroundEnemy_Death_61
+  - first:
+      213: 4266068957386109394
+    second: GroundEnemy_Death_62
+  - first:
+      213: 8150338870040919546
+    second: GroundEnemy_Death_63
+  - first:
+      213: 1016178194241690904
+    second: GroundEnemy_Death_64
+  - first:
+      213: -2035468740722522504
+    second: GroundEnemy_Death_65
+  - first:
+      213: 3576798021820386767
+    second: GroundEnemy_Death_66
+  - first:
+      213: -6463851452944847351
+    second: GroundEnemy_Death_67
+  - first:
+      213: -6023751443388499678
+    second: GroundEnemy_Death_68
+  - first:
+      213: -5772442738392502621
+    second: GroundEnemy_Death_69
+  - first:
+      213: 447186753859552435
+    second: GroundEnemy_Death_70
+  - first:
+      213: 4033670139526578679
+    second: GroundEnemy_Death_71
+  - first:
+      213: 6070367847429042707
+    second: GroundEnemy_Death_72
+  - first:
+      213: 68464495498968043
+    second: GroundEnemy_Death_73
+  - first:
+      213: -4833194817417335072
+    second: GroundEnemy_Death_74
+  - first:
+      213: -763414273893407716
+    second: GroundEnemy_Death_75
+  - first:
+      213: -631901377321075216
+    second: GroundEnemy_Death_76
+  - first:
+      213: -521728098765703384
+    second: GroundEnemy_Death_77
+  - first:
+      213: 9193604696776328881
+    second: GroundEnemy_Death_78
+  - first:
+      213: 8288611451235277214
+    second: GroundEnemy_Death_79
+  - first:
+      213: -2389731002589982957
+    second: GroundEnemy_Death_80
+  - first:
+      213: -5909020027081555197
+    second: GroundEnemy_Death_81
+  - first:
+      213: -1808074508745670221
+    second: GroundEnemy_Death_82
+  - first:
+      213: -983205379308853014
+    second: GroundEnemy_Death_83
+  - first:
+      213: -6796340282653425109
+    second: GroundEnemy_Death_84
+  - first:
+      213: 4529563667521629423
+    second: GroundEnemy_Death_85
+  - first:
+      213: -4316043011101908827
+    second: GroundEnemy_Death_86
+  - first:
+      213: -7845274806599152638
+    second: GroundEnemy_Death_87
+  - first:
+      213: -4025776659273458510
+    second: GroundEnemy_Death_88
+  - first:
+      213: -3811888777932167269
+    second: GroundEnemy_Death_89
+  - first:
+      213: -57991530738497976
+    second: GroundEnemy_Death_90
+  - first:
+      213: 3746037168744926391
+    second: GroundEnemy_Death_91
+  - first:
+      213: -5135800042168143094
+    second: GroundEnemy_Death_92
+  - first:
+      213: 4198062314820156378
+    second: GroundEnemy_Death_93
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GroundEnemy_Death_4
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 1722
+        width: 56
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68b46335988a7310800000000000000
+      internalID: 1403584408273074285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_5
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 1738
+        width: 33
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c77e65f80698820800000000000000
+      internalID: 2920972002081078301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1371
+        width: 564
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def56c50c9ebbcaa0800000000000000
+      internalID: -6139604089668476947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_10
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1365
+        width: 459
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18882e0cf80312c50800000000000000
+      internalID: 6638640719695349889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_11
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1327
+        width: 418
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844caa296c3406330800000000000000
+      internalID: 3702033413841798216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_12
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1359
+        width: 385
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f3f5b05fd698ec0800000000000000
+      internalID: -3564196730861830341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_13
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1356
+        width: 439
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde9936994564e940800000000000000
+      internalID: 5324492026186145503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_51
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 829
+        width: 374
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2d5aaf59ee47500800000000000000
+      internalID: 393201395410785009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_53
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 763
+        width: 368
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6859ec7a24a4be730800000000000000
+      internalID: 4029395941756671366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_55
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 831
+        width: 374
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737bcff78693b5050800000000000000
+      internalID: 5790284866901554999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_59
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 768
+        width: 375
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686210c42d8766140800000000000000
+      internalID: 4712586904703411846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_61
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 788
+        width: 406
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305560e329a3118a0800000000000000
+      internalID: -6336218800953338621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_75
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 128
+        width: 504
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14ee1c33cec765f0800000000000000
+      internalID: -763414273893407716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_77
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 132
+        width: 320
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827fab3fe0372c8f0800000000000000
+      internalID: -521728098765703384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_78
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 119
+        width: 280
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b647bc03ce369f70800000000000000
+      internalID: 9193604696776328881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_79
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 131
+        width: 303
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e991d103330170370800000000000000
+      internalID: 8288611451235277214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_80
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 131
+        width: 339
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fc2e18058f5ded0800000000000000
+      internalID: -2389731002589982957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_Death_82
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 133
+        width: 408
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b186ca50dd68e6e0800000000000000
+      internalID: -1808074508745670221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c0173b940adb3d4449faf6bd0396e1ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GroundEnemy_Death_0: -2226084379920521500
+      GroundEnemy_Death_1: -7567757889080614337
+      GroundEnemy_Death_10: 6638640719695349889
+      GroundEnemy_Death_11: 3702033413841798216
+      GroundEnemy_Death_12: -3564196730861830341
+      GroundEnemy_Death_13: 5324492026186145503
+      GroundEnemy_Death_14: -1294218292732245599
+      GroundEnemy_Death_15: -6374457901643362262
+      GroundEnemy_Death_16: -3624922402615289729
+      GroundEnemy_Death_17: -6137931678662713880
+      GroundEnemy_Death_18: -6919160525855962830
+      GroundEnemy_Death_19: -5102973740958988324
+      GroundEnemy_Death_2: -2476245652470011270
+      GroundEnemy_Death_20: -1772392064854385443
+      GroundEnemy_Death_21: -4701502910137182275
+      GroundEnemy_Death_22: -3498937002101314105
+      GroundEnemy_Death_23: 5121265973429971072
+      GroundEnemy_Death_24: 8084693276102258438
+      GroundEnemy_Death_25: 3753564324923417695
+      GroundEnemy_Death_26: 2615306413911879872
+      GroundEnemy_Death_27: 9405587796593245
+      GroundEnemy_Death_28: -1454166839516856093
+      GroundEnemy_Death_29: 2689416197001229861
+      GroundEnemy_Death_3: -8335312622067236767
+      GroundEnemy_Death_30: -2833865623561762550
+      GroundEnemy_Death_31: -921172127666097213
+      GroundEnemy_Death_32: -6652029514866446468
+      GroundEnemy_Death_33: 6813264696987921013
+      GroundEnemy_Death_34: 2545393453792165992
+      GroundEnemy_Death_35: 4031159716846118343
+      GroundEnemy_Death_36: 3306693327098247824
+      GroundEnemy_Death_37: 2711080051313021357
+      GroundEnemy_Death_38: -113349562702502352
+      GroundEnemy_Death_39: 5649922171838002340
+      GroundEnemy_Death_4: 1403584408273074285
+      GroundEnemy_Death_40: -7032566913792345998
+      GroundEnemy_Death_41: -4756375744093836431
+      GroundEnemy_Death_42: -6414325512416174593
+      GroundEnemy_Death_43: -446179948455197104
+      GroundEnemy_Death_44: -8867231303222866836
+      GroundEnemy_Death_45: 3381140129834185159
+      GroundEnemy_Death_46: -2698691242983135097
+      GroundEnemy_Death_47: 2124232104924580531
+      GroundEnemy_Death_48: -3834014712889448318
+      GroundEnemy_Death_49: 4927577173132622187
+      GroundEnemy_Death_5: 2920972002081078301
+      GroundEnemy_Death_50: -4595274795974820980
+      GroundEnemy_Death_51: 393201395410785009
+      GroundEnemy_Death_52: -1902816349268984904
+      GroundEnemy_Death_53: 4029395941756671366
+      GroundEnemy_Death_54: 3988829833718210123
+      GroundEnemy_Death_55: 5790284866901554999
+      GroundEnemy_Death_56: 8575786196271605097
+      GroundEnemy_Death_57: -4081169055714987728
+      GroundEnemy_Death_58: 1766567417180434983
+      GroundEnemy_Death_59: 4712586904703411846
+      GroundEnemy_Death_6: 7619508352153042592
+      GroundEnemy_Death_60: 1142030947974156536
+      GroundEnemy_Death_61: -6336218800953338621
+      GroundEnemy_Death_62: 4266068957386109394
+      GroundEnemy_Death_63: 8150338870040919546
+      GroundEnemy_Death_64: 1016178194241690904
+      GroundEnemy_Death_65: -2035468740722522504
+      GroundEnemy_Death_66: 3576798021820386767
+      GroundEnemy_Death_67: -6463851452944847351
+      GroundEnemy_Death_68: -6023751443388499678
+      GroundEnemy_Death_69: -5772442738392502621
+      GroundEnemy_Death_7: -2969173373760023964
+      GroundEnemy_Death_70: 447186753859552435
+      GroundEnemy_Death_71: 4033670139526578679
+      GroundEnemy_Death_72: 6070367847429042707
+      GroundEnemy_Death_73: 68464495498968043
+      GroundEnemy_Death_74: -4833194817417335072
+      GroundEnemy_Death_75: -763414273893407716
+      GroundEnemy_Death_76: -631901377321075216
+      GroundEnemy_Death_77: -521728098765703384
+      GroundEnemy_Death_78: 9193604696776328881
+      GroundEnemy_Death_79: 8288611451235277214
+      GroundEnemy_Death_8: -6139604089668476947
+      GroundEnemy_Death_80: -2389731002589982957
+      GroundEnemy_Death_81: -5909020027081555197
+      GroundEnemy_Death_82: -1808074508745670221
+      GroundEnemy_Death_83: -983205379308853014
+      GroundEnemy_Death_84: -6796340282653425109
+      GroundEnemy_Death_85: 4529563667521629423
+      GroundEnemy_Death_86: -4316043011101908827
+      GroundEnemy_Death_87: -7845274806599152638
+      GroundEnemy_Death_88: -4025776659273458510
+      GroundEnemy_Death_89: -3811888777932167269
+      GroundEnemy_Death_9: -4470845345242365034
+      GroundEnemy_Death_90: -57991530738497976
+      GroundEnemy_Death_91: 3746037168744926391
+      GroundEnemy_Death_92: -5135800042168143094
+      GroundEnemy_Death_93: 4198062314820156378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
