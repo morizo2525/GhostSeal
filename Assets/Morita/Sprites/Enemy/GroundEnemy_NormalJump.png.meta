@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: b353806edb8aed74f9377e2e631615cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5603534656088949244
+    second: GroundEnemy_NormalJump_0
+  - first:
+      213: 1851550082442525469
+    second: GroundEnemy_NormalJump_1
+  - first:
+      213: -6165770524045657734
+    second: GroundEnemy_NormalJump_2
+  - first:
+      213: -203779576103927011
+    second: GroundEnemy_NormalJump_3
+  - first:
+      213: -1985284464050250208
+    second: GroundEnemy_NormalJump_4
+  - first:
+      213: 7334504071541365699
+    second: GroundEnemy_NormalJump_5
+  - first:
+      213: -8406704983137862155
+    second: GroundEnemy_NormalJump_6
+  - first:
+      213: 6832341481970549182
+    second: GroundEnemy_NormalJump_7
+  - first:
+      213: -7480716817123032438
+    second: GroundEnemy_NormalJump_8
+  - first:
+      213: -2997150600332835824
+    second: GroundEnemy_NormalJump_9
+  - first:
+      213: 6310161434576624927
+    second: GroundEnemy_NormalJump_10
+  - first:
+      213: -1145732472035555839
+    second: GroundEnemy_NormalJump_11
+  - first:
+      213: 2636625294137980013
+    second: GroundEnemy_NormalJump_12
+  - first:
+      213: -5319751185378161793
+    second: GroundEnemy_NormalJump_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_0
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 542
+        width: 312
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e3a394bee3c32b0800000000000000
+      internalID: -5603534656088949244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_1
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 836
+        width: 348
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bf4d37df602b910800000000000000
+      internalID: 1851550082442525469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 580
+        width: 309
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a793fa34068ce6aa0800000000000000
+      internalID: -6165770524045657734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_4
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 502
+        width: 287
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ede266c4ad274e0800000000000000
+      internalID: -1985284464050250208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_5
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 456
+        width: 288
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb11ebd79469c560800000000000000
+      internalID: 7334504071541365699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 121
+        width: 318
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82471a70b72f2890800000000000000
+      internalID: -7480716817123032438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_9
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 94
+        width: 316
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01400d8986bf766d0800000000000000
+      internalID: -2997150600332835824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_10
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 76
+        width: 339
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d1f4f5462329750800000000000000
+      internalID: 6310161434576624927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundEnemy_NormalJump_11
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 52
+        width: 337
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106c0b4136a8910f0800000000000000
+      internalID: -1145732472035555839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4a72ef7e593c44499c15ca889b94529
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GroundEnemy_NormalJump_0: -5603534656088949244
+      GroundEnemy_NormalJump_1: 1851550082442525469
+      GroundEnemy_NormalJump_10: 6310161434576624927
+      GroundEnemy_NormalJump_11: -1145732472035555839
+      GroundEnemy_NormalJump_12: 2636625294137980013
+      GroundEnemy_NormalJump_13: -5319751185378161793
+      GroundEnemy_NormalJump_2: -6165770524045657734
+      GroundEnemy_NormalJump_3: -203779576103927011
+      GroundEnemy_NormalJump_4: -1985284464050250208
+      GroundEnemy_NormalJump_5: 7334504071541365699
+      GroundEnemy_NormalJump_6: -8406704983137862155
+      GroundEnemy_NormalJump_7: 6832341481970549182
+      GroundEnemy_NormalJump_8: -7480716817123032438
+      GroundEnemy_NormalJump_9: -2997150600332835824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

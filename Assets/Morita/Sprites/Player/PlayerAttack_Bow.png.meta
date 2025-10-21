@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: e9198a35d38d2bc43be29c48faf9a64a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3812517155418542600
+    second: PlayerAttack_Bow_0
+  - first:
+      213: -4313046710662941107
+    second: PlayerAttack_Bow_1
+  - first:
+      213: -4893251134307705046
+    second: PlayerAttack_Bow_2
+  - first:
+      213: 4600896147734903312
+    second: PlayerAttack_Bow_3
+  - first:
+      213: -8443945213216556914
+    second: PlayerAttack_Bow_4
+  - first:
+      213: -2992968509570985082
+    second: PlayerAttack_Bow_5
+  - first:
+      213: -4588229720910312270
+    second: PlayerAttack_Bow_6
+  - first:
+      213: 904642868408055144
+    second: PlayerAttack_Bow_7
+  - first:
+      213: -3987982916074628789
+    second: PlayerAttack_Bow_8
+  - first:
+      213: 4398106601297985362
+    second: PlayerAttack_Bow_9
+  - first:
+      213: -2688794005710908468
+    second: PlayerAttack_Bow_10
+  - first:
+      213: -1295616083693245481
+    second: PlayerAttack_Bow_11
+  - first:
+      213: 602283805075725914
+    second: PlayerAttack_Bow_12
+  - first:
+      213: 3436880393956400307
+    second: PlayerAttack_Bow_13
+  - first:
+      213: -2222068463606144505
+    second: PlayerAttack_Bow_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 257
+        width: 88
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fde133c8d7371bc0800000000000000
+      internalID: -3812517155418542600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 268
+        width: 94
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fdfc6d40ea71cb0800000000000000
+      internalID: -4893251134307705046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_3
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 224
+        width: 233
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ab3367baaa9df30800000000000000
+      internalID: 4600896147734903312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_8
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 242
+        width: 204
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b499b05caa6d7a8c0800000000000000
+      internalID: -3987982916074628789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_9
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 275
+        width: 161
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fbaa6d6a6390d30800000000000000
+      internalID: 4398106601297985362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Bow_10
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 245
+        width: 162
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3d66ff81c7faad0800000000000000
+      internalID: -2688794005710908468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7fcada82e761fde4ca5c4f40ceaff819
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerAttack_Bow_0: -3812517155418542600
+      PlayerAttack_Bow_1: -4313046710662941107
+      PlayerAttack_Bow_10: -2688794005710908468
+      PlayerAttack_Bow_11: -1295616083693245481
+      PlayerAttack_Bow_12: 602283805075725914
+      PlayerAttack_Bow_13: 3436880393956400307
+      PlayerAttack_Bow_14: -2222068463606144505
+      PlayerAttack_Bow_2: -4893251134307705046
+      PlayerAttack_Bow_3: 4600896147734903312
+      PlayerAttack_Bow_4: -8443945213216556914
+      PlayerAttack_Bow_5: -2992968509570985082
+      PlayerAttack_Bow_6: -4588229720910312270
+      PlayerAttack_Bow_7: 904642868408055144
+      PlayerAttack_Bow_8: -3987982916074628789
+      PlayerAttack_Bow_9: 4398106601297985362
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
