@@ -54,6 +54,6 @@ MonoBehaviour:
   bowItemPrefab: {fileID: 1883346709924391029, guid: d3c4d4dc528488a4b98069d56397e6ed, type: 3}
   bombItemPrefab: {fileID: 3400035474250308037, guid: e8f08b7a68937bd499ad40f8a1357397, type: 3}
   trapItemPrefab: {fileID: 3298495987081817899, guid: 41d31906719bf324e8d0a28310a37499, type: 3}
-  playerInventory: {fileID: 0}
+  playerInventory: {fileID: 447197874315621327, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
   showSpawnArea: 1
   enableSpawning: 1
