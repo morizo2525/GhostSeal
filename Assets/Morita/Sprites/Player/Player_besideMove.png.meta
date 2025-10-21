@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 0e2909cc7f14c5b408ebdb5d8cf68c8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6610772904110570997
+    second: Player_besideMove_0
+  - first:
+      213: -1534358095407816342
+    second: Player_besideMove_1
+  - first:
+      213: 3694922919005305115
+    second: Player_besideMove_2
+  - first:
+      213: -5467412987263031788
+    second: Player_besideMove_3
+  - first:
+      213: -8726157057392790308
+    second: Player_besideMove_4
+  - first:
+      213: -5013877286124472831
+    second: Player_besideMove_5
+  - first:
+      213: -1719699500261374817
+    second: Player_besideMove_6
+  - first:
+      213: -427294745892837147
+    second: Player_besideMove_7
+  - first:
+      213: -8679345982178537719
+    second: Player_besideMove_8
+  - first:
+      213: 793257331817257280
+    second: Player_besideMove_9
+  - first:
+      213: -5440723579878701294
+    second: Player_besideMove_10
+  - first:
+      213: -414665709431231129
+    second: Player_besideMove_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_besideMove_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 65
+        width: 212
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9401867a666228e0800000000000000
+      internalID: -1719699500261374817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_besideMove_7
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 66
+        width: 211
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8aaa841b1f11af0800000000000000
+      internalID: -427294745892837147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_besideMove_8
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 74
+        width: 211
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fc88970d4cc8780800000000000000
+      internalID: -8679345982178537719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_besideMove_9
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 63
+        width: 209
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04911762757320b00800000000000000
+      internalID: 793257331817257280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_besideMove_10
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 86
+        width: 216
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2170d34fabaae74b0800000000000000
+      internalID: -5440723579878701294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c464add8b54b0842977ef9889839fba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player_besideMove_0: 6610772904110570997
+      Player_besideMove_1: -1534358095407816342
+      Player_besideMove_10: -5440723579878701294
+      Player_besideMove_11: -414665709431231129
+      Player_besideMove_2: 3694922919005305115
+      Player_besideMove_3: -5467412987263031788
+      Player_besideMove_4: -8726157057392790308
+      Player_besideMove_5: -5013877286124472831
+      Player_besideMove_6: -1719699500261374817
+      Player_besideMove_7: -427294745892837147
+      Player_besideMove_8: -8679345982178537719
+      Player_besideMove_9: 793257331817257280
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
