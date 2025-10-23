@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: a7adc3107d76fa140a9cefb0439acef9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5738027173198212383
+    second: PlayerAttack_Sword_0
+  - first:
+      213: 8896711947476350793
+    second: PlayerAttack_Sword_1
+  - first:
+      213: 920360345209370024
+    second: PlayerAttack_Sword_2
+  - first:
+      213: -4152826737610123787
+    second: PlayerAttack_Sword_3
+  - first:
+      213: 2870238081436272797
+    second: PlayerAttack_Sword_4
+  - first:
+      213: 2609359956522324967
+    second: PlayerAttack_Sword_5
+  - first:
+      213: 6169414954504316712
+    second: PlayerAttack_Sword_6
+  - first:
+      213: 8496575751369483034
+    second: PlayerAttack_Sword_7
+  - first:
+      213: -5144161630921317493
+    second: PlayerAttack_Sword_8
+  - first:
+      213: 644136989598239757
+    second: PlayerAttack_Sword_9
+  - first:
+      213: -8272278181996516508
+    second: PlayerAttack_Sword_10
+  - first:
+      213: -4655220577179232741
+    second: PlayerAttack_Sword_11
+  - first:
+      213: 1389065167091181593
+    second: PlayerAttack_Sword_12
+  - first:
+      213: -1522736157049713417
+    second: PlayerAttack_Sword_13
+  - first:
+      213: -3906188363182388721
+    second: PlayerAttack_Sword_14
+  - first:
+      213: -8459912914957977755
+    second: PlayerAttack_Sword_15
+  - first:
+      213: -425994508574292836
+    second: PlayerAttack_Sword_16
+  - first:
+      213: 4884011146173977454
+    second: PlayerAttack_Sword_17
+  - first:
+      213: 117055842970730680
+    second: PlayerAttack_Sword_18
+  - first:
+      213: 2243569995101919474
+    second: PlayerAttack_Sword_19
+  - first:
+      213: -169618320667013661
+    second: PlayerAttack_Sword_20
+  - first:
+      213: 6629342947323154794
+    second: PlayerAttack_Sword_21
+  - first:
+      213: 1093432782886586967
+    second: PlayerAttack_Sword_22
+  - first:
+      213: 1592552725614124608
+    second: PlayerAttack_Sword_23
+  - first:
+      213: -6636595263225328010
+    second: PlayerAttack_Sword_24
+  - first:
+      213: 1621569532068966247
+    second: PlayerAttack_Sword_25
+  - first:
+      213: 2969496362819914160
+    second: PlayerAttack_Sword_26
+  - first:
+      213: 3713523486697905563
+    second: PlayerAttack_Sword_27
+  - first:
+      213: -7609814271748189881
+    second: PlayerAttack_Sword_28
+  - first:
+      213: 2597907969598179400
+    second: PlayerAttack_Sword_29
+  - first:
+      213: 2000838995785587638
+    second: PlayerAttack_Sword_30
+  - first:
+      213: -7292083481556807092
+    second: PlayerAttack_Sword_31
+  - first:
+      213: -5827260573501760110
+    second: PlayerAttack_Sword_32
+  - first:
+      213: 512530789574607627
+    second: PlayerAttack_Sword_33
+  - first:
+      213: -3912836113887376393
+    second: PlayerAttack_Sword_34
+  - first:
+      213: -6074457863567602904
+    second: PlayerAttack_Sword_35
+  - first:
+      213: 6493487792605195478
+    second: PlayerAttack_Sword_36
+  - first:
+      213: 82951033798207397
+    second: PlayerAttack_Sword_37
+  - first:
+      213: 5257458960106533756
+    second: PlayerAttack_Sword_38
+  - first:
+      213: 7072263582382261376
+    second: PlayerAttack_Sword_39
+  - first:
+      213: -2749807024758736629
+    second: PlayerAttack_Sword_40
+  - first:
+      213: -6014028144809829902
+    second: PlayerAttack_Sword_41
+  - first:
+      213: -424049379776022970
+    second: PlayerAttack_Sword_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_5
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1563
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e354a33e0f463420800000000000000
+      internalID: 2609359956522324967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_6
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1560
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8276633d63a2e9550800000000000000
+      internalID: 6169414954504316712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1539
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b087234baddf9100800000000000000
+      internalID: 117055842970730680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_22
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1039
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ac8b1a257ac2f00800000000000000
+      internalID: 1093432782886586967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_23
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1049
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e5f482442e91610800000000000000
+      internalID: 1592552725614124608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_24
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1073
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e0a6135c316e3a0800000000000000
+      internalID: -6636595263225328010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_36
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 491
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc619f4eb08d1a50800000000000000
+      internalID: 6493487792605195478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_37
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 512
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a72b479683b62100800000000000000
+      internalID: 82951033798207397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_38
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 523
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73385aa11f36f840800000000000000
+      internalID: 5257458960106533756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_39
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 43
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08483d9f14ab52260800000000000000
+      internalID: 7072263582382261376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_41
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 41
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f998671441e98ca0800000000000000
+      internalID: -6014028144809829902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Sword_42
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 41
+        width: 447
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646b937f5597d1af0800000000000000
+      internalID: -424049379776022970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05b5cee2b0aafa148ba927d998bb22dc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerAttack_Sword_0: -5738027173198212383
+      PlayerAttack_Sword_1: 8896711947476350793
+      PlayerAttack_Sword_10: -8272278181996516508
+      PlayerAttack_Sword_11: -4655220577179232741
+      PlayerAttack_Sword_12: 1389065167091181593
+      PlayerAttack_Sword_13: -1522736157049713417
+      PlayerAttack_Sword_14: -3906188363182388721
+      PlayerAttack_Sword_15: -8459912914957977755
+      PlayerAttack_Sword_16: -425994508574292836
+      PlayerAttack_Sword_17: 4884011146173977454
+      PlayerAttack_Sword_18: 117055842970730680
+      PlayerAttack_Sword_19: 2243569995101919474
+      PlayerAttack_Sword_2: 920360345209370024
+      PlayerAttack_Sword_20: -169618320667013661
+      PlayerAttack_Sword_21: 6629342947323154794
+      PlayerAttack_Sword_22: 1093432782886586967
+      PlayerAttack_Sword_23: 1592552725614124608
+      PlayerAttack_Sword_24: -6636595263225328010
+      PlayerAttack_Sword_25: 1621569532068966247
+      PlayerAttack_Sword_26: 2969496362819914160
+      PlayerAttack_Sword_27: 3713523486697905563
+      PlayerAttack_Sword_28: -7609814271748189881
+      PlayerAttack_Sword_29: 2597907969598179400
+      PlayerAttack_Sword_3: -4152826737610123787
+      PlayerAttack_Sword_30: 2000838995785587638
+      PlayerAttack_Sword_31: -7292083481556807092
+      PlayerAttack_Sword_32: -5827260573501760110
+      PlayerAttack_Sword_33: 512530789574607627
+      PlayerAttack_Sword_34: -3912836113887376393
+      PlayerAttack_Sword_35: -6074457863567602904
+      PlayerAttack_Sword_36: 6493487792605195478
+      PlayerAttack_Sword_37: 82951033798207397
+      PlayerAttack_Sword_38: 5257458960106533756
+      PlayerAttack_Sword_39: 7072263582382261376
+      PlayerAttack_Sword_4: 2870238081436272797
+      PlayerAttack_Sword_40: -2749807024758736629
+      PlayerAttack_Sword_41: -6014028144809829902
+      PlayerAttack_Sword_42: -424049379776022970
+      PlayerAttack_Sword_5: 2609359956522324967
+      PlayerAttack_Sword_6: 6169414954504316712
+      PlayerAttack_Sword_7: 8496575751369483034
+      PlayerAttack_Sword_8: -5144161630921317493
+      PlayerAttack_Sword_9: 644136989598239757
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

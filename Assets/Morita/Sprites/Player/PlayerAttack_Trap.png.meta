@@ -1,0 +1,749 @@
+fileFormatVersion: 2
+guid: f0f9b59e87771e84da4a88efa8d28a49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8780428791754037710
+    second: PlayerAttack_Trap_0
+  - first:
+      213: -1253036918462498095
+    second: PlayerAttack_Trap_1
+  - first:
+      213: -737588120215657191
+    second: PlayerAttack_Trap_2
+  - first:
+      213: 4088183810530789787
+    second: PlayerAttack_Trap_3
+  - first:
+      213: -3180850164331519888
+    second: PlayerAttack_Trap_4
+  - first:
+      213: 7207432268151550673
+    second: PlayerAttack_Trap_5
+  - first:
+      213: 2670137481282972308
+    second: PlayerAttack_Trap_6
+  - first:
+      213: 8831462198231618463
+    second: PlayerAttack_Trap_7
+  - first:
+      213: 3205624254923713384
+    second: PlayerAttack_Trap_8
+  - first:
+      213: 7219507804477422797
+    second: PlayerAttack_Trap_9
+  - first:
+      213: -3913049891966205164
+    second: PlayerAttack_Trap_10
+  - first:
+      213: 7467580849586987544
+    second: PlayerAttack_Trap_11
+  - first:
+      213: 942630816122134822
+    second: PlayerAttack_Trap_12
+  - first:
+      213: 1304668666534532821
+    second: PlayerAttack_Trap_13
+  - first:
+      213: 3256992316443090497
+    second: PlayerAttack_Trap_14
+  - first:
+      213: -3900705565034278939
+    second: PlayerAttack_Trap_15
+  - first:
+      213: -5672737233613307971
+    second: PlayerAttack_Trap_16
+  - first:
+      213: -5381215722695250164
+    second: PlayerAttack_Trap_17
+  - first:
+      213: -5455425517951807107
+    second: PlayerAttack_Trap_18
+  - first:
+      213: -4096369391946021968
+    second: PlayerAttack_Trap_19
+  - first:
+      213: 5335675120488513686
+    second: PlayerAttack_Trap_20
+  - first:
+      213: -5923863126398487114
+    second: PlayerAttack_Trap_21
+  - first:
+      213: -6165699904433825936
+    second: PlayerAttack_Trap_22
+  - first:
+      213: -3449674515136375701
+    second: PlayerAttack_Trap_23
+  - first:
+      213: -5083938642776586702
+    second: PlayerAttack_Trap_24
+  - first:
+      213: 7124056486725040517
+    second: PlayerAttack_Trap_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_0
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 365
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec99c1427795ad970800000000000000
+      internalID: 8780428791754037710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_1
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 589
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dab790cf815c9ee0800000000000000
+      internalID: -1253036918462498095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_2
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 584
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9156ff7338f83c5f0800000000000000
+      internalID: -737588120215657191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_3
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 584
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99c03bf3852cb830800000000000000
+      internalID: 4088183810530789787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 391
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070e64fd0a95bd3d0800000000000000
+      internalID: -3180850164331519888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 391
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d27cd51671f50460800000000000000
+      internalID: 7207432268151550673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_6
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 398
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ae35964eb3e0520800000000000000
+      internalID: 2670137481282972308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_7
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 384
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93d2e40418af8a70800000000000000
+      internalID: 8831462198231618463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 366
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86baa16964aac7c20800000000000000
+      internalID: 3205624254923713384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_10
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 378
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41349f00bdd02b9c0800000000000000
+      internalID: -3913049891966205164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_11
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 380
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812642fb73d22a760800000000000000
+      internalID: 7467580849586987544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_12
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 369
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621eb45abb5e41d00800000000000000
+      internalID: 942630816122134822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 165
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d69f526d3d1b1210800000000000000
+      internalID: 1304668666534532821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 174
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e54c96149233d20800000000000000
+      internalID: 3256992316443090497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_16
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 164
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfb85e9a836641b0800000000000000
+      internalID: -5672737233613307971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 172
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fa005afc41255b0800000000000000
+      internalID: -5381215722695250164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_18
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 173
+        width: 111
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7191ef356f6a44b0800000000000000
+      internalID: -5455425517951807107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 166
+        width: 115
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b34644ddb5c627c0800000000000000
+      internalID: -4096369391946021968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_20
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 162
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6908b91a0402c0a40800000000000000
+      internalID: 5335675120488513686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_21
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 158
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5bbfc5fd53acda0800000000000000
+      internalID: -5923863126398487114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_22
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 158
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077df8caa980f6aa0800000000000000
+      internalID: -6165699904433825936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_23
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 158
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64149e3e4b4020d0800000000000000
+      internalID: -3449674515136375701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_24
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 156
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2368b618db83279b0800000000000000
+      internalID: -5083938642776586702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_Trap_25
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 158
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589301b31abbdd260800000000000000
+      internalID: 7124056486725040517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 42c20f39051e32f48b58078d2785bb4f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerAttack_Trap_0: 8780428791754037710
+      PlayerAttack_Trap_1: -1253036918462498095
+      PlayerAttack_Trap_10: -3913049891966205164
+      PlayerAttack_Trap_11: 7467580849586987544
+      PlayerAttack_Trap_12: 942630816122134822
+      PlayerAttack_Trap_13: 1304668666534532821
+      PlayerAttack_Trap_14: 3256992316443090497
+      PlayerAttack_Trap_15: -3900705565034278939
+      PlayerAttack_Trap_16: -5672737233613307971
+      PlayerAttack_Trap_17: -5381215722695250164
+      PlayerAttack_Trap_18: -5455425517951807107
+      PlayerAttack_Trap_19: -4096369391946021968
+      PlayerAttack_Trap_2: -737588120215657191
+      PlayerAttack_Trap_20: 5335675120488513686
+      PlayerAttack_Trap_21: -5923863126398487114
+      PlayerAttack_Trap_22: -6165699904433825936
+      PlayerAttack_Trap_23: -3449674515136375701
+      PlayerAttack_Trap_24: -5083938642776586702
+      PlayerAttack_Trap_25: 7124056486725040517
+      PlayerAttack_Trap_3: 4088183810530789787
+      PlayerAttack_Trap_4: -3180850164331519888
+      PlayerAttack_Trap_5: 7207432268151550673
+      PlayerAttack_Trap_6: 2670137481282972308
+      PlayerAttack_Trap_7: 8831462198231618463
+      PlayerAttack_Trap_8: 3205624254923713384
+      PlayerAttack_Trap_9: 7219507804477422797
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
