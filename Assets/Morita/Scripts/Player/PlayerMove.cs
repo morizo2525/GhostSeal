@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     private float dodgeDuration; // 回避動作全体の時間
 
     private Rigidbody2D rb; 
+    private AnimationController animController;
 
     private bool  isGrounded;         // 接地しているか
     private bool  hasDoubleJump;      // 2段ジャンプが使用可能か
@@ -34,7 +35,8 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb             = GetComponent<Rigidbody2D>();
+        animController = GetComponent<AnimationController>();
     }
 
     private void Update()
@@ -85,21 +87,29 @@ public class PlayerMove : MonoBehaviour
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Abs(scale.x); // スプライトを左向きに
             transform.localScale = scale;
+            animController.PlayerBesideMoveAnim();
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             horizontalInput += 1f; // 右移動
             Vector3 scale = transform.localScale;
             scale.x = -Mathf.Abs(scale.x); // スプライトを右向きに
             transform.localScale = scale;
+            animController.PlayerBesideMoveAnim();
         }
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        else
+        {
+            animController.PlayerIdleAnim();
+        }
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
         // ジャンプ
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (isGrounded)
+            {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 1段目ジャンプ
+            }
             else if (enableDoubleJump && hasDoubleJump)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, secondJumpForce); // 2段目ジャンプ
