@@ -83,4 +83,12 @@ public class AnimationController : MonoBehaviour
     {
         SetBool("IsJumping", false);
     }
+
+    //  ------------エネミー用アニメーション制御関数------------
+
+    //地上エネミーノーマルジャンプ
+    public void GroundEnemyNormalJumpAnim()
+    {
+        PlayAnimation("NormalJump");
+    }
 }
