@@ -42,6 +42,7 @@ public class PlayerAttackManager : MonoBehaviour
         {
             bombAttack = GetComponent<PlayerBombAttack>();
         }
+
         //罠設置スクリプトの参照を取得
         if (trapCreator == null)
         {
