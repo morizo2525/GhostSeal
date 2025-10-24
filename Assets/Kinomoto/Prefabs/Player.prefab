@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 4802511600387977215}
   - component: {fileID: 7239260901039228088}
   - component: {fileID: -647096392729975419}
+  - component: {fileID: -2010978858362202188}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -253,6 +254,8 @@ MonoBehaviour:
     m_Bits: 128
   attackEffect: {fileID: 0}
   swordDamage: 20
+  knockbackForce: 5
+  attackCooldown: 0.5
 --- !u!114 &8808850952842657222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,9 +324,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTrapCreator
   trapPrefab: {fileID: 6704387512906414869, guid: 157e4d2857a337149887dd89467e6629, type: 3}
-  trapCooldown: 2
   mineTrapPrefab: {fileID: 4606356696677419967, guid: 135002ba327713440a84ea006ca0a3c6, type: 3}
-  mineTrapCooldown: 2
+  maxThrowDistance: 3
+  downwardThreshold: 1
+  mainCamera: {fileID: 0}
+  showThrowPreview: 1
 --- !u!114 &8879955161330257813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +396,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHPManager
   maxHP: 3
+--- !u!95 &-2010978858362202188
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ed5d46bf62582c4393e20c3b3b60ad6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3913486402502745693
 GameObject:
   m_ObjectHideFlags: 0
