@@ -26,6 +26,7 @@ public class GroundEnemyMove : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    private AnimationController animController;
     private Transform player;
     private float jumpIntervalTimer;  // ジャンプ判定の間隔タイマー
     private float stopTimer;
@@ -36,7 +37,8 @@ public class GroundEnemyMove : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb             = GetComponent<Rigidbody2D>();
+        animController = GetComponent<AnimationController>();
 
         // プレイヤーを検索
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -109,6 +111,12 @@ public class GroundEnemyMove : MonoBehaviour
             jumpCheckDone = false;
         }
 
+        if (animController != null)
+        {
+            // 接地状態を常に更新(着地でアニメーション終了)
+            animController.SetBool("IsGrounded", currentGrounded);
+        }
+
         wasGroundedLastFrame = currentGrounded;
     }
 
@@ -122,6 +130,12 @@ public class GroundEnemyMove : MonoBehaviour
         // 通常の小ジャンプ + 横方向の力
         rb.linearVelocity = new Vector2(direction * horizontalSpeed, normalJumpForce);
         isNormalJumpActive = true;
+
+        if (animController != null)
+        {
+            animController.SetBool("IsGrounded", false);
+            animController.PlayAnimation("NormalJump");
+        }
     }
 
     void BigJump()

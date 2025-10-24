@@ -142,12 +142,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_0
       rect:
         serializedVersion: 2
-        x: 800
+        x: 764
         y: 542
-        width: 312
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,8 +168,8 @@ TextureImporter:
         y: 836
         width: 348
         height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_2
       rect:
         serializedVersion: 2
-        x: 375
+        x: 336
         y: 580
-        width: 309
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_4
       rect:
         serializedVersion: 2
-        x: 1192
-        y: 502
-        width: 287
+        x: 1131
+        y: 503
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_5
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 456
-        width: 288
+        x: 1547
+        y: 458
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_8
       rect:
         serializedVersion: 2
-        x: 393
+        x: 363
         y: 121
-        width: 318
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_9
       rect:
         serializedVersion: 2
-        x: 795
+        x: 763
         y: 94
-        width: 316
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_10
       rect:
         serializedVersion: 2
-        x: 1150
+        x: 1138
         y: 76
-        width: 339
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: GroundEnemy_NormalJump_11
       rect:
         serializedVersion: 2
-        x: 1543
+        x: 1531
         y: 52
-        width: 337
+        width: 348
         height: 294
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

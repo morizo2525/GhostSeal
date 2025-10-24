@@ -182,7 +182,7 @@ MonoBehaviour:
   minHealth: 10
   maxHealth: 50
   minSizeMultiplier: 0.5
-  maxSizeMultiplier: 1.5
+  maxSizeMultiplier: 1
 --- !u!114 &-9119583575660192852
 MonoBehaviour:
   m_ObjectHideFlags: 0
