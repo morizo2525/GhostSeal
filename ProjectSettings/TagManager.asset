@@ -42,10 +42,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
+  - name: Flore
     uniqueID: 2492257989
     locked: 0
-  - name: New Layer 2
+  - name: BackGround
     uniqueID: 40166397
     locked: 0
   - name: Enemy
