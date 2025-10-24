@@ -21,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     private AnimationController animController;
 
     private bool  isGrounded;         // 接地しているか
+    private bool  wasGrounded;        // 前フレームで接地していたか
     private bool  hasDoubleJump;      // 2段ジャンプが使用可能か
     private bool  isDodging;          // 現在回避中か
     private float dodgeTimer;         // 回避開始からの経過時間
@@ -42,7 +43,14 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         // 接地判定
+        wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        if (isGrounded && !wasGrounded)
+        {
+            animController.PlayerLandAnim();
+        }
+
         if (isGrounded) hasDoubleJump = true; // 着地したら2段ジャンプを回復
 
         // クールダウンタイマー更新
@@ -106,9 +114,12 @@ public class PlayerMove : MonoBehaviour
         // ジャンプ
         if (Input.GetKeyDown(KeyCode.W))
         {
+            animController.PlayerJumpAnim();
+
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 1段目ジャンプ
+                
             }
             else if (enableDoubleJump && hasDoubleJump)
             {

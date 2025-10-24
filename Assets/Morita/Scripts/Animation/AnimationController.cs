@@ -13,20 +13,7 @@ public class AnimationController : MonoBehaviour
             Debug.LogError("Animatorコンポーネントが見つかりません。");
         }
     }
-    //  ------------プレイヤー用アニメーション制御関数------------
-
-    // 待機
-    public void PlayerIdleAnim()
-    {
-        SetBool("IsMoving", false);
-    }
-
-    // 左右移動
-    public void PlayerBesideMoveAnim()
-    {
-        SetBool("IsMoving", true);
-    }
-
+    
     /// <summary>
     /// トリガー型のアニメーションを再生
     /// </summary>
@@ -69,5 +56,31 @@ public class AnimationController : MonoBehaviour
         {
             animator.SetFloat(paramName, value);
         }
+    }
+
+    //  ------------プレイヤー用アニメーション制御関数------------
+
+    // 待機
+    public void PlayerIdleAnim()
+    {
+        SetBool("IsMoving", false);
+    }
+
+    // 左右移動
+    public void PlayerBesideMoveAnim()
+    {
+        SetBool("IsMoving", true);
+    }
+
+    // ジャンプ
+    public void PlayerJumpAnim()
+    {
+        SetBool("IsJumping", true);
+    }
+
+    // 着地
+    public void PlayerLandAnim()
+    {
+        SetBool("IsJumping", false);
     }
 }
