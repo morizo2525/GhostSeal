@@ -15,6 +15,7 @@ public class PlayerTrapAttack : MonoBehaviour
     private float elapsedTime = 0f;
     private bool hasTriggered = false;                           // 既に敵を捕捉したか
     private GameObject capturedEnemy;                            // 現在捕捉中の敵
+    private GameObject capturedAirEnemy;                         // 空中の捕捉中の敵
 
     private void Start()
     {
@@ -53,6 +54,8 @@ public class PlayerTrapAttack : MonoBehaviour
 
         hasTriggered = true;
         capturedEnemy = enemy;
+        capturedAirEnemy = enemy;
+
 
         // 敵のRigidbody2Dを取得して動きを止める
         Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
@@ -64,9 +67,14 @@ public class PlayerTrapAttack : MonoBehaviour
 
         // 敵のスクリプトから制御を奪う（例：移動スクリプトの無効化）
         GroundEnemyMove enemyController = enemy.GetComponent<GroundEnemyMove>();
+        AirEnemyMove airEnemyConreoller = enemy.GetComponent<AirEnemyMove>();
         if (enemyController != null)
         {
             enemyController.enabled = false;
+        }
+        if (airEnemyConreoller != null)
+        {
+            airEnemyConreoller.enabled = false;
         }
 
         // 拘束時間経過後に敵を解放
@@ -93,9 +101,14 @@ public class PlayerTrapAttack : MonoBehaviour
 
         // 敵のスクリプトを再度有効にする
         GroundEnemyMove enemyController = capturedEnemy.GetComponent<GroundEnemyMove>();
+        AirEnemyMove airEnemyMove = capturedEnemy.GetComponent<AirEnemyMove>();
         if (enemyController != null)
         {
             enemyController.enabled = true;
+        }
+        if (airEnemyMove != null)
+        {
+            airEnemyMove.enabled = true;
         }
 
         capturedEnemy = null;
