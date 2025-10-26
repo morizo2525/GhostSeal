@@ -1,52 +1,58 @@
 fileFormatVersion: 2
-guid: ffcd88ca9fb027949ad3db2527995524
+guid: 2e3eba5eeb137b046b0de322f755cb30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1764637875128636898
-    second: PlayerAttack_Bow02_0
+      213: -4885795034362962969
+    second: AirEnemy_Move_0
   - first:
-      213: 1039628767003603495
-    second: PlayerAttack_Bow02_1
+      213: 22754735002234816
+    second: AirEnemy_Move_1
   - first:
-      213: -3374051231113948332
-    second: PlayerAttack_Bow02_2
+      213: 3985251182215474092
+    second: AirEnemy_Move_2
   - first:
-      213: 3282338323545313480
-    second: PlayerAttack_Bow02_3
+      213: -8116214422368160050
+    second: AirEnemy_Move_3
   - first:
-      213: -9009932443410070065
-    second: PlayerAttack_Bow02_4
+      213: 2527678378652999646
+    second: AirEnemy_Move_4
   - first:
-      213: 5108696083512871120
-    second: PlayerAttack_Bow02_5
+      213: 5070119750366029397
+    second: AirEnemy_Move_5
   - first:
-      213: 3488643946626131039
-    second: PlayerAttack_Bow02_6
+      213: -1133590332192956371
+    second: AirEnemy_Move_6
   - first:
-      213: -5302466664605422712
-    second: PlayerAttack_Bow02_7
+      213: -5796754688806390975
+    second: AirEnemy_Move_7
   - first:
-      213: -8065608438123010164
-    second: PlayerAttack_Bow02_8
+      213: 6966849850245330238
+    second: AirEnemy_Move_8
   - first:
-      213: 8821741139000803706
-    second: PlayerAttack_Bow02_9
+      213: -7499015739780189426
+    second: AirEnemy_Move_9
   - first:
-      213: 8175252537097099718
-    second: PlayerAttack_Bow02_10
+      213: 1797643893999415388
+    second: AirEnemy_Move_10
   - first:
-      213: -6589392395047939641
-    second: PlayerAttack_Bow02_11
+      213: -1790515915333016236
+    second: AirEnemy_Move_11
   - first:
-      213: -2969003174837794501
-    second: PlayerAttack_Bow02_12
+      213: 3414037311953648305
+    second: AirEnemy_Move_12
   - first:
-      213: 1830209079430498248
-    second: PlayerAttack_Bow02_13
+      213: -3763712816032179336
+    second: AirEnemy_Move_13
   - first:
-      213: 107467555173114554
-    second: PlayerAttack_Bow02_14
+      213: 3976334255740382851
+    second: AirEnemy_Move_14
+  - first:
+      213: 1351502718674333238
+    second: AirEnemy_Move_15
+  - first:
+      213: 339654983255934972
+    second: AirEnemy_Move_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_0
+      name: AirEnemy_Move_3
       rect:
         serializedVersion: 2
-        x: 142
-        y: 254
-        width: 98
-        height: 249
+        x: 925
+        y: 571
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e51e384cc04d7810800000000000000
-      internalID: 1764637875128636898
+      spriteID: ec6f7d10cf96d5f80800000000000000
+      internalID: -8116214422368160050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_2
+      name: AirEnemy_Move_4
       rect:
         serializedVersion: 2
-        x: 454
-        y: 265
-        width: 267
-        height: 223
+        x: 1481
+        y: 578
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 453db732846fc21d0800000000000000
-      internalID: -3374051231113948332
+      spriteID: edf1c0ad71e141320800000000000000
+      internalID: 2527678378652999646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_3
+      name: AirEnemy_Move_8
       rect:
         serializedVersion: 2
-        x: 814
-        y: 222
-        width: 226
-        height: 277
+        x: 332
+        y: 98
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c0d19f80553d8d20800000000000000
-      internalID: 3282338323545313480
+      spriteID: e353b5fd6093fa060800000000000000
+      internalID: 6966849850245330238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_8
+      name: AirEnemy_Move_10
       rect:
         serializedVersion: 2
-        x: 1660
-        y: 242
-        width: 209
-        height: 249
+        x: 1187
+        y: 91
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c87e844ebd3311090800000000000000
-      internalID: -8065608438123010164
+      spriteID: c503c76e89382f810800000000000000
+      internalID: 1797643893999415388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_9
+      name: AirEnemy_Move_12
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 270
-        width: 171
-        height: 158
+        x: 1546
+        y: 78
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a71c79a83de1d6a70800000000000000
-      internalID: 8821741139000803706
+      spriteID: 1ba3decc8d8116f20800000000000000
+      internalID: 3414037311953648305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_10
+      name: AirEnemy_Move_15
       rect:
         serializedVersion: 2
-        x: 1390
-        y: 243
-        width: 167
-        height: 223
+        x: 791
+        y: 55
+        width: 300
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c998ce3ed4547170800000000000000
-      internalID: 8175252537097099718
+      spriteID: 63eee83ef8081c210800000000000000
+      internalID: 1351502718674333238
       vertices: []
       indices: 
       edges: []
@@ -277,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 201a3349674deb84d93d8b50c1c28277
+    spriteID: 9fa512b810827b84ba5e5403dd2ecd73
     internalID: 0
     vertices: []
     indices: 
@@ -287,22 +293,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlayerAttack_Bow02_0: 1764637875128636898
-      PlayerAttack_Bow02_1: 1039628767003603495
-      PlayerAttack_Bow02_10: 8175252537097099718
-      PlayerAttack_Bow02_11: -6589392395047939641
-      PlayerAttack_Bow02_12: -2969003174837794501
-      PlayerAttack_Bow02_13: 1830209079430498248
-      PlayerAttack_Bow02_14: 107467555173114554
-      PlayerAttack_Bow02_2: -3374051231113948332
-      PlayerAttack_Bow02_3: 3282338323545313480
-      PlayerAttack_Bow02_4: -9009932443410070065
-      PlayerAttack_Bow02_5: 5108696083512871120
-      PlayerAttack_Bow02_6: 3488643946626131039
-      PlayerAttack_Bow02_7: -5302466664605422712
-      PlayerAttack_Bow02_8: -8065608438123010164
-      PlayerAttack_Bow02_9: 8821741139000803706
-      PlayerAttack_Bow_0: 1273519872
+      AirEnemy_Move_0: -4885795034362962969
+      AirEnemy_Move_1: 22754735002234816
+      AirEnemy_Move_10: 1797643893999415388
+      AirEnemy_Move_11: -1790515915333016236
+      AirEnemy_Move_12: 3414037311953648305
+      AirEnemy_Move_13: -3763712816032179336
+      AirEnemy_Move_14: 3976334255740382851
+      AirEnemy_Move_15: 1351502718674333238
+      AirEnemy_Move_16: 339654983255934972
+      AirEnemy_Move_2: 3985251182215474092
+      AirEnemy_Move_3: -8116214422368160050
+      AirEnemy_Move_4: 2527678378652999646
+      AirEnemy_Move_5: 5070119750366029397
+      AirEnemy_Move_6: -1133590332192956371
+      AirEnemy_Move_7: -5796754688806390975
+      AirEnemy_Move_8: 6966849850245330238
+      AirEnemy_Move_9: -7499015739780189426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
