@@ -1,52 +1,58 @@
 fileFormatVersion: 2
-guid: ffcd88ca9fb027949ad3db2527995524
+guid: 3167eb5cde587f141b31735cbb4a5c75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1764637875128636898
-    second: PlayerAttack_Bow02_0
+      213: -5213873962255424572
+    second: PlayerAttack_BombBow_0
   - first:
-      213: 1039628767003603495
-    second: PlayerAttack_Bow02_1
+      213: -2941272115998171648
+    second: PlayerAttack_BombBow_1
   - first:
-      213: -3374051231113948332
-    second: PlayerAttack_Bow02_2
+      213: 6101734078442977949
+    second: PlayerAttack_BombBow_2
   - first:
-      213: 3282338323545313480
-    second: PlayerAttack_Bow02_3
+      213: -3670661141469428723
+    second: PlayerAttack_BombBow_3
   - first:
-      213: -9009932443410070065
-    second: PlayerAttack_Bow02_4
+      213: 3157885881135034845
+    second: PlayerAttack_BombBow_4
   - first:
-      213: 5108696083512871120
-    second: PlayerAttack_Bow02_5
+      213: -1894850039066345907
+    second: PlayerAttack_BombBow_5
   - first:
-      213: 3488643946626131039
-    second: PlayerAttack_Bow02_6
+      213: -4646161474459705803
+    second: PlayerAttack_BombBow_6
   - first:
-      213: -5302466664605422712
-    second: PlayerAttack_Bow02_7
+      213: -8126713922121711241
+    second: PlayerAttack_BombBow_7
   - first:
-      213: -8065608438123010164
-    second: PlayerAttack_Bow02_8
+      213: -5254237952069982370
+    second: PlayerAttack_BombBow_8
   - first:
-      213: 8821741139000803706
-    second: PlayerAttack_Bow02_9
+      213: 1574104710886080392
+    second: PlayerAttack_BombBow_9
   - first:
-      213: 8175252537097099718
-    second: PlayerAttack_Bow02_10
+      213: -4142674831162054651
+    second: PlayerAttack_BombBow_10
   - first:
-      213: -6589392395047939641
-    second: PlayerAttack_Bow02_11
+      213: 1643237605449580692
+    second: PlayerAttack_BombBow_11
   - first:
-      213: -2969003174837794501
-    second: PlayerAttack_Bow02_12
+      213: 2457544947168517226
+    second: PlayerAttack_BombBow_12
   - first:
-      213: 1830209079430498248
-    second: PlayerAttack_Bow02_13
+      213: 8215826719681764332
+    second: PlayerAttack_BombBow_13
   - first:
-      213: 107467555173114554
-    second: PlayerAttack_Bow02_14
+      213: 1289295154180916679
+    second: PlayerAttack_BombBow_14
+  - first:
+      213: 6687559824504559424
+    second: PlayerAttack_BombBow_15
+  - first:
+      213: -8816253793843121822
+    second: PlayerAttack_BombBow_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,12 +148,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_0
+      name: PlayerAttack_BombBow_0
       rect:
         serializedVersion: 2
-        x: 142
-        y: 254
-        width: 98
+        x: 218
+        y: 235
+        width: 95
         height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,19 +163,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e51e384cc04d7810800000000000000
-      internalID: 1764637875128636898
+      spriteID: 4c36b10714994a7b0800000000000000
+      internalID: -5213873962255424572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_2
+      name: PlayerAttack_BombBow_2
       rect:
         serializedVersion: 2
-        x: 454
-        y: 265
-        width: 267
+        x: 833
+        y: 217
+        width: 225
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a3d73e0d6bda450800000000000000
+      internalID: 6101734078442977949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_BombBow_7
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 230
+        width: 188
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771c6b8bebc183f80800000000000000
+      internalID: -8126713922121711241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAttack_BombBow_10
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 234
+        width: 266
         height: 223
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -179,63 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 453db732846fc21d0800000000000000
-      internalID: -3374051231113948332
+      spriteID: 50862ac90334286c0800000000000000
+      internalID: -4142674831162054651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_3
+      name: PlayerAttack_BombBow_11
       rect:
         serializedVersion: 2
-        x: 814
-        y: 222
-        width: 226
-        height: 277
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c0d19f80553d8d20800000000000000
-      internalID: 3282338323545313480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAttack_Bow02_8
-      rect:
-        serializedVersion: 2
-        x: 1660
-        y: 242
-        width: 209
-        height: 249
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c87e844ebd3311090800000000000000
-      internalID: -8065608438123010164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAttack_Bow02_9
-      rect:
-        serializedVersion: 2
-        x: 1092
-        y: 270
-        width: 171
+        x: 1157
+        y: 262
+        width: 160
         height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -245,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a71c79a83de1d6a70800000000000000
-      internalID: 8821741139000803706
+      spriteID: 490c26a55e3fdc610800000000000000
+      internalID: 1643237605449580692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttack_Bow02_10
+      name: PlayerAttack_BombBow_12
       rect:
         serializedVersion: 2
-        x: 1390
-        y: 243
-        width: 167
+        x: 1440
+        y: 229
+        width: 154
         height: 223
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,8 +273,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c998ce3ed4547170800000000000000
-      internalID: 8175252537097099718
+      spriteID: a6c198bdb14fa1220800000000000000
+      internalID: 2457544947168517226
       vertices: []
       indices: 
       edges: []
@@ -277,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 201a3349674deb84d93d8b50c1c28277
+    spriteID: b5e230b6750bdcf48b10b9650635cbb3
     internalID: 0
     vertices: []
     indices: 
@@ -287,22 +293,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlayerAttack_Bow02_0: 1764637875128636898
-      PlayerAttack_Bow02_1: 1039628767003603495
-      PlayerAttack_Bow02_10: 8175252537097099718
-      PlayerAttack_Bow02_11: -6589392395047939641
-      PlayerAttack_Bow02_12: -2969003174837794501
-      PlayerAttack_Bow02_13: 1830209079430498248
-      PlayerAttack_Bow02_14: 107467555173114554
-      PlayerAttack_Bow02_2: -3374051231113948332
-      PlayerAttack_Bow02_3: 3282338323545313480
-      PlayerAttack_Bow02_4: -9009932443410070065
-      PlayerAttack_Bow02_5: 5108696083512871120
-      PlayerAttack_Bow02_6: 3488643946626131039
-      PlayerAttack_Bow02_7: -5302466664605422712
-      PlayerAttack_Bow02_8: -8065608438123010164
-      PlayerAttack_Bow02_9: 8821741139000803706
-      PlayerAttack_Bow_0: 1273519872
+      PlayerAttack_BombBow_0: -5213873962255424572
+      PlayerAttack_BombBow_1: -2941272115998171648
+      PlayerAttack_BombBow_10: -4142674831162054651
+      PlayerAttack_BombBow_11: 1643237605449580692
+      PlayerAttack_BombBow_12: 2457544947168517226
+      PlayerAttack_BombBow_13: 8215826719681764332
+      PlayerAttack_BombBow_14: 1289295154180916679
+      PlayerAttack_BombBow_15: 6687559824504559424
+      PlayerAttack_BombBow_16: -8816253793843121822
+      PlayerAttack_BombBow_2: 6101734078442977949
+      PlayerAttack_BombBow_3: -3670661141469428723
+      PlayerAttack_BombBow_4: 3157885881135034845
+      PlayerAttack_BombBow_5: -1894850039066345907
+      PlayerAttack_BombBow_6: -4646161474459705803
+      PlayerAttack_BombBow_7: -8126713922121711241
+      PlayerAttack_BombBow_8: -5254237952069982370
+      PlayerAttack_BombBow_9: 1574104710886080392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
