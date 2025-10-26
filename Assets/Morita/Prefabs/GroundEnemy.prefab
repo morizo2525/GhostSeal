@@ -241,8 +241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHPManager
   minHealth: 10
   maxHealth: 50
-  minSizeMultiplier: 0.5
-  maxSizeMultiplier: 1
+  minSizeMultiplier: 0.25
+  maxSizeMultiplier: 0.5
 --- !u!114 &1806953535159991105
 MonoBehaviour:
   m_ObjectHideFlags: 0
