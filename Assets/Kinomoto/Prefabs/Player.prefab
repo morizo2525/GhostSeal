@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 4802511600387977215}
   - component: {fileID: 7239260901039228088}
   - component: {fileID: -647096392729975419}
+  - component: {fileID: 7926576610856116391}
   - component: {fileID: -2010978858362202188}
   m_Layer: 8
   m_Name: Player
@@ -93,8 +94,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 344086439
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -396,6 +397,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHPManager
   maxHP: 3
+--- !u!114 &7926576610856116391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd81749c25936643b74ea91fd976cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDethHandler
+  playerHPManager: {fileID: -647096392729975419}
+  gameOverSceneName: GameOverScene
 --- !u!95 &-2010978858362202188
 Animator:
   serializedVersion: 7

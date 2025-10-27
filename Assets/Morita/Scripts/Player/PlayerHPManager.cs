@@ -7,6 +7,9 @@ public class PlayerHPManager : MonoBehaviour
 
     private int currentHP;
 
+    public delegate void OnPlayerDie();  // 死亡イベント
+    public event OnPlayerDie PlayerDied; 
+
     private void Start()
     {
         currentHP = maxHP;
@@ -31,6 +34,12 @@ public class PlayerHPManager : MonoBehaviour
     private void Die()
     {
         Debug.Log("敗北");
+
         // TODO: ゲームオーバー処理など
+
+        PlayerDied?.Invoke(); // プレイヤー死亡イベントを発生
     }
+
+    public int GetCurrentHP() => currentHP;
+    public int GetMaxHP() => maxHP;
 }
