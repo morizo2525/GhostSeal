@@ -243,6 +243,8 @@ MonoBehaviour:
   maxHealth: 50
   minSizeMultiplier: 0.25
   maxSizeMultiplier: 0.5
+  groundDeathDuration: 1.433
+  airDeathDuration: 1
 --- !u!114 &1806953535159991105
 MonoBehaviour:
   m_ObjectHideFlags: 0

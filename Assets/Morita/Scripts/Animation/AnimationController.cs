@@ -91,4 +91,14 @@ public class AnimationController : MonoBehaviour
     {
         PlayAnimation("NormalJump");
     }
+
+    public void GroundEnemyBigJumpAnim()
+    {
+        PlayAnimation("BigJump");
+    }
+
+    public void GroundEnemyDeathAnim()
+    {
+        PlayAnimation("Death");
+    }
 }

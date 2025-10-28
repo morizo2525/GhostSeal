@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyHPManager : MonoBehaviour
 {
@@ -16,11 +17,24 @@ public class EnemyHPManager : MonoBehaviour
     [Tooltip("最大HPの時のサイズ倍率")]
     public float maxSizeMultiplier = 2.0f;
 
+    [Tooltip("地上エネミーの死亡アニメーション再生時間")]
+    public float groundDeathDuration = 1.0f;
+
+    [Tooltip("空中エネミーの死亡アニメーション再生時間")]
+    public float airDeathDuration = 1.0f;
+
+    private AirEnemyMove    airEnemy;    // 空中エネミー用のコンポーネント
+    private GroundEnemyMove groundEnemy; // 地上エネミー用のコンポーネント
     private int enemyHealth;
     private int enemyMaxHealth;
+    private AnimationController animController;
+    private bool isDead = false;
 
     void Start()
     {
+        groundEnemy    = GetComponent<GroundEnemyMove>();
+        airEnemy       = GetComponent<AirEnemyMove>();
+        animController = GetComponent<AnimationController>();
         InitializeEnemy();
     }
 
@@ -52,6 +66,8 @@ public class EnemyHPManager : MonoBehaviour
 
     public void EnemyTakeDamage(int damage)
     {
+        if (isDead) return; // 既に死亡している場合は無視
+
         enemyHealth -= damage;
 
         // デバッグ用
@@ -65,7 +81,39 @@ public class EnemyHPManager : MonoBehaviour
 
     void EnemyDie()
     {
+        if (isDead) return;
+        isDead = true;
+
         Debug.Log("Enemy died");
+
+        // 移動を停止
+        if (groundEnemy != null) groundEnemy.enabled = false;
+        if (airEnemy != null)    airEnemy.enabled = false; 
+       
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero; // 速度をゼロに
+            rb.bodyType = RigidbodyType2D.Kinematic;            // 物理挙動を停止
+        }
+
+        // 敵タイプに応じて死亡アニメ再生と待機時間設定
+        float deathDuration = groundDeathDuration;
+
+        if (groundEnemy != null)
+        {
+            animController?.GroundEnemyDeathAnim();
+            deathDuration = groundDeathDuration;
+        }
+
+        // アニメーション再生後にdestroy
+        StartCoroutine(DestroyAfterAnimation(deathDuration));
+    }
+    
+    IEnumerator DestroyAfterAnimation(float duration)
+    {
+        yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }
 
