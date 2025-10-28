@@ -62,9 +62,7 @@ public class GroundEnemyMove : MonoBehaviour
         if (currentGrounded && !wasGroundedLastFrame)
         {
             // 着地後の停止開始(横移動も停止)
-            isStopped = true;
-            stopTimer = 0f;
-            rb.linearVelocity = Vector2.zero; // 完全に停止
+            OnLanded();
         }
 
         // 停止中の処理
@@ -85,24 +83,7 @@ public class GroundEnemyMove : MonoBehaviour
         // ジャンプ判定のタイミング(通常ジャンプの間隔で判定)
         if (!isStopped && currentGrounded && jumpIntervalTimer >= normalJumpInterval && !jumpCheckDone)
         {
-            // 乱数を取得
-            float randomValue = Random.value;
-
-            // 確率に基づいてジャンプの種類を決定
-            if (randomValue < bigJumpChance)
-            {
-                // 大ジャンプ
-                BigJump();
-            }
-            else if (randomValue < bigJumpChance + normalJumpChance)
-            {
-                // 通常ジャンプ
-                NormalJump();
-            }
-            // それ以外(残りの確率)はジャンプしない
-
-            jumpCheckDone = true; // 判定済みにする
-            jumpIntervalTimer = 0f; // タイマーリセット
+            PerformJumpCheck();
         }
 
         // タイマーがリセットされたら判定フラグもリセット
@@ -113,11 +94,45 @@ public class GroundEnemyMove : MonoBehaviour
 
         if (animController != null)
         {
+            
             // 接地状態を常に更新(着地でアニメーション終了)
             animController.SetBool("IsGrounded", currentGrounded);
         }
 
         wasGroundedLastFrame = currentGrounded;
+    }
+
+    void OnLanded()
+    {
+        // 着地後の停止時間
+        isStopped = true;
+        stopTimer = 0f;
+        rb.linearVelocity = Vector2.zero;
+
+        if (animController != null)
+        {
+            animController.SetBool("IsGrounded", true);
+            animController.PlayAnimation("Idle");
+        }
+
+        Debug.Log("Enemy landed");
+    }
+
+    void PerformJumpCheck()
+    {
+        float randomValue = Random.value;
+
+        if (randomValue < bigJumpChance)
+        {
+            BigJump();
+        }
+        else if (randomValue < bigJumpChance + normalJumpChance)
+        {
+            NormalJump();
+        }
+
+        jumpCheckDone = true;
+        jumpIntervalTimer = 0f;
     }
 
     void NormalJump()
@@ -134,7 +149,7 @@ public class GroundEnemyMove : MonoBehaviour
         if (animController != null)
         {
             animController.SetBool("IsGrounded", false);
-            animController.PlayAnimation("NormalJump");
+            animController.GroundEnemyNormalJumpAnim();
         }
     }
 
@@ -148,6 +163,12 @@ public class GroundEnemyMove : MonoBehaviour
         // 大ジャンプ + 横方向の力
         rb.linearVelocity = new Vector2(direction * horizontalSpeed, bigJumpForce);
         isNormalJumpActive = false;
+
+        if (animController != null)
+        {
+            animController.SetBool("IsGrounded", false);
+            animController.GroundEnemyBigJumpAnim();
+        }
     }
 
     bool IsGrounded()

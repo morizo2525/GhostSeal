@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542382470534366967, guid: 91114cbf09b74fd459a52b8b80082adf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.6
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 4542382470534366967, guid: 91114cbf09b74fd459a52b8b80082adf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -882,6 +882,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3680979103451732890, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_Size.x
+      value: 1.176715
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680979103451732890, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2562532
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680979103451732890, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.24804194
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680979103451732890, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.017978648
+      objectReference: {fileID: 0}
     - target: {fileID: 3688789971437307912, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: swordDamage
       value: 10
@@ -891,9 +907,41 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: boxSize.x
+      value: 0.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: boxSize.y
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: playerMove
       value: 
       objectReference: {fileID: 325369406}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: boxOffset.x
+      value: -0.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: circleRadius
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: circleYOffset
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719529730878632815, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719529730878632815, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095477974515307052, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -467307283419413426, guid: 0ced5b8c44891934ab3d3a76360b0532, type: 3}
     - target: {fileID: 9095477974515307052, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: m_SortingLayer
       value: 4
