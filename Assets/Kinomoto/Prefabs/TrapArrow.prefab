@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb8ca345ab3b4149a09e49dd9d65695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrapArrow
-  trapPrefab: {fileID: 6704387512906414869, guid: 157e4d2857a337149887dd89467e6629, type: 3}
+  trapPrefab: {fileID: 6704387512906414869, guid: ea75d33288614564ca8fccc4c79cea9b, type: 3}
   destroyDelay: 0.001
 --- !u!58 &9005973196952699889
 CircleCollider2D:
