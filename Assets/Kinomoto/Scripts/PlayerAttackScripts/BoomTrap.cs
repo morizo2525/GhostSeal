@@ -24,16 +24,20 @@ public class BoomTrap : MonoBehaviour
 
     void Start()
     {
+        //Playerとの当たり判定を無くす
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>());
         // 設置後、少し待ってから起動状態にする（プレイヤーの誤爆防止）
         Invoke(nameof(ActivateTrap), activationDelay);
     }
 
     /// <summary>
-    /// 地雷を起動状態にする
+    /// 地雷を起動状態にして、プレイヤーとの当たり判定を復活する
     /// </summary>
     void ActivateTrap()
     {
         isActivated = true;
+        // プレイヤーとの当たり判定を復活
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), false);
         Debug.Log("地雷が起動しました");
     }
 
@@ -52,6 +56,12 @@ public class BoomTrap : MonoBehaviour
         if (((1 << other.gameObject.layer) & enemyLayer) != 0)
         {
             Debug.Log($"{other.gameObject.name} が地雷を踏みました！");
+            Explode();
+        }
+        // プレイヤーが触れた場合も爆発させる
+        else if (affectPlayer && other.CompareTag("Player"))
+        {
+            Debug.Log("プレイヤーが地雷を踏みました！");
             Explode();
         }
     }
