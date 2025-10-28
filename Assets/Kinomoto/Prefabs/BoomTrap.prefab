@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4216623423869708727}
   - component: {fileID: 5902081929667696310}
   - component: {fileID: 2564550829125486779}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: BoomTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,10 +111,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 5
+  knockbackForce: 30
   affectPlayer: 1
   explosionEffect: {fileID: 0}
-  activationDelay: 0.5
+  activationDelay: 1.2
 --- !u!61 &-4216623423869708727
 BoxCollider2D:
   m_ObjectHideFlags: 0
