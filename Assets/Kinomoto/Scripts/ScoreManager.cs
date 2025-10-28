@@ -1,37 +1,78 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-
-//EnemyHPManagerを参照して、敵の最大HPに基づいてスコアを計算・管理するスクリプト
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager Instance { get; private set; }
+
     [Header("敵撃破時のスコア設定")]
-    [SerializeField]
-    private EnemyHPManager enemyHPManager;　//EnemyHPManagerへの参照
-    private int score;
-    private int enemyMaxHealth;
-    private const int scorePerHealthPoint = 10; // HP1ポイントあたりのスコア
-    private const int scorePerEnemyPoint = 20; // 敵1体あたりの追加スコア
+    private int totalScore;
+    private const int scorePerHealthPoint = 10;
+    private const int scorePerEnemyPoint = 20;
+
+    [Header("スコアリセット設定")]
+    [Tooltip("このシーンに遷移した時にスコアをリセット")]
+    [SerializeField] private string gameSceneName = "GameScene"; // ゲームシーンの名前を設定
+
+    void Awake()
+    {
+        // シングルトンパターン + シーン間で永続化
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            // シーン遷移時のイベントを登録
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
-        if (enemyHPManager == null)
-        {
-            Debug.LogError("EnemyHPManager reference is not set in ScoreManager.");
-            return;
-        }
-
-        // 敵の最大HPを取得
-        enemyMaxHealth = enemyHPManager.GetMaxHealth();
-
-        // スコアを計算
-        CalculateScore();
-
-        // デバッグ用にスコアを表示
-        Debug.Log($"Calculated Score: {score}");
+        totalScore = 0;
+        Debug.Log($"Score initialized: {totalScore}");
     }
 
-    void CalculateScore()
+    void OnDestroy()
     {
-        score = (enemyMaxHealth * scorePerHealthPoint) + scorePerEnemyPoint;
+        // イベントの登録解除
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
+    // シーンが読み込まれた時に呼ばれる
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // ゲームシーンに遷移したらスコアをリセット
+        if (scene.name == gameSceneName)
+        {
+            ResetScore();
+        }
+    }
+
+    // 敵が倒された時に呼び出されるメソッド
+    public void OnEnemyDefeated(int enemyMaxHealth)
+    {
+        int earnedScore = (enemyMaxHealth * scorePerHealthPoint) + scorePerEnemyPoint;
+        totalScore += earnedScore;
+        Debug.Log($"Enemy defeated! Earned: {earnedScore}, Total Score: {totalScore}");
+    }
+
+    public int GetTotalScore()
+    {
+        return totalScore;
+    }
+
+    // ゲーム再開時などにスコアをリセット
+    public void ResetScore()
+    {
+        totalScore = 0;
+        Debug.Log("Score reset");
     }
 }

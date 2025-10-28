@@ -55,11 +55,19 @@ public class PlayerSwordAttack : MonoBehaviour
                 Debug.Log($"剣で敵を攻撃！ {swordDamage}ダメージ");
             }
 
+            // ノックバック適用
             Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
             if (enemyRb != null)
             {
                 Vector2 knockbackDir = (enemy.transform.position - transform.position).normalized;
                 enemyRb.AddForce(knockbackDir * knockbackForce, ForceMode2D.Impulse);
+
+                // 空中の敵の場合、移動を一時停止
+                AirEnemyMove airEnemy = enemy.GetComponent<AirEnemyMove>();
+                if (airEnemy != null)
+                {
+                    airEnemy.ApplyKnockback(0.3f); // 0.3秒間ノックバック状態
+                }
             }
         }
 
