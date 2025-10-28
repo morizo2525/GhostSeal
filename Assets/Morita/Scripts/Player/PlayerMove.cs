@@ -15,10 +15,14 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float dodgeCooldown = 1f; 　　　　// 回避クールダウン
     [SerializeField] private float dodgeInvincibleTime = 0.5f; // 回避の無敵時間
 
+    [Header("物理設定")]
+    [SerializeField] private float normalGravityScale = 1f; // 通常時の重力
+
     private float dodgeDuration; // 回避動作全体の時間
 
-    private Rigidbody2D rb; 
+    private Rigidbody2D         rb; 
     private AnimationController animController;
+    private PlayerAfterImage    playerAfterImage;
 
     private bool  isGrounded;         // 接地しているか
     private bool  wasGrounded;        // 前フレームで接地していたか
@@ -36,8 +40,9 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        rb             = GetComponent<Rigidbody2D>();
-        animController = GetComponent<AnimationController>();
+        rb               = GetComponent<Rigidbody2D>();
+        animController   = GetComponent<AnimationController>();
+        playerAfterImage = GetComponent<PlayerAfterImage>();
     }
 
     private void Update()
@@ -63,15 +68,38 @@ public class PlayerMove : MonoBehaviour
 
             // 無敵時間終了チェック
             if (dodgeTimer >= dodgeInvincibleTime)
-                isInvincible = false; // 無敵時間が終了したら無敵解除
+            {
+                isInvincible = false;              // 無敵時間が終了したら無敵解除
+                playerAfterImage.StopAfterImage(); // 残像生成停止
+            }
 
             // 回避動作終了チェック
             if (dodgeTimer >= dodgeDuration)
             {
-                isDodging    = false;  // 回避終了
-                dodgeTimer   = 0f; 　　// タイマーリセット
-                isInvincible = false;　// 確実に無敵解除
+                isDodging    = false;                 // 回避終了
+                dodgeTimer   = 0f; 　　               // タイマーリセット
+                isInvincible = false;                 // 念のため確実に解除
+                rb.gravityScale = normalGravityScale; // 重力を元に戻す
+                playerAfterImage.StopAfterImage();    // 念のため確実に停止
             }
+
+            // 回避中のジャンプ(二段ジャンプのみ)
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                if (enableDoubleJump && hasDoubleJump)
+                {
+                    animController.PlayerJumpAnim();
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, secondJumpForce);
+                    hasDoubleJump = false;
+
+                    // ジャンプで回避を中断
+                    isDodging       = false;
+                    isInvincible    = false;
+                    rb.gravityScale = normalGravityScale;
+                    playerAfterImage.StopAfterImage();
+                }
+            }
+
             return; // 回避中は通常操作を受け付けない
         }
 
@@ -84,6 +112,9 @@ public class PlayerMove : MonoBehaviour
             dodgeTimer         = 0f;                                  // タイマーリセット
             dodgeCooldownTimer = dodgeCooldown;                       // クールダウン開始
             isInvincible       = true;                                // 無敵状態開始
+            rb.gravityScale    = 0f;                                  // 重力を無効化
+            rb.linearVelocity  = new Vector2(rb.linearVelocity.x, 0f);// Y方向の速度もリセット
+            playerAfterImage.StartAfterImage();                       // 残像生成開始
             return;
         }
 
@@ -115,7 +146,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             animController.PlayerJumpAnim();
-
+            
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 1段目ジャンプ
