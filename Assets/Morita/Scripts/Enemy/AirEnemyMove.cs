@@ -10,7 +10,9 @@ public class AirEnemyMove : MonoBehaviour
 
     private Rigidbody2D rb;
     private Transform player;
-    private float waveTimer;  //揺れのタイマー
+    private float waveTimer;         //揺れのタイマー
+    private float initialScaleX;
+    private int   currentFacing = 1; // 1:右向き, -1:左向き
 
     // ノックバック制御用
     private bool isKnockedBack = false;
@@ -19,6 +21,8 @@ public class AirEnemyMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        initialScaleX = transform.localScale.x; // 初期スケール保存
+
         // 重力の影響を受けないように設定
         rb.gravityScale = 0f;
         // プレイヤーを検索
@@ -68,6 +72,21 @@ public class AirEnemyMove : MonoBehaviour
         Vector2 finalDirection = directionToPlayer + perpendicular * waveOffset;
         // プレイヤーに向かって揺れながら移動
         rb.linearVelocity = finalDirection.normalized * moveSpeed;
+
+        // 向きの調整
+        float horizontalDiff = player.position.x - transform.position.x;
+        if (Mathf.Abs(horizontalDiff) > 0.1f)
+        {
+            int desiredFacing = horizontalDiff > 0 ? 1 : -1;
+            if (desiredFacing != currentFacing) // 向きが変わった場合のみ更新
+            {
+                currentFacing = desiredFacing;
+                Vector3 scale = transform.localScale;
+                scale.x = Mathf.Abs(initialScaleX) * -currentFacing * Mathf.Sign(initialScaleX);
+                transform.localScale = scale;
+            }
+        }
+
     }
 
     // 外部から呼び出してノックバック状態にする

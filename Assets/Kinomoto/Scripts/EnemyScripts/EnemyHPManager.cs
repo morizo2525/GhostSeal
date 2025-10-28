@@ -23,7 +23,7 @@ public class EnemyHPManager : MonoBehaviour
     [Tooltip("空中エネミーの死亡アニメーション再生時間")]
     public float airDeathDuration = 1.0f;
 
-    private AirEnemyMove airEnemy;    // 空中エネミー用のコンポーネント
+    private AirEnemyMove airEnemy;       // 空中エネミー用のコンポーネント
     private GroundEnemyMove groundEnemy; // 地上エネミー用のコンポーネント
     private int enemyHealth;
     private int enemyMaxHealth;

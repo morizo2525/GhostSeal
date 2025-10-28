@@ -146,6 +146,11 @@ public class GroundEnemyMove : MonoBehaviour
         rb.linearVelocity = new Vector2(direction * horizontalSpeed, normalJumpForce);
         isNormalJumpActive = true;
 
+        // 向きをプレイヤー方向に合わせる
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * -direction;
+        transform.localScale = scale;
+
         if (animController != null)
         {
             animController.SetBool("IsGrounded", false);
@@ -163,6 +168,11 @@ public class GroundEnemyMove : MonoBehaviour
         // 大ジャンプ + 横方向の力
         rb.linearVelocity = new Vector2(direction * horizontalSpeed, bigJumpForce);
         isNormalJumpActive = false;
+
+        // 向きをプレイヤー方向に合わせる
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * -direction;
+        transform.localScale = scale;
 
         if (animController != null)
         {
