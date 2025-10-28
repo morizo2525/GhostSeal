@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9190673284403193808}
   - component: {fileID: 9095477974515307052}
-  - component: {fileID: 310867926258299654}
   - component: {fileID: 8048653876899340646}
   - component: {fileID: 3680979103451732890}
+  - component: {fileID: 310867926258299654}
   - component: {fileID: 1524913400768818106}
   - component: {fileID: 447197874315621327}
   - component: {fileID: 3688789971437307912}
@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 7239260901039228088}
   - component: {fileID: -647096392729975419}
   - component: {fileID: 7926576610856116391}
+  - component: {fileID: 5173727543055337984}
   - component: {fileID: -2010978858362202188}
   m_Layer: 8
   m_Name: Player
@@ -108,32 +109,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &310867926258299654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414360383626688829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3deee8c91a6a04189bf7ebe77e2c68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  moveSpeed: 6
-  jumpForce: 10
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  enableDoubleJump: 1
-  secondJumpForce: 9
-  dodgeDistance: 3
-  dodgeSpeed: 15
-  dodgeCooldown: 1
-  dodgeInvincibleTime: 0.5
-  groundCheck: {fileID: 7719529730878632815}
-  groundCheckRadius: 0.02
-  isInvincible: 0
 --- !u!50 &8048653876899340646
 Rigidbody2D:
   serializedVersion: 5
@@ -198,6 +173,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &310867926258299654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3deee8c91a6a04189bf7ebe77e2c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  moveSpeed: 6
+  jumpForce: 10
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  enableDoubleJump: 1
+  secondJumpForce: 9
+  dodgeDistance: 2
+  dodgeSpeed: 30
+  dodgeCooldown: 1
+  dodgeInvincibleTime: 0.5
+  normalGravityScale: 3
+  groundCheck: {fileID: 7719529730878632815}
+  groundCheckRadius: 0.02
+  isInvincible: 0
 --- !u!114 &1524913400768818106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,6 +413,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDethHandler
   playerHPManager: {fileID: -647096392729975419}
   gameOverSceneName: GameOverScene
+--- !u!114 &5173727543055337984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7877fdb423e671d43bea06df042b09ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAfterImage
+  spawnInterval: 0.01
+  fadeOutTime: 0.25
+  afterImageColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+  poolSize: 10
 --- !u!95 &-2010978858362202188
 Animator:
   serializedVersion: 7
