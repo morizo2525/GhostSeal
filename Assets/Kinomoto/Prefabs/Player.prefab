@@ -256,7 +256,7 @@ MonoBehaviour:
   attackEffect: {fileID: 0}
   swordDamage: 20
   knockbackForce: 5
-  attackCooldown: 0.5
+  attackCooldown: 0.25
 --- !u!114 &8808850952842657222
 MonoBehaviour:
   m_ObjectHideFlags: 0
