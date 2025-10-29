@@ -114,8 +114,6 @@ public class GroundEnemyMove : MonoBehaviour
             animController.SetBool("IsGrounded", true);
             animController.PlayAnimation("Idle");
         }
-
-        Debug.Log("Enemy landed");
     }
 
     void PerformJumpCheck()

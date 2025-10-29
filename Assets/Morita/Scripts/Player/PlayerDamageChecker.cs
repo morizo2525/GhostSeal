@@ -36,6 +36,9 @@ public class PlayerDamageChecker : MonoBehaviour
 
     private void Update()
     {
+        // プレイヤーが死亡していたら判定をやめる
+        if (playerHPManager.IsDead) return;
+
         // 無敵タイマーを減らす
         if (invincibleTimer > 0f) invincibleTimer -= Time.deltaTime;
 

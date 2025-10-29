@@ -6,7 +6,7 @@ public class PlayerHPManager : MonoBehaviour
     [SerializeField] private int maxHP = 5;
 
     private int currentHP;
-
+    private bool isDead = false; 　　　　// 死亡フラグ
     public delegate void OnPlayerDie();  // 死亡イベント
     public event OnPlayerDie PlayerDied; 
 
@@ -20,6 +20,8 @@ public class PlayerHPManager : MonoBehaviour
     /// </summary>
     public void TakeDamage(int damage)
     {
+        if (isDead) return;
+
         currentHP -= damage;
         currentHP = Mathf.Max(currentHP, 0);
 
@@ -33,13 +35,15 @@ public class PlayerHPManager : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("敗北");
+        if (isDead) return;　// 二重呼び出し防止
 
-        // TODO: ゲームオーバー処理など
+        isDead = true; // 死亡フラグON
+        Debug.Log("敗北");
 
         PlayerDied?.Invoke(); // プレイヤー死亡イベントを発生
     }
 
     public int GetCurrentHP() => currentHP;
     public int GetMaxHP() => maxHP;
+    public bool IsDead => isDead; // 外部参照用
 }

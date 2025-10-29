@@ -7,7 +7,7 @@ public class PlayerDethHandler : MonoBehaviour
 
     private GameObject          gameOverCanvas; // GameOver専用Canvas
     private AnimationController animController;
-
+    private MonoBehaviour[] PlayerMove;
     private void Awake()
     {
         if (playerHPManager == null)
@@ -29,6 +29,9 @@ public class PlayerDethHandler : MonoBehaviour
             }
         }
 
+        // プレイヤーの操作スクリプトを取得
+        PlayerMove = GetComponents<MonoBehaviour>();
+
         // GameOver Canvasを初期状態で非表示
         if (gameOverCanvas != null)
         {
@@ -48,11 +51,14 @@ public class PlayerDethHandler : MonoBehaviour
 
     private void OnPlayerDie()
     {
+        // プレイヤーの操作を無効化
+        DisablePlayerControl();
+
+        // 判定無効化のためレイヤーを切り替える
+        gameObject.layer = LayerMask.NameToLayer("DeadPlayer");
+
         // 死亡アニメーション再生
         animController.PlayerDeathAnim();
-
-        // SceneTransitionでシーン遷移
-        SceneTransition.LoadScene("GameOverScene");
     }
 
     // ゲームオーバー時のスプライト表示(アニメーションイベントから呼び出される)
@@ -68,5 +74,17 @@ public class PlayerDethHandler : MonoBehaviour
     public void LoadGameOverScene()
     {
         SceneTransition.LoadScene(gameOverSceneName);
+    }
+
+    // プレイヤーの操作を無効化
+    private void DisablePlayerControl()
+    {
+        // 方法1: 特定のコンポーネントを無効化（推奨）
+        // プロジェクトの操作スクリプト名に合わせて変更してください
+        var playerController = GetComponent<PlayerMove>();
+        if (playerController != null)
+        {
+            playerController.enabled = false;
+        }
     }
 }
