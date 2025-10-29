@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: 973cc131966167247903e8e2fc406770
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3040743751216023842
+    second: AirEnemy_Death_0
+  - first:
+      213: -7480495639272409240
+    second: AirEnemy_Death_1
+  - first:
+      213: 3698648241314405405
+    second: AirEnemy_Death_2
+  - first:
+      213: 6279110741162881021
+    second: AirEnemy_Death_3
+  - first:
+      213: 6091513807016662188
+    second: AirEnemy_Death_4
+  - first:
+      213: 6265346352243688743
+    second: AirEnemy_Death_5
+  - first:
+      213: -9138074472399441326
+    second: AirEnemy_Death_6
+  - first:
+      213: 6205656543011877121
+    second: AirEnemy_Death_7
+  - first:
+      213: -4981715471100567689
+    second: AirEnemy_Death_8
+  - first:
+      213: 6035361610882076642
+    second: AirEnemy_Death_9
+  - first:
+      213: 3123237615940994716
+    second: AirEnemy_Death_10
+  - first:
+      213: -4241829623233021999
+    second: AirEnemy_Death_11
+  - first:
+      213: -60394544276051447
+    second: AirEnemy_Death_12
+  - first:
+      213: -5341506842798522350
+    second: AirEnemy_Death_13
+  - first:
+      213: 8948816043300500586
+    second: AirEnemy_Death_14
+  - first:
+      213: 1568051630642938120
+    second: AirEnemy_Death_15
+  - first:
+      213: -7126221134684970933
+    second: AirEnemy_Death_16
+  - first:
+      213: 2509558585041222748
+    second: AirEnemy_Death_17
+  - first:
+      213: -9022713405704835078
+    second: AirEnemy_Death_18
+  - first:
+      213: 4278024821881130867
+    second: AirEnemy_Death_19
+  - first:
+      213: 730796379750169428
+    second: AirEnemy_Death_20
+  - first:
+      213: 6464445822844051975
+    second: AirEnemy_Death_21
+  - first:
+      213: -228273076395758993
+    second: AirEnemy_Death_22
+  - first:
+      213: 7086980238937696620
+    second: AirEnemy_Death_23
+  - first:
+      213: -4547953449353666112
+    second: AirEnemy_Death_24
+  - first:
+      213: -5490663615982536923
+    second: AirEnemy_Death_25
+  - first:
+      213: 7021052541297447925
+    second: AirEnemy_Death_26
+  - first:
+      213: 1317778185035957520
+    second: AirEnemy_Death_27
+  - first:
+      213: 1280670572756565016
+    second: AirEnemy_Death_28
+  - first:
+      213: -5119959886036618204
+    second: AirEnemy_Death_29
+  - first:
+      213: 378887853289193381
+    second: AirEnemy_Death_30
+  - first:
+      213: 2510293937461754878
+    second: AirEnemy_Death_31
+  - first:
+      213: 1926306242127199982
+    second: AirEnemy_Death_32
+  - first:
+      213: 4510970819071978583
+    second: AirEnemy_Death_33
+  - first:
+      213: -3033251175056455492
+    second: AirEnemy_Death_34
+  - first:
+      213: 8086093281039671327
+    second: AirEnemy_Death_35
+  - first:
+      213: -3611231279152074395
+    second: AirEnemy_Death_36
+  - first:
+      213: 5239338236107376824
+    second: AirEnemy_Death_37
+  - first:
+      213: -1815970056382207184
+    second: AirEnemy_Death_38
+  - first:
+      213: 6463779475187010215
+    second: AirEnemy_Death_39
+  - first:
+      213: -700031612067410683
+    second: AirEnemy_Death_40
+  - first:
+      213: 8397082738026275035
+    second: AirEnemy_Death_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AirEnemy_Death_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 476
+        width: 387
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c1bacaafc345330800000000000000
+      internalID: 3698648241314405405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_9
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 475
+        width: 382
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efc7ab8869e1c350800000000000000
+      internalID: 6035361610882076642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_10
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 405
+        width: 277
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c960d476018f75b20800000000000000
+      internalID: 3123237615940994716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 218
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a643e3d47c4903c70800000000000000
+      internalID: 8948816043300500586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_20
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 191
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b762a7f6f442a00800000000000000
+      internalID: 730796379750169428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_21
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 0
+        width: 183
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702a06cc93356b950800000000000000
+      internalID: 6464445822844051975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_22
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 207
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a25a1b8d205dcf0800000000000000
+      internalID: -228273076395758993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_23
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 207
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6928189af20a5260800000000000000
+      internalID: 7086980238937696620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirEnemy_Death_24
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 0
+        width: 237
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c123441f6c62e0c0800000000000000
+      internalID: -4547953449353666112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4e0ae201f32f7724b9e60a75041b6ff1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AirEnemy_Death_0: 3040743751216023842
+      AirEnemy_Death_1: -7480495639272409240
+      AirEnemy_Death_10: 3123237615940994716
+      AirEnemy_Death_11: -4241829623233021999
+      AirEnemy_Death_12: -60394544276051447
+      AirEnemy_Death_13: -5341506842798522350
+      AirEnemy_Death_14: 8948816043300500586
+      AirEnemy_Death_15: 1568051630642938120
+      AirEnemy_Death_16: -7126221134684970933
+      AirEnemy_Death_17: 2509558585041222748
+      AirEnemy_Death_18: -9022713405704835078
+      AirEnemy_Death_19: 4278024821881130867
+      AirEnemy_Death_2: 3698648241314405405
+      AirEnemy_Death_20: 730796379750169428
+      AirEnemy_Death_21: 6464445822844051975
+      AirEnemy_Death_22: -228273076395758993
+      AirEnemy_Death_23: 7086980238937696620
+      AirEnemy_Death_24: -4547953449353666112
+      AirEnemy_Death_25: -5490663615982536923
+      AirEnemy_Death_26: 7021052541297447925
+      AirEnemy_Death_27: 1317778185035957520
+      AirEnemy_Death_28: 1280670572756565016
+      AirEnemy_Death_29: -5119959886036618204
+      AirEnemy_Death_3: 6279110741162881021
+      AirEnemy_Death_30: 378887853289193381
+      AirEnemy_Death_31: 2510293937461754878
+      AirEnemy_Death_32: 1926306242127199982
+      AirEnemy_Death_33: 4510970819071978583
+      AirEnemy_Death_34: -3033251175056455492
+      AirEnemy_Death_35: 8086093281039671327
+      AirEnemy_Death_36: -3611231279152074395
+      AirEnemy_Death_37: 5239338236107376824
+      AirEnemy_Death_38: -1815970056382207184
+      AirEnemy_Death_39: 6463779475187010215
+      AirEnemy_Death_4: 6091513807016662188
+      AirEnemy_Death_40: -700031612067410683
+      AirEnemy_Death_41: 8397082738026275035
+      AirEnemy_Death_5: 6265346352243688743
+      AirEnemy_Death_6: -9138074472399441326
+      AirEnemy_Death_7: 6205656543011877121
+      AirEnemy_Death_8: -4981715471100567689
+      AirEnemy_Death_9: 6035361610882076642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

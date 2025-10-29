@@ -98,13 +98,27 @@ public class AnimationController : MonoBehaviour
         PlayAnimation("NormalJump");
     }
 
+    // 地上エネミービッグジャンプ
     public void GroundEnemyBigJumpAnim()
     {
         PlayAnimation("BigJump");
     }
 
+    // 地上エネミー死亡
     public void GroundEnemyDeathAnim()
     {
         PlayAnimation("Death");
+    }
+
+    //空中エネミー死亡
+    public void AirEnemyDeathAnim()
+    {
+        PlayAnimation("Death");
+    }
+
+    // 地雷爆発
+    public void BoomTrapExplosionAnim()
+    {
+        PlayAnimation("Explosion");
     }
 }

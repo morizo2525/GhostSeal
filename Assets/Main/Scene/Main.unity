@@ -306,20 +306,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FogManager
   fogLayers:
   - fogTransform: {fileID: 993874688}
-    minSpeed: 4
-    maxSpeed: 6
+    minSpeed: 1
+    maxSpeed: 2
     speed: 0
   - fogTransform: {fileID: 551378250}
-    minSpeed: 4
-    maxSpeed: 6
+    minSpeed: 1
+    maxSpeed: 2
     speed: 0
   - fogTransform: {fileID: 448373454}
-    minSpeed: 6
-    maxSpeed: 8
+    minSpeed: 1
+    maxSpeed: 2
     speed: 0
   - fogTransform: {fileID: 1178279710}
-    minSpeed: 8
-    maxSpeed: 10
+    minSpeed: 1
+    maxSpeed: 2
     speed: 0
   resetOffset: 8.5
 --- !u!114 &325369406 stripped
