@@ -312,8 +312,6 @@ MonoBehaviour:
   arrowPrefab: {fileID: 1155395192224245379, guid: 945f696d289a4d44e8f14535382e215c, type: 3}
   shootPoint: {fileID: 2515248423476360997}
   shootPower: 10
-  minAngle: 15
-  maxAngle: 75
 --- !u!114 &6145268245489957313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDethHandler
   playerHPManager: {fileID: -647096392729975419}
+  gameOverCanvas: {fileID: 0}
   gameOverSceneName: GameOverScene
 --- !u!114 &5173727543055337984
 MonoBehaviour:

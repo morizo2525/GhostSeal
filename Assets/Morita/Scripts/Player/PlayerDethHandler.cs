@@ -3,9 +3,9 @@ using UnityEngine;
 public class PlayerDethHandler : MonoBehaviour
 {
     [SerializeField] private PlayerHPManager playerHPManager;
-    [SerializeField] private GameObject gameOverCanvas; // GameOver専用Canvas
     [SerializeField] private string gameOverSceneName = "GameOverScene";
 
+    private GameObject          gameOverCanvas; // GameOver専用Canvas
     private AnimationController animController;
 
     private void Awake()
@@ -18,6 +18,15 @@ public class PlayerDethHandler : MonoBehaviour
         if (animController == null)
         {
             animController = GetComponent<AnimationController>();
+        }
+
+        if (gameOverCanvas == null)
+        {
+            gameOverCanvas = GameObject.Find("GameOverCanvas");
+            if (gameOverCanvas == null)
+            {
+                Debug.LogError("GameOver_Canvasが見つかりません。シーンに配置してください。");
+            }
         }
 
         // GameOver Canvasを初期状態で非表示
