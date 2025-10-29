@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 7926576610856116391}
   - component: {fileID: 5173727543055337984}
   - component: {fileID: -2010978858362202188}
+  - component: {fileID: -7858256055047165313}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -259,6 +260,9 @@ MonoBehaviour:
   swordDamage: 20
   knockbackForce: 5
   attackCooldown: 0.25
+  swordAnimPrefab: {fileID: 0}
+  swordAnimDuration: 0.5
+  swordOffset: {x: 0.5, y: 0}
 --- !u!114 &8808850952842657222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDethHandler
   playerHPManager: {fileID: -647096392729975419}
-  gameOverCanvas: {fileID: 0}
   gameOverSceneName: GameOverScene
 --- !u!114 &5173727543055337984
 MonoBehaviour:
@@ -450,6 +453,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7858256055047165313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423d2e116b7d59a4787dec21760d0295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBlink
+  blinkInterval: 0.1
 --- !u!1 &3913486402502745693
 GameObject:
   m_ObjectHideFlags: 0
