@@ -176,4 +176,6 @@ MonoBehaviour:
     m_Bits: 128
   knockbackForce: 15
   affectPlayer: 1
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 3947112281999426251, guid: 825672d65f3e6d64a8bbece7eec9ccc1, type: 3}
+  explosionSE: {fileID: 8300000, guid: d20d1ce0e630a114b81c427cc407096c, type: 3}
+  seVolume: 1

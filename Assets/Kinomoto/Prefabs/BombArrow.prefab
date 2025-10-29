@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1900070497
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: affb9623060ba1f459042f9b5f54e292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoomArrow
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 3947112281999426251, guid: 825672d65f3e6d64a8bbece7eec9ccc1, type: 3}
   explosionRadius: 4
   explosionDamage: 40
   enemyLayer:
@@ -176,3 +176,5 @@ MonoBehaviour:
     m_Bits: 128
   knockbackForce: 5
   affectPlayer: 1
+  explosionSE: {fileID: 8300000, guid: d20d1ce0e630a114b81c427cc407096c, type: 3}
+  seVolume: 1

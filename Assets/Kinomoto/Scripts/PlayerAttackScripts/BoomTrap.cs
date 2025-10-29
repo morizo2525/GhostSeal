@@ -21,6 +21,11 @@ public class BoomTrap : MonoBehaviour
     [Header("起動設定")]
     public float activationDelay = 0.5f;    // 設置後の起動までの遅延時間（誤爆防止）
 
+    [Header("サウンド設定")]
+    public AudioClip explosionSE;           // 爆発SE
+    [Range(0f, 1f)]
+    public float seVolume = 1.0f;           // SEの音量
+
     private bool isActivated = false;       // 地雷が起動状態か
     private bool hasExploded = false;       // 既に爆発したか（重複防止）
 
@@ -78,6 +83,12 @@ public class BoomTrap : MonoBehaviour
     {
         if (hasExploded) return;
         hasExploded = true;
+
+        // 爆発SEを再生
+        if (explosionSE != null)
+        {
+            AudioSource.PlayClipAtPoint(explosionSE, transform.position, seVolume);
+        }
 
         // 爆発エフェクトを生成（設定されている場合）
         if (explosionEffect != null)

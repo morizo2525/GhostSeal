@@ -33,12 +33,27 @@ public class WeaponInventory : MonoBehaviour
     [Header("現在のコンボ（読み取り専用）")]
     [SerializeField] private WeponComboType currentCombo = WeponComboType.None; //現在の武器コンボ
 
+    [Header("サウンド設定")]
+    [SerializeField] private AudioClip comboBombBowSE;   // 爆弾+弓コンボSE
+    [SerializeField] private AudioClip comboTrapBowSE;   // 罠+弓コンボSE
+    [SerializeField] private AudioClip comboBombTrapSE;  // 爆弾+罠コンボSE
+    [Range(0f, 1f)]
+    [SerializeField] private float seVolume = 1.0f;      // SEの音量
+    private AudioSource audioSource;
+
     // Inspector上での変更を検知するための変数
     private WeaponType previousSlot1 = WeaponType.None;
     private WeaponType previousSlot2 = WeaponType.None;
 
     void Start()
     {
+        // AudioSourceコンポーネントを取得または追加
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         UpdateWeaponCombo(); //初期化時に武器コンボを更新
         previousSlot1 = weaponSlot1;
         previousSlot2 = weaponSlot2;
@@ -229,6 +244,8 @@ public class WeaponInventory : MonoBehaviour
     //両方のスロットが埋まっている場合の組み合わせ効果
     private void UpdateWeaponCombo()
     {
+        WeponComboType previousCombo = currentCombo;
+
         if (weaponSlot1 != WeaponType.None && weaponSlot2 != WeaponType.None)
         {
             if ((weaponSlot1 == WeaponType.Bomb && weaponSlot2 == WeaponType.Bow) ||
@@ -236,18 +253,36 @@ public class WeaponInventory : MonoBehaviour
             {
                 currentCombo = WeponComboType.BombBow;
                 Debug.Log("爆弾＋弓のコンボ効果:爆弾矢が発動！");
+
+                // 新しくコンボが成立した場合にSEを再生
+                if (previousCombo != currentCombo)
+                {
+                    PlayComboSE(comboBombBowSE);
+                }
             }
             else if ((weaponSlot1 == WeaponType.Trap && weaponSlot2 == WeaponType.Bow) ||
                      (weaponSlot1 == WeaponType.Bow && weaponSlot2 == WeaponType.Trap))
             {
                 currentCombo = WeponComboType.TrapBow;
                 Debug.Log("罠＋弓のコンボ効果:トラップアローが発動！");
+
+                // 新しくコンボが成立した場合にSEを再生
+                if (previousCombo != currentCombo)
+                {
+                    PlayComboSE(comboTrapBowSE);
+                }
             }
             else if ((weaponSlot1 == WeaponType.Bomb && weaponSlot2 == WeaponType.Trap) ||
                      (weaponSlot1 == WeaponType.Trap && weaponSlot2 == WeaponType.Bomb))
             {
                 currentCombo = WeponComboType.BombTrap;
                 Debug.Log("爆弾＋罠のコンボ効果:地雷が発動！");
+
+                // 新しくコンボが成立した場合にSEを再生
+                if (previousCombo != currentCombo)
+                {
+                    PlayComboSE(comboBombTrapSE);
+                }
             }
             else
             {
@@ -257,6 +292,15 @@ public class WeaponInventory : MonoBehaviour
         else
         {
             currentCombo = WeponComboType.None;
+        }
+    }
+
+    // コンボ成立SEを再生
+    private void PlayComboSE(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, seVolume);
         }
     }
 

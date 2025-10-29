@@ -48,5 +48,5 @@ MonoBehaviour:
   EmitterScale: 0
   TimeScale: 0
   effectAsset: {fileID: 11400000, guid: 92b2b612e93d9f5478a450a68a056cf0, type: 2}
-  playOnStart: 0
+  playOnStart: 1
   isLooping: 0

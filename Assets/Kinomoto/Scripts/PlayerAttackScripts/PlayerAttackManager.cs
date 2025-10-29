@@ -19,8 +19,26 @@ public class PlayerAttackManager : MonoBehaviour
     [Header("武器インベントリのスクリプト")]
     public WeaponInventory weaponInventory;
 
+    [Header("攻撃サウンド設定")]
+    public AudioClip bowShootSE;           // 通常の弓矢発射SE
+    public AudioClip bombThrowSE;          // 爆弾投擲SE
+    public AudioClip trapCreateSE;         // 罠設置SE
+    public AudioClip boomBowShootSE;       // 爆弾矢発射SE
+    public AudioClip trapBowShootSE;       // トラップ矢発射SE
+    public AudioClip mineTrapCreateSE;     // 地雷設置SE
+    [Range(0f, 1f)]
+    public float seVolume = 1.0f;          // SEの音量
+    private AudioSource audioSource;
+
     private void Start()
     {
+        // AudioSourceコンポーネントを取得または追加
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         //WeaponInventoryスクリプトの参照を取得
         if (weaponInventory == null)
         {
@@ -57,7 +75,7 @@ public class PlayerAttackManager : MonoBehaviour
         {
             if (swordAttack != null)
             {
-                swordAttack.SwordAttack(); //剣攻撃メソッドを呼び出す
+                swordAttack.SwordAttack(); //剣攻撃メソッドを呼び出す（剣のSEは剣攻撃スクリプト内で再生）
             }
         }
 
@@ -97,6 +115,9 @@ public class PlayerAttackManager : MonoBehaviour
                 //爆弾＋弓のコンボ効果: 爆弾矢を発射
                 if (boomBowAttack != null && weaponInventory.UseComboWeapon())
                 {
+                    // 爆弾矢SE再生
+                    PlaySE(boomBowShootSE);
+
                     boomBowAttack.ShootBoomArrow(); //爆弾矢を発射
                     Debug.Log("爆弾矢を発射しました！");
                 }
@@ -106,6 +127,9 @@ public class PlayerAttackManager : MonoBehaviour
                 //罠+弓：トラップアロー
                 if (trapBowAttack != null && weaponInventory.UseComboWeapon())
                 {
+                    // トラップ矢SE再生
+                    PlaySE(trapBowShootSE);
+
                     trapBowAttack.BowShootTrapArrow(); //トラップアローを発射
                     Debug.Log("トラップアローを発射しました！");
                 }
@@ -115,6 +139,9 @@ public class PlayerAttackManager : MonoBehaviour
                 //爆弾 + 罠：地雷
                 if (trapCreator != null && weaponInventory.UseComboWeapon())
                 {
+                    // 地雷設置SE再生
+                    PlaySE(mineTrapCreateSE);
+
                     trapCreator.CreateMineTrap();
                     Debug.Log("地雷トラップを設置しました！");
                 }
@@ -130,6 +157,9 @@ public class PlayerAttackManager : MonoBehaviour
         {
             if (bowAttack != null && weaponInventory.UseWeapon(WeaponInventory.WeaponType.Bow))
             {
+                // 弓矢SE再生
+                PlaySE(bowShootSE);
+
                 bowAttack.BowShoot(); //通常の矢を発射
                 Debug.Log("通常の矢を発射しました");
             }
@@ -138,6 +168,9 @@ public class PlayerAttackManager : MonoBehaviour
         {
             if (bombAttack != null && weaponInventory.UseWeapon(WeaponInventory.WeaponType.Bomb))
             {
+                // 爆弾投擲SE再生
+                PlaySE(bombThrowSE);
+
                 bombAttack.ThrowBomb(); //爆弾を単体で投げる
                 Debug.Log("爆弾を投擲しました");
             }
@@ -146,12 +179,24 @@ public class PlayerAttackManager : MonoBehaviour
         {
             if (trapCreator != null && weaponInventory.UseWeapon(WeaponInventory.WeaponType.Trap))
             {
+                // 罠設置SE再生
+                PlaySE(trapCreateSE);
+
                 trapCreator.CreateTrap(); //罠を設置
             }
         }
         else
         {
             Debug.Log("使用可能な武器がありません");
+        }
+    }
+
+    // SEを再生するヘルパーメソッド
+    private void PlaySE(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, seVolume);
         }
     }
 }

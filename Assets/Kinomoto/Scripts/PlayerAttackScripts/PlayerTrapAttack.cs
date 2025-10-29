@@ -12,6 +12,12 @@ public class PlayerTrapAttack : MonoBehaviour
     [SerializeField] private string enemyTag = "Enemy";          // 敵のタグ
     [SerializeField] private Collider2D trapCollider;            // トラップのコライダー
 
+    [Header("サウンド設定")]
+    [SerializeField] private AudioClip trapActivateSE;           // トラップ作動時のSE
+    [Range(0f, 1f)]
+    [SerializeField] private float seVolume = 1.0f;              // SEの音量
+    private AudioSource audioSource;
+
     private float elapsedTime = 0f;
     private bool hasTriggered = false;                           // 既に敵を捕捉したか
     private GameObject capturedEnemy;                            // 現在捕捉中の敵
@@ -19,6 +25,13 @@ public class PlayerTrapAttack : MonoBehaviour
 
     private void Start()
     {
+        // AudioSourceコンポーネントを取得または追加
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         if (trapCollider == null)
             trapCollider = GetComponent<Collider2D>();
     }
@@ -56,6 +69,11 @@ public class PlayerTrapAttack : MonoBehaviour
         capturedEnemy = enemy;
         capturedAirEnemy = enemy;
 
+        // トラップ作動SEを再生
+        if (trapActivateSE != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(trapActivateSE, seVolume);
+        }
 
         // 敵のRigidbody2Dを取得して動きを止める
         Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
