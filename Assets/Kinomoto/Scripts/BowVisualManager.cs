@@ -1,0 +1,220 @@
+using UnityEngine;
+
+public class BowVisualManager : MonoBehaviour
+{
+    [Header("弓オブジェクト参照")]
+    [SerializeField] private GameObject normalBowObject;    // 通常の弓オブジェクト
+    [SerializeField] private GameObject boomBowObject;      // 爆弾矢用の弓オブジェクト
+    [SerializeField] private GameObject trapBowObject;      // トラップ矢用の弓オブジェクト
+
+    [Header("描画設定")]
+    [SerializeField] private float bowDistance = 0.5f;      // プレイヤーからの距離
+
+    [Header("参照スクリプト")]
+    [SerializeField] private PlayerAttackManager attackManager;     // 武器攻撃管理スクリプト
+    [SerializeField] private WeaponInventory weaponInventory;       // 武器インベントリ
+
+    private Camera mainCamera;
+    private GameObject currentBowObject;    // 現在表示中の弓オブジェクト
+
+    private void Start()
+    {
+        mainCamera = Camera.main;
+
+        // 参照の自動取得
+        if (attackManager == null)
+        {
+            attackManager = GetComponent<PlayerAttackManager>();
+            if (attackManager == null)
+            {
+                Debug.LogError("PlayerAttackManagerが見つかりません。");
+            }
+        }
+
+        if (weaponInventory == null)
+        {
+            weaponInventory = GetComponent<WeaponInventory>();
+            if (weaponInventory == null)
+            {
+                Debug.LogError("WeaponInventoryが見つかりません。");
+            }
+        }
+
+        // 弓オブジェクトの初期設定
+        InitializeBowObjects();
+    }
+
+    private void Update()
+    {
+        // どの弓を表示すべきか判定
+        UpdateBowVisibility();
+
+        // 表示中の弓があれば、マウス位置に追従
+        if (currentBowObject != null && currentBowObject.activeSelf)
+        {
+            UpdateBowRotation();
+        }
+    }
+
+    /// <summary>
+    /// 弓オブジェクトの初期設定
+    /// </summary>
+    private void InitializeBowObjects()
+    {
+        // 通常の弓オブジェクトが設定されているか確認
+        if (normalBowObject == null)
+        {
+            Debug.LogWarning("通常の弓オブジェクトが設定されていません。");
+        }
+        else
+        {
+            normalBowObject.SetActive(false);
+            // 初期スケールを設定（反転を解除）
+            ResetBowScale(normalBowObject);
+        }
+
+        // 爆弾矢の弓オブジェクトが設定されているか確認
+        if (boomBowObject == null)
+        {
+            Debug.LogWarning("爆弾矢用の弓オブジェクトが設定されていません。");
+        }
+        else
+        {
+            boomBowObject.SetActive(false);
+            // 初期スケールを設定（反転を解除）
+            ResetBowScale(boomBowObject);
+        }
+
+        // トラップ矢の弓オブジェクトが設定されているか確認
+        if (trapBowObject == null)
+        {
+            Debug.LogWarning("トラップ矢用の弓オブジェクトが設定されていません。");
+        }
+        else
+        {
+            trapBowObject.SetActive(false);
+            // 初期スケールを設定（反転を解除）
+            ResetBowScale(trapBowObject);
+        }
+    }
+
+    /// <summary>
+    /// 弓のスケールをリセット（親の影響をキャンセル＋反転）
+    /// </summary>
+    private void ResetBowScale(GameObject bowObj)
+    {
+        if (bowObj == null) return;
+
+        Vector3 parentScale = transform.lossyScale;
+        bowObj.transform.localScale = new Vector3(
+            1f / Mathf.Abs(parentScale.x),
+            1f / Mathf.Abs(parentScale.y),
+            1f / Mathf.Abs(parentScale.z)
+        );
+    }
+
+    /// <summary>
+    /// 弓の表示状態を更新
+    /// </summary>
+    private void UpdateBowVisibility()
+    {
+        if (weaponInventory == null) return;
+
+        GameObject targetBow = null;
+
+        // 爆弾矢コンボが使える場合
+        if (weaponInventory.GetCurrentCombo() == WeaponInventory.WeponComboType.BombBow)
+        {
+            targetBow = boomBowObject;
+        }
+        // トラップ矢コンボが使える場合
+        else if (weaponInventory.GetCurrentCombo() == WeaponInventory.WeponComboType.TrapBow)
+        {
+            targetBow = trapBowObject;
+        }
+        // 通常の弓を持っている場合
+        else if (weaponInventory.HasWeapon(WeaponInventory.WeaponType.Bow) &&
+                 weaponInventory.GetCurrentCombo() == WeaponInventory.WeponComboType.None)
+        {
+            targetBow = normalBowObject;
+        }
+
+        // 弓の表示切り替え
+        if (targetBow != currentBowObject)
+        {
+            // 現在の弓を非表示
+            if (currentBowObject != null)
+            {
+                currentBowObject.SetActive(false);
+            }
+
+            // 新しい弓を表示
+            currentBowObject = targetBow;
+            if (currentBowObject != null)
+            {
+                currentBowObject.SetActive(true);
+            }
+        }
+        else if (targetBow == null && currentBowObject != null)
+        {
+            // 弓を表示する必要がない場合は非表示
+            currentBowObject.SetActive(false);
+            currentBowObject = null;
+        }
+    }
+
+    /// <summary>
+    /// マウス位置に応じて弓の回転を更新
+    /// </summary>
+    private void UpdateBowRotation()
+    {
+        if (currentBowObject == null || mainCamera == null) return;
+
+        // マウスのワールド座標を取得
+        Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f;
+
+        // プレイヤーからマウスへの方向ベクトル
+        Vector2 direction = (mousePos - transform.position).normalized;
+
+        // 角度を計算（度数法）
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // 弓の位置を更新（マウス方向に配置）
+        Vector3 bowPosition = transform.position + (Vector3)(direction * bowDistance);
+        currentBowObject.transform.position = bowPosition;
+
+        // 親オブジェクト（プレイヤー）のスケールの影響をキャンセル
+        Vector3 parentScale = transform.localScale;
+        currentBowObject.transform.localScale = new Vector3(
+            1f / parentScale.x,  // 符号も含めて逆数を取る
+            1f / Mathf.Abs(parentScale.y),
+            1f / Mathf.Abs(parentScale.z)
+        );
+
+        // 弓の回転を更新
+        currentBowObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+
+        // 左向きの場合は弓を反転
+        SpriteRenderer bowRenderer = currentBowObject.GetComponent<SpriteRenderer>();
+        if (bowRenderer != null)
+        {
+            if (direction.x < 0)
+            {
+                bowRenderer.flipY = true;
+            }
+            else
+            {
+                bowRenderer.flipY = false;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 弓の距離を設定（外部から変更可能）
+    /// </summary>
+    public void SetBowDistance(float distance)
+    {
+        bowDistance = distance;
+    }
+}
