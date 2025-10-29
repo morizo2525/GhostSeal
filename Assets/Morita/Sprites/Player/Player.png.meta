@@ -1,0 +1,657 @@
+fileFormatVersion: 2
+guid: b0b4c8918bf6ec143a0ea8f5a8a940f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6940118517422896251
+    second: Ghost_Seal_die___0
+  - first:
+      213: -197001642186355247
+    second: Ghost_Seal_die___1
+  - first:
+      213: 436039613251204606
+    second: Ghost_Seal_die___2
+  - first:
+      213: -3117521910249867211
+    second: Ghost_Seal_die___3
+  - first:
+      213: -98951966624462458
+    second: Ghost_Seal_die___4
+  - first:
+      213: -8179929406270337499
+    second: Ghost_Seal_die___5
+  - first:
+      213: -9127826861944737549
+    second: Ghost_Seal_die___6
+  - first:
+      213: 86546515385072027
+    second: Ghost_Seal_die___7
+  - first:
+      213: -6358323824079041282
+    second: Ghost_Seal_die___8
+  - first:
+      213: -8719188746880107973
+    second: Ghost_Seal_die___9
+  - first:
+      213: -2350219871549854131
+    second: Ghost_Seal_die___10
+  - first:
+      213: 1945210726666220190
+    second: Ghost_Seal_die___11
+  - first:
+      213: -3491621234502551824
+    second: Ghost_Seal_die___12
+  - first:
+      213: -7306966522443511670
+    second: Ghost_Seal_die___13
+  - first:
+      213: 9012520369983736850
+    second: Ghost_Seal_die___14
+  - first:
+      213: 6536831154720181964
+    second: Ghost_Seal_die___15
+  - first:
+      213: -8635733653052030946
+    second: Ghost_Seal_die___16
+  - first:
+      213: 413035480788790738
+    second: Ghost_Seal_die___17
+  - first:
+      213: -6932531094066193864
+    second: Ghost_Seal_die___18
+  - first:
+      213: -6835014452083108040
+    second: Ghost_Seal_die___19
+  - first:
+      213: -2492089415565680344
+    second: Ghost_Seal_die___20
+  - first:
+      213: -253165141023928227
+    second: Ghost_Seal_die___21
+  - first:
+      213: -864541731386406338
+    second: Ghost_Seal_die___22
+  - first:
+      213: -8378633990050241375
+    second: Ghost_Seal_die___23
+  - first:
+      213: -4616729038747396904
+    second: Ghost_Seal_die___24
+  - first:
+      213: -1741782207094896662
+    second: Ghost_Seal_die___25
+  - first:
+      213: -1392630621874607454
+    second: Ghost_Seal_die___26
+  - first:
+      213: -8802068952895764294
+    second: Ghost_Seal_die___27
+  - first:
+      213: 8876325434721899510
+    second: Ghost_Seal_die___28
+  - first:
+      213: 1347540974294295396
+    second: Ghost_Seal_die___29
+  - first:
+      213: -3030917829138144012
+    second: Ghost_Seal_die___30
+  - first:
+      213: -8993349570313361029
+    second: Ghost_Seal_die___31
+  - first:
+      213: -9095858322526135674
+    second: Ghost_Seal_die___32
+  - first:
+      213: -5370402755982938846
+    second: Ghost_Seal_die___33
+  - first:
+      213: -156881403236430749
+    second: Ghost_Seal_die___34
+  - first:
+      213: 1875346115323671510
+    second: Ghost_Seal_die___35
+  - first:
+      213: 5065681314616683101
+    second: Ghost_Seal_die___36
+  - first:
+      213: -7040273493689623583
+    second: Ghost_Seal_die___37
+  - first:
+      213: 254916011407516680
+    second: Ghost_Seal_die___38
+  - first:
+      213: 888065076777646505
+    second: Ghost_Seal_die___39
+  - first:
+      213: 2917382455622590692
+    second: Ghost_Seal_die___40
+  - first:
+      213: 8004815165359601071
+    second: Ghost_Seal_die___41
+  - first:
+      213: 4667057052204542913
+    second: Ghost_Seal_die___42
+  - first:
+      213: 9104994134501231115
+    second: Ghost_Seal_die___43
+  - first:
+      213: 4570240982319538110
+    second: Ghost_Seal_die___44
+  - first:
+      213: 8052013711326613719
+    second: Ghost_Seal_die___45
+  - first:
+      213: 6287015250664746599
+    second: Ghost_Seal_die___46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ghost_Seal_die___5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2430
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e0c7b4b8d0b7e80800000000000000
+      internalID: -8179929406270337499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___8
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2407
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc8dda7b22b2c7a0800000000000000
+      internalID: -6358323824079041282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___9
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 2394
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ab0ace7083ff680800000000000000
+      internalID: -8719188746880107973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___10
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2394
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ee4349a77526fd0800000000000000
+      internalID: -2350219871549854131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___20
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1343
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82162b451e15a6dd0800000000000000
+      internalID: -2492089415565680344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1319
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a463730e78004f0800000000000000
+      internalID: -864541731386406338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___23
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1340
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4aa0827cc19bb80800000000000000
+      internalID: -8378633990050241375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___25
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1343
+        width: 357
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7430e9f42f3d7e0800000000000000
+      internalID: -1741782207094896662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 779
+        width: 385
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a9c8e2c0505c180800000000000000
+      internalID: -9095858322526135674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___34
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 752
+        width: 337
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c4a38e135a2ddf0800000000000000
+      internalID: -156881403236430749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___36
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 756
+        width: 357
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aaf07015aec4640800000000000000
+      internalID: 5065681314616683101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___42
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 197
+        width: 380
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb222f69a7b4c040800000000000000
+      internalID: 4667057052204542913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___43
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 175
+        width: 335
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a06fcccef6b5e70800000000000000
+      internalID: 9104994134501231115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___44
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 176
+        width: 251
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf961195f1cc6f30800000000000000
+      internalID: 4570240982319538110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___45
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 178
+        width: 217
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0923e1fcf7ebf60800000000000000
+      internalID: 8052013711326613719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Seal_die___46
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 188
+        width: 217
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ee5597f07ff3750800000000000000
+      internalID: 6287015250664746599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 829be6b7b1a9b2f48bb25ff4eca09bcb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ghost_Seal_die___0: -6940118517422896251
+      Ghost_Seal_die___1: -197001642186355247
+      Ghost_Seal_die___10: -2350219871549854131
+      Ghost_Seal_die___11: 1945210726666220190
+      Ghost_Seal_die___12: -3491621234502551824
+      Ghost_Seal_die___13: -7306966522443511670
+      Ghost_Seal_die___14: 9012520369983736850
+      Ghost_Seal_die___15: 6536831154720181964
+      Ghost_Seal_die___16: -8635733653052030946
+      Ghost_Seal_die___17: 413035480788790738
+      Ghost_Seal_die___18: -6932531094066193864
+      Ghost_Seal_die___19: -6835014452083108040
+      Ghost_Seal_die___2: 436039613251204606
+      Ghost_Seal_die___20: -2492089415565680344
+      Ghost_Seal_die___21: -253165141023928227
+      Ghost_Seal_die___22: -864541731386406338
+      Ghost_Seal_die___23: -8378633990050241375
+      Ghost_Seal_die___24: -4616729038747396904
+      Ghost_Seal_die___25: -1741782207094896662
+      Ghost_Seal_die___26: -1392630621874607454
+      Ghost_Seal_die___27: -8802068952895764294
+      Ghost_Seal_die___28: 8876325434721899510
+      Ghost_Seal_die___29: 1347540974294295396
+      Ghost_Seal_die___3: -3117521910249867211
+      Ghost_Seal_die___30: -3030917829138144012
+      Ghost_Seal_die___31: -8993349570313361029
+      Ghost_Seal_die___32: -9095858322526135674
+      Ghost_Seal_die___33: -5370402755982938846
+      Ghost_Seal_die___34: -156881403236430749
+      Ghost_Seal_die___35: 1875346115323671510
+      Ghost_Seal_die___36: 5065681314616683101
+      Ghost_Seal_die___37: -7040273493689623583
+      Ghost_Seal_die___38: 254916011407516680
+      Ghost_Seal_die___39: 888065076777646505
+      Ghost_Seal_die___4: -98951966624462458
+      Ghost_Seal_die___40: 2917382455622590692
+      Ghost_Seal_die___41: 8004815165359601071
+      Ghost_Seal_die___42: 4667057052204542913
+      Ghost_Seal_die___43: 9104994134501231115
+      Ghost_Seal_die___44: 4570240982319538110
+      Ghost_Seal_die___45: 8052013711326613719
+      Ghost_Seal_die___46: 6287015250664746599
+      Ghost_Seal_die___5: -8179929406270337499
+      Ghost_Seal_die___6: -9127826861944737549
+      Ghost_Seal_die___7: 86546515385072027
+      Ghost_Seal_die___8: -6358323824079041282
+      Ghost_Seal_die___9: -8719188746880107973
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

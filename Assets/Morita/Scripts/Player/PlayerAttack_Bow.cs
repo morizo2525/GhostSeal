@@ -3,9 +3,9 @@ using UnityEngine;
 public class PlayerAttack_Bow : MonoBehaviour
 {
     [Header("–î‚Ìİ’è")]
-    public GameObject arrowPrefab;      // ”­Ë‚·‚é–î‚ÌPrefab
-    public Transform shootPoint;        // ”­ËˆÊ’u
-    public float shootPower = 10f;      // ”­Ë‚Ì‰‘¬
+    public GameObject arrowPrefab;       // ”­Ë‚·‚é–î‚ÌPrefab
+    public Transform  shootPoint;        // ”­ËˆÊ’u
+    public float      shootPower = 10f;  // ”­Ë‚Ì‰‘¬
 
     public void BowShoot()
     {

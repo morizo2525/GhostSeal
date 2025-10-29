@@ -1476,6 +1476,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlink
   blinkInterval: 0.1
+--- !u!114 &1901470513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901470451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85451b655ff33a14a8885c7dd46379fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBowDisplay
+  bowObject: {fileID: 6724484508877076720, guid: cf98d1333a65d4544ab35f6e3ca36f43, type: 3}
+  bowOffset: {x: -0.6, y: 0}
+  weaponInventory: {fileID: 1901470479}
+  bowSortingOrder: 10
 --- !u!1 &1995193554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1752,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1414360383626688829, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       insertIndex: 19
       addedObject: {fileID: 1901470496}
+    - targetCorrespondingSourceObject: {fileID: 1414360383626688829, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      insertIndex: 20
+      addedObject: {fileID: 1901470513}
   m_SourcePrefab: {fileID: 100100000, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
 --- !u!1001 &2135789712
 PrefabInstance:
