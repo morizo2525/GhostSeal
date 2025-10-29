@@ -17,6 +17,11 @@ public class PlayerSwordAttack : MonoBehaviour
     public float attackCooldown = 0.5f; // 攻撃間隔（秒）
     private bool isAttacking = false;   // 攻撃中フラグ
 
+    [Header("剣アニメーション設定")]
+    public GameObject swordAnimPrefab;                    // 剣のアニメーションプレハブ
+    public float      swordAnimDuration = 0.5f;           // アニメーション再生時間
+    public Vector2    swordOffset = new Vector2(0.5f, 0); // 剣の表示位置オフセット
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !isAttacking)
@@ -34,6 +39,26 @@ public class PlayerSwordAttack : MonoBehaviour
 
         // 攻撃アニメーション再生（必要なら）
         // animator.SetTrigger("Attack");
+
+        if (swordAnimPrefab != null)
+        {
+            Vector2    swordPos  = (Vector2)transform.position + new Vector2(direction * swordOffset.x, swordOffset.y);
+            GameObject swordAnim = Instantiate(swordAnimPrefab, swordPos, Quaternion.identity);
+
+            // プレイヤーの子オブジェクトにして追従させる
+            swordAnim.transform.SetParent(transform);
+
+            // 向きに応じて反転
+            if (direction < 0)
+            {
+                Vector3 scale = swordAnim.transform.localScale;
+                scale.x *= -1;
+                swordAnim.transform.localScale = scale;
+            }
+
+            // アニメーション再生時間後に削除
+            Destroy(swordAnim, swordAnimDuration);
+        }
 
         // 攻撃エフェクト生成
         Vector2 attackPos = (Vector2)transform.position + new Vector2(direction * attackRange, 0);

@@ -8,6 +8,9 @@ public class PlayerDethHandler : MonoBehaviour
     private GameObject          gameOverCanvas; // GameOver専用Canvas
     private AnimationController animController;
     private MonoBehaviour[] PlayerMove;
+    private MonoBehaviour[] PlayerSwordAttack;
+    private MonoBehaviour[] PlayerAttackManager;
+
     private void Awake()
     {
         if (playerHPManager == null)
@@ -30,7 +33,9 @@ public class PlayerDethHandler : MonoBehaviour
         }
 
         // プレイヤーの操作スクリプトを取得
-        PlayerMove = GetComponents<MonoBehaviour>();
+        PlayerMove          = GetComponents<MonoBehaviour>();
+        PlayerSwordAttack   = GetComponents<MonoBehaviour>();
+        PlayerAttackManager = GetComponents<MonoBehaviour>();
 
         // GameOver Canvasを初期状態で非表示
         if (gameOverCanvas != null)
@@ -54,11 +59,9 @@ public class PlayerDethHandler : MonoBehaviour
         // プレイヤーの操作を無効化
         DisablePlayerControl();
 
-        // 判定無効化のためレイヤーを切り替える
-        gameObject.layer = LayerMask.NameToLayer("DeadPlayer");
-
         // 死亡アニメーション再生
         animController.PlayerDeathAnim();
+
     }
 
     // ゲームオーバー時のスプライト表示(アニメーションイベントから呼び出される)
@@ -79,12 +82,22 @@ public class PlayerDethHandler : MonoBehaviour
     // プレイヤーの操作を無効化
     private void DisablePlayerControl()
     {
-        // 方法1: 特定のコンポーネントを無効化（推奨）
-        // プロジェクトの操作スクリプト名に合わせて変更してください
         var playerController = GetComponent<PlayerMove>();
         if (playerController != null)
         {
             playerController.enabled = false;
+        }
+
+        var playerSwordAttack = GetComponent<PlayerSwordAttack>();
+        if (playerSwordAttack != null)
+        {
+            playerSwordAttack.enabled = false;
+        }
+
+        var playerAttackManager = GetComponent<PlayerAttackManager>();
+        if (playerAttackManager != null)
+        {
+            playerAttackManager.enabled = false;
         }
     }
 }
