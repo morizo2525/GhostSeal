@@ -95,6 +95,12 @@ public class EnemyHPManager : MonoBehaviour
         if (groundEnemy != null) groundEnemy.enabled = false;
         if (airEnemy != null) airEnemy.enabled = false;
 
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (var col in colliders)
+        {
+            col.enabled = false;
+        }
+
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
