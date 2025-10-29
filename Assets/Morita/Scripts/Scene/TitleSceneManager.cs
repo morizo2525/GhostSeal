@@ -8,6 +8,11 @@ public class TitleSceneManager : MonoBehaviour
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Sprite newBackgroundSprite;
 
+    [Header("チュートリアル設定")]
+    [SerializeField] private Button tutorialButton;  // チュートリアルボタン
+    [SerializeField] private GameObject tutorialPanel;  // チュートリアル画像を含むパネル
+    [SerializeField] private Button closeTutorialButton;  // チュートリアルを閉じるボタン
+
     [Header("サウンド設定")]
     [SerializeField] private AudioClip buttonClickSE;  // ボタンクリック時のSE
     [Range(0f, 1f)]
@@ -23,8 +28,24 @@ public class TitleSceneManager : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
+        // チュートリアルパネルを最初は非表示に
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(false);
+        }
+
         // ボタンが押されたときの処理を登録
         startButton.onClick.AddListener(OnStartButtonClicked);
+
+        if (tutorialButton != null)
+        {
+            tutorialButton.onClick.AddListener(OnTutorialButtonClicked);
+        }
+
+        if (closeTutorialButton != null)
+        {
+            closeTutorialButton.onClick.AddListener(OnCloseTutorialButtonClicked);
+        }
     }
 
     private void OnStartButtonClicked()
@@ -46,5 +67,23 @@ public class TitleSceneManager : MonoBehaviour
 
         // SceneTransitionを使って遷移
         SceneTransition.LoadScene(gameSceneName, delay);
+    }
+
+    private void OnTutorialButtonClicked()
+    {
+        // チュートリアルパネルを表示
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(true);
+        }
+    }
+
+    private void OnCloseTutorialButtonClicked()
+    {
+        // チュートリアルパネルを非表示
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(false);
+        }
     }
 }

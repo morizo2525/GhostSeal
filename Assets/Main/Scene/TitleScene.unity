@@ -938,6 +938,9 @@ MonoBehaviour:
   gameSceneName: Main
   backgroundImage: {fileID: 1037566811}
   newBackgroundSprite: {fileID: 8212253349993389043, guid: 61e8a13e99a288046b9d3c85e56bc2a1, type: 3}
+  tutorialButton: {fileID: 0}
+  tutorialPanel: {fileID: 0}
+  closeTutorialButton: {fileID: 0}
   buttonClickSE: {fileID: 8300000, guid: 09b4f7f7cd78d574dbcf539d13842733, type: 3}
   seVolume: 0.505
 --- !u!4 &1474409916
