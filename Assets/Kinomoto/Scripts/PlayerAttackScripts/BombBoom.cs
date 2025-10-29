@@ -15,6 +15,11 @@ public class BombBoom : MonoBehaviour
     [Header("エフェクト（オプション）")]
     public GameObject explosionEffect;      // 爆発エフェクトのPrefab
 
+    [Header("サウンド設定")]
+    public AudioClip explosionSE;           // 爆発SE
+    [Range(0f, 1f)]
+    public float seVolume = 1.0f;           // SEの音量
+
     private float timer = 0f;
 
     void Update()
@@ -32,6 +37,12 @@ public class BombBoom : MonoBehaviour
     /// </summary>
     void Explode()
     {
+        // 爆発SEを再生
+        if (explosionSE != null)
+        {
+            AudioSource.PlayClipAtPoint(explosionSE, transform.position, seVolume);
+        }
+
         // 爆発エフェクトを生成（設定されている場合）
         if (explosionEffect != null)
         {
@@ -40,7 +51,6 @@ public class BombBoom : MonoBehaviour
 
         // 範囲内の敵を検索してダメージ＋ノックバック
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, explosionRadius, enemyLayer);
-
         foreach (Collider2D enemy in hitEnemies)
         {
             // ダメージ処理

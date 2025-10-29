@@ -10,6 +10,11 @@ public class BoomArrow : MonoBehaviour
     public float knockbackForce = 5f;
     public bool affectPlayer = true;
 
+    [Header("サウンド設定")]
+    public AudioClip explosionSE;           // 爆発SE
+    [Range(0f, 1f)]
+    public float seVolume = 1.0f;           // SEの音量
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // 着弾した瞬間に爆発
@@ -18,6 +23,12 @@ public class BoomArrow : MonoBehaviour
 
     void Explode()
     {
+        // 爆発SEを再生
+        if (explosionSE != null)
+        {
+            AudioSource.PlayClipAtPoint(explosionSE, transform.position, seVolume);
+        }
+
         // 爆発エフェクト生成
         if (explosionEffect != null)
         {

@@ -21,7 +21,7 @@ public class PlayerBombItem : MonoBehaviour
     void Update()
     {
         // アイテムを回転させる
-        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        //transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
 
         // アイテムを浮遊させる
         //float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;

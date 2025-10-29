@@ -104,7 +104,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // 回避入力
-        if (Input.GetKeyDown(KeyCode.E) && dodgeCooldownTimer <= 0f)
+        if (Input.GetKeyDown(KeyCode.Space) && dodgeCooldownTimer <= 0f)
         {
             dodgeDuration      = dodgeDistance / dodgeSpeed; 　　　　 // 回避時間を計算
             dodgeDirection     = transform.localScale.x < 0 ? 1 : -1; // 向きの逆方向に回避
