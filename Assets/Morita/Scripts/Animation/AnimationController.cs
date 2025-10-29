@@ -84,6 +84,12 @@ public class AnimationController : MonoBehaviour
         SetBool("IsJumping", false);
     }
 
+    // 死亡
+    public void PlayerDeathAnim()
+    {
+        PlayAnimation("Death");
+    }
+
     //  ------------エネミー用アニメーション制御関数------------
 
     //地上エネミーノーマルジャンプ
