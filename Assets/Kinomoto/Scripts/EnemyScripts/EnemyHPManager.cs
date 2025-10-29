@@ -116,6 +116,12 @@ public class EnemyHPManager : MonoBehaviour
             deathDuration = groundDeathDuration;
         }
 
+        else if (airEnemy != null)
+        {
+            animController?.AirEnemyDeathAnim();
+            deathDuration = airDeathDuration;
+        }
+
         StartCoroutine(DestroyAfterAnimation(deathDuration));
     }
 

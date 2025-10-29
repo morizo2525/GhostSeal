@@ -29,11 +29,15 @@ public class BoomTrap : MonoBehaviour
     private bool isActivated = false;       // 地雷が起動状態か
     private bool hasExploded = false;       // 既に爆発したか（重複防止）
 
+    private AnimationController animController;
+
     // プレイヤーの最後のノックバック時刻を記録（static変数で全地雷で共有）
     private static float lastPlayerKnockbackTime = -999f;
 
     void Start()
     {
+        animController = GetComponent<AnimationController>();
+
         //Playerとの当たり判定を無くす
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>());
         // 設置後、少し待ってから起動状態にする（プレイヤーの誤爆防止）

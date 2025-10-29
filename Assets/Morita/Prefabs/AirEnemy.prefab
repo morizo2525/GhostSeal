@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1251941459
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4885795034362962969, guid: 2e3eba5eeb137b046b0de322f755cb30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -174,8 +174,8 @@ MonoBehaviour:
   maxHealth: 50
   minSizeMultiplier: 0.25
   maxSizeMultiplier: 0.5
-  groundDeathDuration: 1
-  airDeathDuration: 1
+  groundDeathDuration: 0
+  airDeathDuration: 0.683
 --- !u!114 &-9119583575660192852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ Animator:
   m_GameObject: {fileID: 3342422235811473260}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 64a20edfa985c0d44a9440694cb14f6a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 461776732a4538249bd17f587f6d3967, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
