@@ -12,6 +12,8 @@ public class BoomTrap : MonoBehaviour
     [Header("ノックバックの設定")]
     public float knockbackForce = 5f;       // ノックバックの力
     public bool affectPlayer = true;        // プレイヤーもノックバックするか
+    public float maxKnockbackVelocity = 15f; // ノックバック後の最大速度
+    public float playerKnockbackCooldown = 0.3f; // プレイヤーのノックバック無敵時間
 
     [Header("エフェクト（オプション）")]
     public GameObject explosionEffect;      // 爆発エフェクトのPrefab
@@ -21,6 +23,9 @@ public class BoomTrap : MonoBehaviour
 
     private bool isActivated = false;       // 地雷が起動状態か
     private bool hasExploded = false;       // 既に爆発したか（重複防止）
+
+    // プレイヤーの最後のノックバック時刻を記録（static変数で全地雷で共有）
+    private static float lastPlayerKnockbackTime = -999f;
 
     void Start()
     {
@@ -93,10 +98,10 @@ public class BoomTrap : MonoBehaviour
             }
 
             // ノックバック処理
-            ApplyKnockback(enemy.gameObject);
+            ApplyKnockback(enemy.gameObject, false);
         }
 
-        // プレイヤーへのノックバック
+        // プレイヤーへのノックバック（制限付き）
         if (affectPlayer)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -105,7 +110,7 @@ public class BoomTrap : MonoBehaviour
                 float distance = Vector2.Distance(transform.position, player.transform.position);
                 if (distance <= explosionRadius)
                 {
-                    ApplyKnockback(player);
+                    ApplyKnockback(player, true);
                 }
             }
         }
@@ -120,10 +125,21 @@ public class BoomTrap : MonoBehaviour
     /// <summary>
     /// ノックバックを適用する
     /// </summary>
-    void ApplyKnockback(GameObject target)
+    void ApplyKnockback(GameObject target, bool isPlayer)
     {
         Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
         if (rb == null) return;
+
+        // プレイヤーの場合、クールダウン中なら無視
+        if (isPlayer)
+        {
+            if (Time.time - lastPlayerKnockbackTime < playerKnockbackCooldown)
+            {
+                Debug.Log("プレイヤーのノックバッククールダウン中");
+                return;
+            }
+            lastPlayerKnockbackTime = Time.time;
+        }
 
         // 爆発中心からターゲットへの方向
         Vector2 direction = (target.transform.position - transform.position).normalized;
@@ -134,6 +150,27 @@ public class BoomTrap : MonoBehaviour
 
         // ノックバックを適用
         rb.AddForce(direction * knockbackForce * forceFalloff, ForceMode2D.Impulse);
+
+        // 速度の上限を適用（プレイヤーのみ、または全体）
+        if (isPlayer)
+        {
+            // 次フレームで速度制限を適用
+            StartCoroutine(LimitVelocity(rb));
+        }
+    }
+
+    /// <summary>
+    /// 速度を制限する
+    /// </summary>
+    private System.Collections.IEnumerator LimitVelocity(Rigidbody2D rb)
+    {
+        yield return new WaitForFixedUpdate();
+
+        if (rb != null && rb.velocity.magnitude > maxKnockbackVelocity)
+        {
+            rb.velocity = rb.velocity.normalized * maxKnockbackVelocity;
+            Debug.Log($"ノックバック速度を制限: {maxKnockbackVelocity}");
+        }
     }
 
     // Gizmoで爆発範囲を表示（エディタ上で確認用）

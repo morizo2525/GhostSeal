@@ -111,8 +111,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 30
+  knockbackForce: 60
   affectPlayer: 1
+  maxKnockbackVelocity: 15
+  playerKnockbackCooldown: 0.3
   explosionEffect: {fileID: 0}
   activationDelay: 1.2
 --- !u!61 &-4216623423869708727
