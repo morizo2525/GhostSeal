@@ -60,5 +60,8 @@ TagManager:
   - name: Weapon
     uniqueID: 1900070497
     locked: 0
+  - name: Scaffold
+    uniqueID: 1977977109
+    locked: 0
   m_RenderingLayers:
   - Default
