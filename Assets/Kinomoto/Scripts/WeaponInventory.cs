@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 
 public class WeaponInventory : MonoBehaviour
