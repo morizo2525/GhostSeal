@@ -113,12 +113,6 @@ public class AnimationController : MonoBehaviour
     //空中エネミー死亡
     public void AirEnemyDeathAnim()
     {
-        PlayAnimation("Death");
-    }
-
-    // 地雷爆発
-    public void BoomTrapExplosionAnim()
-    {
-        PlayAnimation("Explosion");
+        animator.SetTrigger("Death");
     }
 }

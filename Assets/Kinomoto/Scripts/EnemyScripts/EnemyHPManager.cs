@@ -47,8 +47,6 @@ public class EnemyHPManager : MonoBehaviour
 
         // HPに応じてサイズを調整
         AdjustSizeBasedOnHP();
-
-        Debug.Log($"Enemy spawned with HP: {enemyHealth}, Size: {transform.localScale}");
     }
 
     // HPに基づいてサイズを調整
@@ -83,7 +81,6 @@ public class EnemyHPManager : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-        Debug.Log("Enemy died");
 
         // スコアを加算
         if (ScoreManager.Instance != null)
@@ -110,16 +107,18 @@ public class EnemyHPManager : MonoBehaviour
 
         // 敵タイプに応じて死亡アニメ再生と待機時間設定
         float deathDuration = groundDeathDuration;
-        if (groundEnemy != null)
+
+        if (airEnemy != null)
+
         {
-            animController?.GroundEnemyDeathAnim();
-            deathDuration = groundDeathDuration;
+            animController.AirEnemyDeathAnim();
+            deathDuration = airDeathDuration;
         }
 
-        else if (airEnemy != null)
+        else if (groundEnemy != null)
+
         {
-            animController?.AirEnemyDeathAnim();
-            deathDuration = airDeathDuration;
+            animController.GroundEnemyDeathAnim();
         }
 
         StartCoroutine(DestroyAfterAnimation(deathDuration));

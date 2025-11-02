@@ -2,121 +2,121 @@ using UnityEngine;
 
 public class BoomTrap : MonoBehaviour
 {
-    //’n—‹‚ÌƒXƒNƒŠƒvƒg
+    //ï¿½nï¿½ï¿½ï¿½ÌƒXï¿½Nï¿½ï¿½ï¿½vï¿½g
 
-    [Header("”š”­‚Ìİ’è")]
-    public float explosionRadius = 5f;      // ”š”­‚Ì”ÍˆÍ
-    public int explosionDamage = 50;        // ”š”­ƒ_ƒ[ƒW
-    public LayerMask enemyLayer;            // “G‚ÌƒŒƒCƒ„[
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½Ìİ’ï¿½")]
+    public float explosionRadius = 5f;      // ï¿½ï¿½ï¿½ï¿½ï¿½Ì”Íˆï¿½
+    public int explosionDamage = 50;        // ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½[ï¿½W
+    public LayerMask enemyLayer;            // ï¿½Gï¿½Ìƒï¿½ï¿½Cï¿½ï¿½ï¿½[
 
-    [Header("ƒmƒbƒNƒoƒbƒN‚Ìİ’è")]
-    public float knockbackForce = 5f;       // ƒmƒbƒNƒoƒbƒN‚Ì—Í
-    public bool affectPlayer = true;        // ƒvƒŒƒCƒ„[‚àƒmƒbƒNƒoƒbƒN‚·‚é‚©
-    public float maxKnockbackVelocity = 15f; // ƒmƒbƒNƒoƒbƒNŒã‚ÌÅ‘å‘¬“x
-    public float playerKnockbackCooldown = 0.3f; // ƒvƒŒƒCƒ„[‚ÌƒmƒbƒNƒoƒbƒN–³“GŠÔ
+    [Header("ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½Ìİ’ï¿½")]
+    public float knockbackForce = 5f;       // ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½Ì—ï¿½
+    public bool affectPlayer = true;        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½é‚©
+    public float maxKnockbackVelocity = 15f; // ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ÌÅ‘å‘¬ï¿½x
+    public float playerKnockbackCooldown = 0.3f; // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ìƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½ï¿½
 
-    [Header("ƒGƒtƒFƒNƒgiƒIƒvƒVƒ‡ƒ“j")]
-    public GameObject explosionEffect;      // ”š”­ƒGƒtƒFƒNƒg‚ÌPrefab
+    [Header("ï¿½Gï¿½tï¿½Fï¿½Nï¿½gï¿½iï¿½Iï¿½vï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½j")]
+    public GameObject explosionEffect;      // ï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½tï¿½Fï¿½Nï¿½gï¿½ï¿½Prefab
 
-    [Header("‹N“®İ’è")]
-    public float activationDelay = 0.5f;    // İ’uŒã‚Ì‹N“®‚Ü‚Å‚Ì’x‰„ŠÔiŒë”š–h~j
+    [Header("ï¿½Nï¿½ï¿½ï¿½İ’ï¿½")]
+    public float activationDelay = 0.5f;    // ï¿½İ’uï¿½ï¿½Ì‹Nï¿½ï¿½ï¿½Ü‚Å‚Ì’xï¿½ï¿½ï¿½ï¿½ï¿½Ôiï¿½ë”šï¿½hï¿½~ï¿½j
 
-    [Header("ƒTƒEƒ“ƒhİ’è")]
-    public AudioClip explosionSE;           // ”š”­SE
+    [Header("ï¿½Tï¿½Eï¿½ï¿½ï¿½hï¿½İ’ï¿½")]
+    public AudioClip explosionSE;           // ï¿½ï¿½ï¿½ï¿½SE
     [Range(0f, 1f)]
-    public float seVolume = 1.0f;           // SE‚Ì‰¹—Ê
+    public float seVolume = 1.0f;           // SEï¿½Ì‰ï¿½ï¿½ï¿½
 
-    private bool isActivated = false;       // ’n—‹‚ª‹N“®ó‘Ô‚©
-    private bool hasExploded = false;       // Šù‚É”š”­‚µ‚½‚©id•¡–h~j
+    private bool isActivated = false;       // ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½Ô‚ï¿½
+    private bool hasExploded = false;       // ï¿½ï¿½ï¿½É”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½dï¿½ï¿½ï¿½hï¿½~ï¿½j
 
     private AnimationController animController;
 
-    // ƒvƒŒƒCƒ„[‚ÌÅŒã‚ÌƒmƒbƒNƒoƒbƒN‚ğ‹L˜^istatic•Ï”‚Å‘S’n—‹‚Å‹¤—Lj
+    // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ÌÅŒï¿½Ìƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½^ï¿½istaticï¿½Ïï¿½ï¿½Å‘Sï¿½nï¿½ï¿½ï¿½Å‹ï¿½ï¿½Lï¿½j
     private static float lastPlayerKnockbackTime = -999f;
 
     void Start()
     {
         animController = GetComponent<AnimationController>();
 
-        //Player‚Æ‚Ì“–‚½‚è”»’è‚ğ–³‚­‚·
+        //Playerï¿½Æ‚Ì“ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½ğ–³‚ï¿½ï¿½ï¿½
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>());
-        // İ’uŒãA­‚µ‘Ò‚Á‚Ä‚©‚ç‹N“®ó‘Ô‚É‚·‚éiƒvƒŒƒCƒ„[‚ÌŒë”š–h~j
+        // ï¿½İ’uï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Ò‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½Ô‚É‚ï¿½ï¿½ï¿½iï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ÌŒë”šï¿½hï¿½~ï¿½j
         Invoke(nameof(ActivateTrap), activationDelay);
     }
 
     /// <summary>
-    /// ’n—‹‚ğ‹N“®ó‘Ô‚É‚µ‚ÄAƒvƒŒƒCƒ„[‚Æ‚Ì“–‚½‚è”»’è‚ğ•œŠˆ‚·‚é
+    /// ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½Ô‚É‚ï¿½ï¿½ÄAï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Æ‚Ì“ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½ğ•œŠï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     void ActivateTrap()
     {
         isActivated = true;
-        // ƒvƒŒƒCƒ„[‚Æ‚Ì“–‚½‚è”»’è‚ğ•œŠˆ
+        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Æ‚Ì“ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½ğ•œŠï¿½
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), false);
-        Debug.Log("’n—‹‚ª‹N“®‚µ‚Ü‚µ‚½");
+        Debug.Log("ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
     }
 
     /// <summary>
-    /// “G‚ªG‚ê‚½‚Æ‚«‚Ìˆ—
+    /// ï¿½Gï¿½ï¿½ï¿½Gï¿½ê‚½ï¿½Æ‚ï¿½ï¿½Ìï¿½ï¿½ï¿½
     /// </summary>
     void OnTriggerEnter2D(Collider2D other)
     {
-        // ‚Ü‚¾‹N“®‚µ‚Ä‚¢‚È‚¢A‚Ü‚½‚ÍŠù‚É”š”­‚µ‚Ä‚¢‚éê‡‚Í‰½‚à‚µ‚È‚¢
+        // ï¿½Ü‚ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½ï¿½Aï¿½Ü‚ï¿½ï¿½ÍŠï¿½ï¿½É”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ê‡ï¿½Í‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
         if (!isActivated || hasExploded)
         {
             return;
         }
 
-        // “GƒŒƒCƒ„[‚ÌƒIƒuƒWƒFƒNƒg‚ªG‚ê‚½‚©Šm”F
+        // ï¿½Gï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Gï¿½ê‚½ï¿½ï¿½ï¿½mï¿½F
         if (((1 << other.gameObject.layer) & enemyLayer) != 0)
         {
-            Debug.Log($"{other.gameObject.name} ‚ª’n—‹‚ğ“¥‚İ‚Ü‚µ‚½I");
+            Debug.Log($"{other.gameObject.name} ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½ğ“¥‚İ‚Ü‚ï¿½ï¿½ï¿½ï¿½I");
             Explode();
         }
-        // ƒvƒŒƒCƒ„[‚ªG‚ê‚½ê‡‚à”š”­‚³‚¹‚é
+        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Gï¿½ê‚½ï¿½ê‡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         else if (affectPlayer && other.CompareTag("Player"))
         {
-            Debug.Log("ƒvƒŒƒCƒ„[‚ª’n—‹‚ğ“¥‚İ‚Ü‚µ‚½I");
+            Debug.Log("ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½ğ“¥‚İ‚Ü‚ï¿½ï¿½ï¿½ï¿½I");
             Explode();
         }
     }
 
     /// <summary>
-    /// ”š”­ˆ—F”ÍˆÍ“à‚Ì“G‚Éƒ_ƒ[ƒW‚ÆƒmƒbƒNƒoƒbƒN‚ğ—^‚¦‚é
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fï¿½ÍˆÍ“ï¿½ï¿½Ì“Gï¿½Éƒ_ï¿½ï¿½ï¿½[ï¿½Wï¿½Æƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½^ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     void Explode()
     {
         if (hasExploded) return;
         hasExploded = true;
 
-        // ”š”­SE‚ğÄ¶
+        // ï¿½ï¿½ï¿½ï¿½SEï¿½ï¿½ï¿½Äï¿½
         if (explosionSE != null)
         {
             AudioSource.PlayClipAtPoint(explosionSE, transform.position, seVolume);
         }
 
-        // ”š”­ƒGƒtƒFƒNƒg‚ğ¶¬iİ’è‚³‚ê‚Ä‚¢‚éê‡j
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½tï¿½Fï¿½Nï¿½gï¿½ğ¶ï¿½ï¿½iï¿½İ’è‚³ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ê‡ï¿½j
         if (explosionEffect != null)
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
         }
 
-        // ”ÍˆÍ“à‚Ì“G‚ğŒŸõ‚µ‚Äƒ_ƒ[ƒW{ƒmƒbƒNƒoƒbƒN
+        // ï¿½ÍˆÍ“ï¿½ï¿½Ì“Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äƒ_ï¿½ï¿½ï¿½[ï¿½Wï¿½{ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½N
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, explosionRadius, enemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            // ƒ_ƒ[ƒWˆ—
+            // ï¿½_ï¿½ï¿½ï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½
             EnemyHPManager enemyHP = enemy.GetComponent<EnemyHPManager>();
             if (enemyHP != null)
             {
                 enemyHP.EnemyTakeDamage(explosionDamage);
             }
 
-            // ƒmƒbƒNƒoƒbƒNˆ—
+            // ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
             ApplyKnockback(enemy.gameObject, false);
         }
 
-        // ƒvƒŒƒCƒ„[‚Ö‚ÌƒmƒbƒNƒoƒbƒNi§ŒÀ•t‚«j
+        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ö‚Ìƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½iï¿½ï¿½ï¿½ï¿½ï¿½tï¿½ï¿½ï¿½j
         if (affectPlayer)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -130,65 +130,65 @@ public class BoomTrap : MonoBehaviour
             }
         }
 
-        // ƒfƒoƒbƒO—p
-        Debug.Log($"’n—‹‚ª”š”­I {hitEnemies.Length}‘Ì‚Ì“G‚Éƒ_ƒ[ƒW");
+        // ï¿½fï¿½oï¿½bï¿½Oï¿½p
+        Debug.Log($"ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½I {hitEnemies.Length}ï¿½Ì‚Ì“Gï¿½Éƒ_ï¿½ï¿½ï¿½[ï¿½W");
 
-        // ’n—‹ƒIƒuƒWƒFƒNƒg‚ğíœ
+        // ï¿½nï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½íœ
         Destroy(gameObject);
     }
 
     /// <summary>
-    /// ƒmƒbƒNƒoƒbƒN‚ğ“K—p‚·‚é
+    /// ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½Kï¿½pï¿½ï¿½ï¿½ï¿½
     /// </summary>
     void ApplyKnockback(GameObject target, bool isPlayer)
     {
         Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
         if (rb == null) return;
 
-        // ƒvƒŒƒCƒ„[‚Ìê‡AƒN[ƒ‹ƒ_ƒEƒ“’†‚È‚ç–³‹
+        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ìê‡ï¿½Aï¿½Nï¿½[ï¿½ï¿½ï¿½_ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½È‚ç–³ï¿½ï¿½
         if (isPlayer)
         {
             if (Time.time - lastPlayerKnockbackTime < playerKnockbackCooldown)
             {
-                Debug.Log("ƒvƒŒƒCƒ„[‚ÌƒmƒbƒNƒoƒbƒNƒN[ƒ‹ƒ_ƒEƒ“’†");
+                Debug.Log("ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ìƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½Nï¿½[ï¿½ï¿½ï¿½_ï¿½Eï¿½ï¿½ï¿½ï¿½");
                 return;
             }
             lastPlayerKnockbackTime = Time.time;
         }
 
-        // ”š”­’†S‚©‚çƒ^[ƒQƒbƒg‚Ö‚Ì•ûŒü
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½^ï¿½[ï¿½Qï¿½bï¿½gï¿½Ö‚Ì•ï¿½ï¿½ï¿½
         Vector2 direction = (target.transform.position - transform.position).normalized;
 
-        // ‹——£‚É‰‚¶‚ÄƒmƒbƒNƒoƒbƒN—Í‚ğŒ¸Š
+        // ï¿½ï¿½ï¿½ï¿½ï¿½É‰ï¿½ï¿½ï¿½ï¿½Äƒmï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½
         float distance = Vector2.Distance(transform.position, target.transform.position);
-        float forceFalloff = 1f - (distance / explosionRadius); // ‰“‚¢‚Ù‚Çã‚­‚È‚é
+        float forceFalloff = 1f - (distance / explosionRadius); // ï¿½ï¿½ï¿½ï¿½ï¿½Ù‚Çã‚­ï¿½È‚ï¿½
 
-        // ƒmƒbƒNƒoƒbƒN‚ğ“K—p
+        // ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½Kï¿½p
         rb.AddForce(direction * knockbackForce * forceFalloff, ForceMode2D.Impulse);
 
-        // ‘¬“x‚ÌãŒÀ‚ğ“K—piƒvƒŒƒCƒ„[‚Ì‚İA‚Ü‚½‚Í‘S‘Ìj
+        // ï¿½ï¿½ï¿½xï¿½Ìï¿½ï¿½ï¿½ï¿½Kï¿½pï¿½iï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ì‚İAï¿½Ü‚ï¿½ï¿½Í‘Sï¿½Ìj
         if (isPlayer)
         {
-            // ŸƒtƒŒ[ƒ€‚Å‘¬“x§ŒÀ‚ğ“K—p
+            // ï¿½ï¿½ï¿½tï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Å‘ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½p
             StartCoroutine(LimitVelocity(rb));
         }
     }
 
     /// <summary>
-    /// ‘¬“x‚ğ§ŒÀ‚·‚é
+    /// ï¿½ï¿½ï¿½xï¿½ğ§Œï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     private System.Collections.IEnumerator LimitVelocity(Rigidbody2D rb)
     {
         yield return new WaitForFixedUpdate();
 
-        if (rb != null && rb.velocity.magnitude > maxKnockbackVelocity)
+        if (rb != null && rb.linearVelocity.magnitude > maxKnockbackVelocity)
         {
-            rb.velocity = rb.velocity.normalized * maxKnockbackVelocity;
-            Debug.Log($"ƒmƒbƒNƒoƒbƒN‘¬“x‚ğ§ŒÀ: {maxKnockbackVelocity}");
+            rb.linearVelocity = rb.linearVelocity.normalized * maxKnockbackVelocity;
+            Debug.Log($"ï¿½mï¿½bï¿½Nï¿½oï¿½bï¿½Nï¿½ï¿½ï¿½xï¿½ğ§Œï¿½: {maxKnockbackVelocity}");
         }
     }
 
-    // Gizmo‚Å”š”­”ÍˆÍ‚ğ•\¦iƒGƒfƒBƒ^ã‚ÅŠm”F—pj
+    // Gizmoï¿½Å”ï¿½ï¿½ï¿½ï¿½ÍˆÍ‚ï¿½\ï¿½ï¿½ï¿½iï¿½Gï¿½fï¿½Bï¿½^ï¿½ï¿½ÅŠmï¿½Fï¿½pï¿½j
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
