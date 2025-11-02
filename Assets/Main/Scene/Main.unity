@@ -994,6 +994,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1657105470174573695, guid: b6143151522a21741bd3f959a76adf6d, type: 3}
+      propertyPath: spawnAreaMin.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2314686616857115207, guid: b6143151522a21741bd3f959a76adf6d, type: 3}
       propertyPath: m_Name
       value: AirEnemySpawnManager
@@ -2075,6 +2079,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3052370168477075833, guid: 95a83adeed5eeae43a700648a086327e, type: 3}
+      propertyPath: leftSpawnAreaMax.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052370168477075833, guid: 95a83adeed5eeae43a700648a086327e, type: 3}
+      propertyPath: leftSpawnAreaMin.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052370168477075833, guid: 95a83adeed5eeae43a700648a086327e, type: 3}
+      propertyPath: rightSpawnAreaMax.x
+      value: 9.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6113721777320080440, guid: 95a83adeed5eeae43a700648a086327e, type: 3}
       propertyPath: m_Name
       value: GroundEnemySpwanManager
