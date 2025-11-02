@@ -9,6 +9,7 @@ public class AirEnemyMove : MonoBehaviour
     [SerializeField] private float waveFrequency = 2f;  //揺れスピード(周波数)
 
     private Rigidbody2D rb;
+    private AnimationController animController;
     private Transform player;
     private float waveTimer;         //揺れのタイマー
     private float initialScaleX;
@@ -18,10 +19,13 @@ public class AirEnemyMove : MonoBehaviour
     private bool isKnockedBack = false;
     private float knockbackEndTime = 0f;
 
+    
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        initialScaleX = transform.localScale.x; // 初期スケール保存
+        animController = GetComponent<AnimationController>();
+        rb             = GetComponent<Rigidbody2D>();
+        initialScaleX  = transform.localScale.x; // 初期スケール保存
 
         // 重力の影響を受けないように設定
         rb.gravityScale = 0f;

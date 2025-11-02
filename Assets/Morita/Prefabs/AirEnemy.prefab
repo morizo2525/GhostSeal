@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2469767681785779323}
   - component: {fileID: -3097193428496116677}
   - component: {fileID: -9119583575660192852}
+  - component: {fileID: 2223887121298890294}
   - component: {fileID: 368935113847513352}
   m_Layer: 7
   m_Name: AirEnemy
@@ -191,6 +192,18 @@ MonoBehaviour:
   moveSpeed: 1
   waveAmplitude: 3
   waveFrequency: 1
+--- !u!114 &2223887121298890294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342422235811473260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184ba400247cce440b161295a99c1e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationController
 --- !u!95 &368935113847513352
 Animator:
   serializedVersion: 7
