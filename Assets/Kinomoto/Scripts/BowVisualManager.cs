@@ -16,6 +16,7 @@ public class BowVisualManager : MonoBehaviour
 
     private Camera mainCamera;
     private GameObject currentBowObject;    // 現在表示中の弓オブジェクト
+    private Vector3 playerPosition;         // プレイヤーの現在位置
 
     private void Start()
     {
@@ -46,13 +47,16 @@ public class BowVisualManager : MonoBehaviour
 
     private void Update()
     {
+        // プレイヤーの現在位置を取得
+        playerPosition = transform.position;
+
         // どの弓を表示すべきか判定
         UpdateBowVisibility();
 
-        // 表示中の弓があれば、マウス位置に追従
+        // 表示中の弓があれば、位置と回転を更新
         if (currentBowObject != null && currentBowObject.activeSelf)
         {
-            UpdateBowRotation();
+            UpdateBowPositionAndRotation();
         }
     }
 
@@ -69,8 +73,6 @@ public class BowVisualManager : MonoBehaviour
         else
         {
             normalBowObject.SetActive(false);
-            // 初期スケールを設定（反転を解除）
-            ResetBowScale(normalBowObject);
         }
 
         // 爆弾矢の弓オブジェクトが設定されているか確認
@@ -81,8 +83,6 @@ public class BowVisualManager : MonoBehaviour
         else
         {
             boomBowObject.SetActive(false);
-            // 初期スケールを設定（反転を解除）
-            ResetBowScale(boomBowObject);
         }
 
         // トラップ矢の弓オブジェクトが設定されているか確認
@@ -93,24 +93,7 @@ public class BowVisualManager : MonoBehaviour
         else
         {
             trapBowObject.SetActive(false);
-            // 初期スケールを設定（反転を解除）
-            ResetBowScale(trapBowObject);
         }
-    }
-
-    /// <summary>
-    /// 弓のスケールをリセット（親の影響をキャンセル＋反転）
-    /// </summary>
-    private void ResetBowScale(GameObject bowObj)
-    {
-        if (bowObj == null) return;
-
-        Vector3 parentScale = transform.lossyScale;
-        bowObj.transform.localScale = new Vector3(
-            1f / Mathf.Abs(parentScale.x),
-            1f / Mathf.Abs(parentScale.y),
-            1f / Mathf.Abs(parentScale.z)
-        );
     }
 
     /// <summary>
@@ -164,9 +147,9 @@ public class BowVisualManager : MonoBehaviour
     }
 
     /// <summary>
-    /// マウス位置に応じて弓の回転を更新
+    /// プレイヤー位置とマウス位置に応じて弓の位置と回転を更新
     /// </summary>
-    private void UpdateBowRotation()
+    private void UpdateBowPositionAndRotation()
     {
         if (currentBowObject == null || mainCamera == null) return;
 
@@ -175,22 +158,15 @@ public class BowVisualManager : MonoBehaviour
         mousePos.z = 0f;
 
         // プレイヤーからマウスへの方向ベクトル
-        Vector2 direction = (mousePos - transform.position).normalized;
+        Vector2 direction = (mousePos - playerPosition).normalized;
 
         // 角度を計算（度数法）
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // 弓の位置を更新（マウス方向に配置）
-        Vector3 bowPosition = transform.position + (Vector3)(direction * bowDistance);
+        // 弓の位置を更新（プレイヤー位置を基準にマウス方向に配置）
+        Vector3 bowPosition = playerPosition + (Vector3)(direction * bowDistance);
+        bowPosition.z = 0f;  // Z座標を固定
         currentBowObject.transform.position = bowPosition;
-
-        // 親オブジェクト（プレイヤー）のスケールの影響をキャンセル
-        Vector3 parentScale = transform.localScale;
-        currentBowObject.transform.localScale = new Vector3(
-            1f / parentScale.x,  // 符号も含めて逆数を取る
-            1f / Mathf.Abs(parentScale.y),
-            1f / Mathf.Abs(parentScale.z)
-        );
 
         // 弓の回転を更新
         currentBowObject.transform.rotation = Quaternion.Euler(0f, 0f, angle);
