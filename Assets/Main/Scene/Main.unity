@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8608014274811872374, guid: ea69ef091a5f38f4f8412a982f25d761, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -832,7 +832,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 361}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &770037610
 PrefabInstance:
@@ -1441,6 +1441,8 @@ GameObject:
   - component: {fileID: 1051730230}
   - component: {fileID: 1051730229}
   - component: {fileID: 1051730228}
+  - component: {fileID: 1051730232}
+  - component: {fileID: 1051730231}
   m_Layer: 5
   m_Name: GameOverCanvas
   m_TagString: Untagged
@@ -1531,6 +1533,33 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1051730231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051730226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126fcd85d20aac848bab89475c314730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverCanvasController
+  gameOverCanvas: {fileID: 1051730226}
+  canvasGroup: {fileID: 1051730232}
+  fadeInDuration: 2
+--- !u!225 &1051730232
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051730226}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!224 &1052257733 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6132321202645659556, guid: d86a08dc4f6d22d45bb0d22d452a3b49, type: 3}
@@ -2179,19 +2208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8253764c6c7af5f45bcb73806c95d344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponInventory
---- !u!114 &1901470496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901470451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423d2e116b7d59a4787dec21760d0295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerBlink
-  blinkInterval: 0.1
 --- !u!114 &1901470513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,6 +2454,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1051730226}
+    - target: {fileID: 7926576610856116391, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: gameOverController
+      value: 
+      objectReference: {fileID: 1051730231}
     - target: {fileID: 9095477974515307052, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2512,9 +2532,6 @@ PrefabInstance:
       addedObject: {fileID: 1901470468}
     - targetCorrespondingSourceObject: {fileID: 1414360383626688829, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       insertIndex: 19
-      addedObject: {fileID: 1901470496}
-    - targetCorrespondingSourceObject: {fileID: 1414360383626688829, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
-      insertIndex: 20
       addedObject: {fileID: 1901470513}
     - targetCorrespondingSourceObject: {fileID: 1414360383626688829, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       insertIndex: -1

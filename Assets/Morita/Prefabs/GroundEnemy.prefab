@@ -115,7 +115,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1251941459
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 6721984699485301864, guid: e0648ff187ca82f4497fc6d2a977051e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,7 +208,7 @@ MonoBehaviour:
   normalJumpInterval: 2
   normalStopDuration: 0.3
   normalJumpChance: 0.7
-  bigJumpForce: 10
+  bigJumpForce: 13
   bigJumpCooldown: 2
   bigStopDuration: 2
   bigJumpChance: 0.3

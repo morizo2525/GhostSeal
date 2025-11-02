@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayerDethHandler : MonoBehaviour
 {
-    [SerializeField] private PlayerHPManager playerHPManager;
+    [SerializeField] private PlayerHPManager          playerHPManager;
+    [SerializeField] private GameOverCanvasController gameOverController;
     [SerializeField] private string gameOverSceneName = "GameOverScene";
 
-    private GameObject          gameOverCanvas; // GameOver専用Canvas
     private AnimationController animController;
     private MonoBehaviour[] PlayerMove;
     private MonoBehaviour[] PlayerSwordAttack;
@@ -23,25 +23,15 @@ public class PlayerDethHandler : MonoBehaviour
             animController = GetComponent<AnimationController>();
         }
 
-        if (gameOverCanvas == null)
+        if (gameOverController == null)
         {
-            gameOverCanvas = GameObject.Find("GameOverCanvas");
-            if (gameOverCanvas == null)
-            {
-                Debug.LogError("GameOver_Canvasが見つかりません。シーンに配置してください。");
-            }
+            gameOverController = GetComponent<GameOverCanvasController>();
         }
 
         // プレイヤーの操作スクリプトを取得
         PlayerMove          = GetComponents<MonoBehaviour>();
         PlayerSwordAttack   = GetComponents<MonoBehaviour>();
         PlayerAttackManager = GetComponents<MonoBehaviour>();
-
-        // GameOver Canvasを初期状態で非表示
-        if (gameOverCanvas != null)
-        {
-            gameOverCanvas.SetActive(false);
-        }
 
         // HP管理スクリプトの死亡イベントに登録
         playerHPManager.PlayerDied += OnPlayerDie;
@@ -67,9 +57,9 @@ public class PlayerDethHandler : MonoBehaviour
     // ゲームオーバー時のスプライト表示(アニメーションイベントから呼び出される)
     public void ShowGameOverSprite()
     {
-        if (gameOverCanvas != null)
+        if (gameOverController != null)
         {
-            gameOverCanvas.SetActive(true);
+            gameOverController.ShowGameOver();
         }
     }
 
