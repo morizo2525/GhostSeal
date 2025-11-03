@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1900070497
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.96981126, g: 0.93787706, b: 0.43001065, a: 1}
@@ -108,7 +108,9 @@ MonoBehaviour:
   trapDuration: 10
   enemyStunDuration: 3
   enemyTag: Enemy
-  trapCollider: {fileID: 0}
+  trapCollider: {fileID: 8201059712315536520}
+  trapActivateSE: {fileID: 8300000, guid: 603fbd1c170e8584d84edfb5625d6436, type: 3}
+  seVolume: 1
 --- !u!61 &8201059712315536520
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class BowVisualManager : MonoBehaviour
     [Header("参照スクリプト")]
     [SerializeField] private PlayerAttackManager attackManager;     // 武器攻撃管理スクリプト
     [SerializeField] private WeaponInventory weaponInventory;       // 武器インベントリ
+    [SerializeField] private PlayerHPManager playerHPManager;     // プレイヤーHP管理スクリプト
 
     private Camera mainCamera;
     private GameObject currentBowObject;    // 現在表示中の弓オブジェクト
@@ -152,6 +153,12 @@ public class BowVisualManager : MonoBehaviour
         else if (targetBow == null && currentBowObject != null)
         {
             // 弓を表示する必要がない場合は非表示
+            currentBowObject.SetActive(false);
+            currentBowObject = null;
+        }
+        //HPが０なら非表示
+        else if(playerHPManager.IsDead)
+        {
             currentBowObject.SetActive(false);
             currentBowObject = null;
         }

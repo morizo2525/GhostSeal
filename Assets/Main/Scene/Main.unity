@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &184367150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.29, z: 0}
-  m_LocalScale: {x: -0.6, y: 0.6, z: 0.3}
+  m_LocalScale: {x: -0.5, y: 0.5, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &633509671
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -619,7 +619,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.29, z: 0}
-  m_LocalScale: {x: -0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: -0.5, y: 0.5, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &719673527
 Transform:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.29, z: 0}
-  m_LocalScale: {x: -0.6, y: 0.6, z: 0.3}
+  m_LocalScale: {x: -0.5, y: 0.5, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2500,9 +2500,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
     - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: bombThrowSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
+    - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: trapCreateSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
+    - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: boomBowShootSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
+    - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: trapBowShootSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
+    - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: bowVisualManager
       value: 
       objectReference: {fileID: 2062461779}
+    - target: {fileID: 1524913400768818106, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: mineTrapCreateSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dcf653ac821a3c4395f067311b3add6, type: 3}
     - target: {fileID: 3680979103451732890, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: m_Size.x
       value: 1.176715
