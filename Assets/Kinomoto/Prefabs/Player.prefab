@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 5173727543055337984}
   - component: {fileID: -2010978858362202188}
   - component: {fileID: -7858256055047165313}
+  - component: {fileID: 6499276538031198245}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -220,6 +221,14 @@ MonoBehaviour:
   boomBowAttack: {fileID: 662296421205750064}
   trapBowAttack: {fileID: 8879955161330257813}
   weaponInventory: {fileID: 447197874315621327}
+  bowVisualManager: {fileID: 0}
+  bowShootSE: {fileID: 0}
+  bombThrowSE: {fileID: 0}
+  trapCreateSE: {fileID: 0}
+  boomBowShootSE: {fileID: 0}
+  trapBowShootSE: {fileID: 0}
+  mineTrapCreateSE: {fileID: 0}
+  seVolume: 1
 --- !u!114 &447197874315621327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +248,10 @@ MonoBehaviour:
   trapAmmo: 0
   maxAmmo: 10
   currentCombo: 0
+  comboBombBowSE: {fileID: 0}
+  comboTrapBowSE: {fileID: 0}
+  comboBombTrapSE: {fileID: 0}
+  seVolume: 1
 --- !u!114 &3688789971437307912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHPManager
   maxHP: 3
+  damageSE: {fileID: 0}
+  deathSE: {fileID: 0}
+  seVolume: 1
 --- !u!114 &7926576610856116391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDethHandler
   playerHPManager: {fileID: -647096392729975419}
+  gameOverController: {fileID: 0}
   gameOverSceneName: GameOverScene
 --- !u!114 &5173727543055337984
 MonoBehaviour:
@@ -471,6 +488,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlink
   blinkInterval: 0.1
+--- !u!114 &6499276538031198245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360383626688829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e74204317194946b4a3062c8ac64b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BowVisualManager
+  normalBowObject: {fileID: 3746516854779046123, guid: 23ec9319c1857ba40ae96795e6d604ba, type: 3}
+  boomBowObject: {fileID: 8885193001138439934, guid: e49364567fc153d4588b9fd5831b9f2e, type: 3}
+  trapBowObject: {fileID: 1195523737797814656, guid: cfec78a16ade75443b56ceeeea569fd0, type: 3}
+  bowDistance: 0.5
+  shootAnimationTrigger: Shoot
+  attackManager: {fileID: 1524913400768818106}
+  weaponInventory: {fileID: 447197874315621327}
+  playerHPManager: {fileID: -647096392729975419}
 --- !u!1 &3913486402502745693
 GameObject:
   m_ObjectHideFlags: 0

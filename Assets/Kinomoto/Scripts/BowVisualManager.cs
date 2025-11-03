@@ -157,11 +157,11 @@ public class BowVisualManager : MonoBehaviour
             currentBowObject = null;
         }
         //HP‚ª‚O‚È‚ç”ñ•\Ž¦
-        else if(playerHPManager.IsDead)
-        {
-            currentBowObject.SetActive(false);
-            currentBowObject = null;
-        }
+        //else if(playerHPManager.IsDead)
+        //{
+        //    currentBowObject.SetActive(false);
+        //    currentBowObject = null;
+        //}
     }
 
     /// <summary>
