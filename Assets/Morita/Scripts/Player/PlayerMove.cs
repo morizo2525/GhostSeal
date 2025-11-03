@@ -3,11 +3,11 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [Header("移動パラメーター")]
-    [SerializeField] private float     moveSpeed = 5f;           // 移動速度
-    [SerializeField] private float     jumpForce = 10f;          // 1段目のジャンプ力
+    [SerializeField] private float moveSpeed = 5f;           // 移動速度
+    [SerializeField] private float jumpForce = 10f;          // 1段目のジャンプ力
     [SerializeField] private LayerMask groundLayer;              // 地面として認識するレイヤー
-    [SerializeField] private bool      enableDoubleJump = true;  // 2段ジャンプを有効にするか
-    [SerializeField] private float     secondJumpForce = 9f;     // 2段目のジャンプ力
+    [SerializeField] private bool enableDoubleJump = true;  // 2段ジャンプを有効にするか
+    [SerializeField] private float secondJumpForce = 9f;     // 2段目のジャンプ力
 
     [Header("回避設定")]
     [SerializeField] private float dodgeDistance = 3f; 　　　　// 回避距離
@@ -20,17 +20,17 @@ public class PlayerMove : MonoBehaviour
 
     private float dodgeDuration; // 回避動作全体の時間
 
-    private Rigidbody2D         rb; 
+    private Rigidbody2D rb;
     private AnimationController animController;
-    private PlayerAfterImage    playerAfterImage;
+    private PlayerAfterImage playerAfterImage;
 
-    private bool  isGrounded;         // 接地しているか
-    private bool  wasGrounded;        // 前フレームで接地していたか
-    private bool  hasDoubleJump;      // 2段ジャンプが使用可能か
-    private bool  isDodging;          // 現在回避中か
+    private bool isGrounded;          // 接地しているか
+    private bool wasGrounded;         // 前フレームで接地していたか
+    private bool hasDoubleJump;       // 2段ジャンプが使用可能か
+    private bool isDodging;           // 現在回避中か
     private float dodgeTimer;         // 回避開始からの経過時間
     private float dodgeCooldownTimer; // 回避のクールダウン残り時間
-    private int   dodgeDirection;     // 回避の方向(1:右 / -1:左)
+    private int dodgeDirection;       // 回避の方向(1:右 / -1:左)
 
     [Header("接地チェック")]
     [SerializeField] private Transform groundCheck;          // 接地判定用のオブジェクト位置
@@ -40,8 +40,8 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        rb               = GetComponent<Rigidbody2D>();
-        animController   = GetComponent<AnimationController>();
+        rb = GetComponent<Rigidbody2D>();
+        animController = GetComponent<AnimationController>();
         playerAfterImage = GetComponent<PlayerAfterImage>();
     }
 
@@ -67,7 +67,11 @@ public class PlayerMove : MonoBehaviour
             dodgeTimer += Time.deltaTime;
 
             // 無敵時間終了チェック
-            if (dodgeTimer >= dodgeInvincibleTime)
+            if (dodgeTimer < dodgeInvincibleTime)
+            {
+                isInvincible = true; // 無敵時間中は確実に無敵状態
+            }
+            else
             {
                 isInvincible = false;              // 無敵時間が終了したら無敵解除
                 playerAfterImage.StopAfterImage(); // 残像生成停止
@@ -76,9 +80,9 @@ public class PlayerMove : MonoBehaviour
             // 回避動作終了チェック
             if (dodgeTimer >= dodgeDuration)
             {
-                isDodging    = false;                 // 回避終了
-                dodgeTimer   = 0f; 　　               // タイマーリセット
-                isInvincible = false;                 // 念のため確実に解除
+                isDodging = false;                    // 回避終了
+                dodgeTimer = 0f; 　　                 // タイマーリセット
+                isInvincible = false;                 // 回避終了で解除
                 rb.gravityScale = normalGravityScale; // 重力を元に戻す
                 playerAfterImage.StopAfterImage();    // 念のため確実に停止
             }
@@ -93,8 +97,8 @@ public class PlayerMove : MonoBehaviour
                     hasDoubleJump = false;
 
                     // ジャンプで回避を中断
-                    isDodging       = false;
-                    isInvincible    = false;
+                    isDodging = false;
+                    isInvincible = false;
                     rb.gravityScale = normalGravityScale;
                     playerAfterImage.StopAfterImage();
                 }
@@ -106,14 +110,14 @@ public class PlayerMove : MonoBehaviour
         // 回避入力
         if (Input.GetKeyDown(KeyCode.Space) && dodgeCooldownTimer <= 0f)
         {
-            dodgeDuration      = dodgeDistance / dodgeSpeed; 　　　　 // 回避時間を計算
-            dodgeDirection     = transform.localScale.x < 0 ? 1 : -1; // 向きの逆方向に回避
-            isDodging          = true; 　                             // 回避開始
-            dodgeTimer         = 0f;                                  // タイマーリセット
+            dodgeDuration = dodgeDistance / dodgeSpeed; 　　　　 // 回避時間を計算
+            dodgeDirection = transform.localScale.x < 0 ? 1 : -1; // 向きの逆方向に回避
+            isDodging = true; 　                             // 回避開始
+            dodgeTimer = 0f;                                  // タイマーリセット
             dodgeCooldownTimer = dodgeCooldown;                       // クールダウン開始
-            isInvincible       = true;                                // 無敵状態開始
-            rb.gravityScale    = 0f;                                  // 重力を無効化
-            rb.linearVelocity  = new Vector2(rb.linearVelocity.x, 0f);// Y方向の速度もリセット
+            isInvincible = true;                                // 無敵状態開始
+            rb.gravityScale = 0f;                                  // 重力を無効化
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);// Y方向の速度もリセット
             playerAfterImage.StartAfterImage();                       // 残像生成開始
             return;
         }
@@ -140,17 +144,17 @@ public class PlayerMove : MonoBehaviour
         {
             animController.PlayerIdleAnim();
         }
-            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
         // ジャンプ
         if (Input.GetKeyDown(KeyCode.W))
         {
             animController.PlayerJumpAnim();
-            
+
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 1段目ジャンプ
-                
+
             }
             else if (enableDoubleJump && hasDoubleJump)
             {
@@ -178,4 +182,3 @@ public class PlayerMove : MonoBehaviour
         }
     }
 }
-
