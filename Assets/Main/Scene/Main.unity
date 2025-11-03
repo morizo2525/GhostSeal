@@ -2419,6 +2419,18 @@ PrefabInstance:
       propertyPath: damageSE
       value: 
       objectReference: {fileID: 8300000, guid: c049e055975ecfb48a9ec15894ae985a, type: 3}
+    - target: {fileID: 310867926258299654, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: dodgeSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 310867926258299654, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: dodgeDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 310867926258299654, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: dodgeInvincibleTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 447197874315621327, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: maxAmmo
       value: 10
@@ -2530,6 +2542,10 @@ PrefabInstance:
     - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: circleYOffset
       value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239260901039228088, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
+      propertyPath: invincibleTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7719529730878632815, guid: ed9ba4307cb0fa64e8afe74383a9e9cb, type: 3}
       propertyPath: m_LocalPosition.x
