@@ -3169,6 +3169,7 @@ MonoBehaviour:
   shootAnimationTrigger: Shoot
   attackManager: {fileID: 2062461778}
   weaponInventory: {fileID: 1901470479}
+  playerHPManager: {fileID: 1901470470}
 --- !u!1001 &2135789712
 PrefabInstance:
   m_ObjectHideFlags: 0
