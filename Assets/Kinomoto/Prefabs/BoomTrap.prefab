@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e94c8c32924594680eb71b34cb024e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoomTrap
-  explosionRadius: 5
+  explosionRadius: 2
   explosionDamage: 50
   enemyLayer:
     serializedVersion: 2
