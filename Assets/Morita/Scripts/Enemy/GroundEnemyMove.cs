@@ -28,6 +28,7 @@ public class GroundEnemyMove : MonoBehaviour
     private Rigidbody2D rb;
     private AnimationController animController;
     private Transform player;
+
     private float jumpIntervalTimer;  // ジャンプ判定の間隔タイマー
     private float stopTimer;
     private bool isStopped;
@@ -187,7 +188,7 @@ public class GroundEnemyMove : MonoBehaviour
             return false;
         }
 
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        return  Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
     void OnDrawGizmosSelected()
