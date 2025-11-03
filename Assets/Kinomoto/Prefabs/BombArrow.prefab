@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoomArrow
   explosionEffect: {fileID: 3947112281999426251, guid: 825672d65f3e6d64a8bbece7eec9ccc1, type: 3}
-  explosionRadius: 4
+  explosionRadius: 2
   explosionDamage: 40
   enemyLayer:
     serializedVersion: 2
