@@ -19,6 +19,9 @@ public class PlayerAttackManager : MonoBehaviour
     [Header("武器インベントリのスクリプト")]
     public WeaponInventory weaponInventory;
 
+    [Header("弓ビジュアル管理スクリプト")]
+    public BowVisualManager bowVisualManager;
+
     [Header("攻撃サウンド設定")]
     public AudioClip bowShootSE;           // 通常の弓矢発射SE
     public AudioClip bombThrowSE;          // 爆弾投擲SE
@@ -65,6 +68,15 @@ public class PlayerAttackManager : MonoBehaviour
         if (trapCreator == null)
         {
             trapCreator = GetComponent<PlayerTrapCreator>();
+        }
+
+        if (bowVisualManager == null)
+        {
+            bowVisualManager = GetComponent<BowVisualManager>();
+            if (bowVisualManager == null)
+            {
+                Debug.LogWarning("BowVisualManagerスクリプトが見つかりません。弓のアニメーションは再生されません。");
+            }
         }
     }
 
@@ -115,6 +127,12 @@ public class PlayerAttackManager : MonoBehaviour
                 //爆弾＋弓のコンボ効果: 爆弾矢を発射
                 if (boomBowAttack != null && weaponInventory.UseComboWeapon())
                 {
+                    // アニメーション再生
+                    if (bowVisualManager != null)
+                    {
+                        bowVisualManager.PlayBowShootAnimation();
+                    }
+
                     // 爆弾矢SE再生
                     PlaySE(boomBowShootSE);
 
@@ -127,6 +145,12 @@ public class PlayerAttackManager : MonoBehaviour
                 //罠+弓：トラップアロー
                 if (trapBowAttack != null && weaponInventory.UseComboWeapon())
                 {
+                    // アニメーション再生
+                    if (bowVisualManager != null)
+                    {
+                        bowVisualManager.PlayBowShootAnimation();
+                    }
+
                     // トラップ矢SE再生
                     PlaySE(trapBowShootSE);
 
@@ -157,6 +181,12 @@ public class PlayerAttackManager : MonoBehaviour
         {
             if (bowAttack != null && weaponInventory.UseWeapon(WeaponInventory.WeaponType.Bow))
             {
+                // アニメーション再生
+                if (bowVisualManager != null)
+                {
+                    bowVisualManager.PlayBowShootAnimation();
+                }
+
                 // 弓矢SE再生
                 PlaySE(bowShootSE);
 

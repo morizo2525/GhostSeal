@@ -10,6 +10,9 @@ public class BowVisualManager : MonoBehaviour
     [Header("描画設定")]
     [SerializeField] private float bowDistance = 0.5f;      // プレイヤーからの距離
 
+    [Header("アニメーション設定")]
+    [SerializeField] private string shootAnimationTrigger = "Shoot";
+
     [Header("参照スクリプト")]
     [SerializeField] private PlayerAttackManager attackManager;     // 武器攻撃管理スクリプト
     [SerializeField] private WeaponInventory weaponInventory;       // 武器インベントリ
@@ -17,6 +20,11 @@ public class BowVisualManager : MonoBehaviour
     private Camera mainCamera;
     private GameObject currentBowObject;    // 現在表示中の弓オブジェクト
     private Vector3 playerPosition;         // プレイヤーの現在位置
+
+    // 各弓のAnimator参照
+    private Animator normalBowAnimator;
+    private Animator boomBowAnimator;
+    private Animator trapBowAnimator;
 
     private void Start()
     {
@@ -43,6 +51,9 @@ public class BowVisualManager : MonoBehaviour
 
         // 弓オブジェクトの初期設定
         InitializeBowObjects();
+
+        // InitializeAnimators();
+        InitializeAnimators();
     }
 
     private void Update()
@@ -192,5 +203,71 @@ public class BowVisualManager : MonoBehaviour
     public void SetBowDistance(float distance)
     {
         bowDistance = distance;
+    }
+
+    // 弓の攻撃アニメーションを再生
+    public void PlayBowShootAnimation()
+    {
+        Animator currentAnimator = GetCurrentBowAnimator();
+
+        if (currentAnimator != null)
+        {
+            currentAnimator.SetTrigger("Shoot");
+            Debug.Log($"弓の攻撃アニメーションを再生: {currentBowObject.name}");
+        }
+        else
+        {
+            Debug.LogWarning("現在の弓のAnimatorが見つかりません。");
+        }
+    }
+
+    // Animatorを取得するメソッド
+    private void InitializeAnimators()
+    {
+        if (normalBowObject != null)
+        {
+            normalBowAnimator = normalBowObject.GetComponent<Animator>();
+            if (normalBowAnimator == null)
+            {
+                Debug.LogWarning("通常の弓にAnimatorコンポーネントがありません。");
+            }
+        }
+
+        if (boomBowObject != null)
+        {
+            boomBowAnimator = boomBowObject.GetComponent<Animator>();
+            if (boomBowAnimator == null)
+            {
+                Debug.LogWarning("爆弾矢の弓にAnimatorコンポーネントがありません。");
+            }
+        }
+
+        if (trapBowObject != null)
+        {
+            trapBowAnimator = trapBowObject.GetComponent<Animator>();
+            if (trapBowAnimator == null)
+            {
+                Debug.LogWarning("トラップ矢の弓にAnimatorコンポーネントがありません。");
+            }
+        }
+    }
+
+    // 現在の弓のAnimatorを取得
+    private Animator GetCurrentBowAnimator()
+    {
+        if (currentBowObject == normalBowObject)
+        {
+            return normalBowAnimator;
+        }
+        else if (currentBowObject == boomBowObject)
+        {
+            return boomBowAnimator;
+        }
+        else if (currentBowObject == trapBowObject)
+        {
+            return trapBowAnimator;
+        }
+
+        return null;
     }
 }
