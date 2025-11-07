@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8792220504702444063}
   - component: {fileID: 6900157921852339429}
   - component: {fileID: 3197102849841009342}
+  - component: {fileID: 2312755199411046550}
   - component: {fileID: -6641930105418064466}
   - component: {fileID: 1806953535159991105}
   - component: {fileID: 7214429819902957664}
@@ -217,6 +218,21 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &2312755199411046550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879678001261346585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cb21e45b5e3104c8b45d0195905e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamageEffect
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.05
+  flashCount: 3
 --- !u!114 &-6641930105418064466
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,6 +28,7 @@ public class EnemyHPManager : MonoBehaviour
     private int enemyHealth;
     private int enemyMaxHealth;
     private AnimationController animController;
+    private EnemyDamageEffect flashEffect; // 敵の点滅エフェクト
     private bool isDead = false;
 
     void Start()
@@ -35,6 +36,7 @@ public class EnemyHPManager : MonoBehaviour
         groundEnemy = GetComponent<GroundEnemyMove>();
         airEnemy = GetComponent<AirEnemyMove>();
         animController = GetComponent<AnimationController>();
+        flashEffect = GetComponent<EnemyDamageEffect>(); // 点滅エフェクトを取得
         InitializeEnemy();
     }
 
@@ -67,6 +69,12 @@ public class EnemyHPManager : MonoBehaviour
         if (isDead) return; // 既に死亡している場合は無視
 
         enemyHealth -= damage;
+
+        // ダメージを受けたときに点滅エフェクトを再生
+        if (flashEffect != null)
+        {
+            flashEffect.Flash();
+        }
 
         // デバッグ用
         Debug.Log($"Enemy Health: {enemyHealth}/{enemyMaxHealth}");
